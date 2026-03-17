@@ -23,18 +23,20 @@ src/rag/vector_store/
 # Data Files (Generated)
 # ---------------------------
 data/raw/*
-data/processed/*
-data/output/*
+data/archive/*
+data/cache/
 
-# Ignore generated data
-*.csv
-*.json
-*.txt
+# Ignore intermediate pipeline files
+cleaned_news.csv
+news_master_dataset.csv
+news_with_topics.csv
+finbert_output.csv
+finbert_summary.json
+
 
 # Keep folder structure
 !data/raw/.gitkeep
-!data/processed/.gitkeep
-
+!data/archive/.gitkeep
 # OS
 .DS_Store
 Thumbs.db
