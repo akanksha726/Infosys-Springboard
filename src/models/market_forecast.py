@@ -11,7 +11,7 @@ sys.path.append(
 
 from src.utils.data_loader import load_daily_metrics, load_brand_metrics
 from src.rag.rag_engine import generate_rag_response
-
+from src.utils.data_loader import load_master_dataset
 
 BASE_DIR = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "..")
@@ -140,8 +140,39 @@ def forecast_market_sentiment():
 
     df = load_daily_metrics()
 
+    master_df = load_master_dataset()
+
+    # convert dates
+    df["date"] = pd.to_datetime(df["date"])
+    master_df["date"] = pd.to_datetime(master_df["date"])
+
+    # aggregate final trend per day
+    trend_daily = (
+        master_df.groupby("date")["final_trend_score"]
+        .mean()
+        .reset_index()
+    )
+
+    # merge into df
+    df = pd.merge(
+        df,
+        trend_daily,
+        on="date",
+        how="left"
+    )
+
+    # fill missing
+    df["final_trend_score"] = df["final_trend_score"].fillna(0)
+
     if df.empty or len(df) < 10:
         return {"error": "Not enough data for forecasting"}
+
+    # -------------------------
+    # ADD TREND FEATURES SAFETY
+    # -------------------------
+    for col in ["trend_score", "trend_velocity", "trend_sentiment_signal"]:
+        if col not in df.columns:
+            df[col] = 0
 
     df = df.sort_values("date")
 
@@ -216,7 +247,10 @@ def forecast_market_sentiment():
         "avg_topic_sentiment",
         "event_intensity",
         "topic_intensity_3",
-        "topic_intensity_5"
+        "topic_intensity_5",
+        "final_trend_score",
+        "trend_velocity",
+        "trend_sentiment_signal"
     ]
 
     X = df[feature_cols]
@@ -274,7 +308,10 @@ def forecast_market_sentiment():
                 "avg_topic_sentiment": df["avg_topic_sentiment"].tail(3).mean(),
                 "event_intensity": df["event_intensity"].tail(3).mean(),
                 "topic_intensity_3": df["topic_intensity_3"].tail(3).mean(),
-                "topic_intensity_5": df["topic_intensity_5"].tail(3).mean()
+                "topic_intensity_5": df["topic_intensity_5"].tail(3).mean(),
+                "final_trend_score": df["final_trend_score"].tail(3).mean(),
+                "trend_velocity": df["trend_velocity"].tail(3).mean(),
+                "trend_sentiment_signal": df["trend_sentiment_signal"].tail(3).mean()
             }])
 
             pred = model.predict(features)[0]
@@ -357,9 +394,9 @@ def forecast_brand_sentiment():
 
     results = []
 
-    for brand in df["Brand"].unique():
+    for brand in df["brand"].unique():
 
-        brand_df = df[df["Brand"] == brand].copy()
+        brand_df = df[df["brand"] == brand].copy()
 
         if len(brand_df) < 5:
             continue

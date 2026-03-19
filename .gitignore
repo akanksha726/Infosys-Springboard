@@ -22,18 +22,26 @@ src/rag/vector_store/
 # ---------------------------
 # Data Files (Generated)
 # ---------------------------
+
+# Ignore raw + cache
 data/raw/*
 data/archive/*
 data/cache/
+scripts/data/
+
+# Keep important processed files
+!data/processed/
+!data/processed/daily_market_metrics.csv
+!data/processed/brand_daily_metrics.csv
+!data/processed/trend_data_cleaned.csv
+!data/processed/final_market_signal.json
 
 # Ignore intermediate pipeline files
-cleaned_news.csv
-news_master_dataset.csv
-news_with_topics.csv
-finbert_output.csv
-finbert_summary.json
-
-
+data/processed/cleaned_news.csv
+data/processed/news_master_dataset.csv
+data/processed/news_with_topics.csv
+data/processed/finbert_output.csv
+data/processed/finbert_summary.json
 # Keep folder structure
 !data/raw/.gitkeep
 !data/archive/.gitkeep

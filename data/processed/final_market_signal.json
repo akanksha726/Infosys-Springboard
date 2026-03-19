@@ -1,29 +1,29 @@
 {
-    "timestamp": "2026-03-16 20:58:02.464692",
+    "timestamp": "2026-03-19 22:50:28.588381",
     "current_market_state": {
         "market_signals": {
             "market_direction": "Bearish",
-            "market_slope": -0.01875,
-            "current_sentiment": 0.071429,
-            "top_positive_brand": "Snapdeal",
-            "top_negative_brand": "Amazon India",
-            "most_volatile_brand": "Snapdeal",
+            "market_slope": -0.011438,
+            "current_sentiment": 0.363627,
+            "top_positive_brand": "snapdeal",
+            "top_negative_brand": "ajio",
+            "most_volatile_brand": "snapdeal",
             "top_topics": [
+                "expansion",
                 "technology",
-                "other",
-                "discounts"
+                "funding"
             ],
-            "most_positive_topic": "funding",
-            "most_negative_topic": "logistics",
-            "fastest_rising_topic": "technology",
-            "fastest_declining_topic": "funding",
-            "rag_market_explanation": "Here's a concise analysis of the current Indian ecommerce market sentiment:\n\n**1. Key Market Signals**\nThe news context reveals a bearish market direction, with a focus on technology and other topics, and a decline in funding-related discussions. The top positive brand is Snapdeal, while Amazon India is the top negative brand.\n\n**2. Brand Impact**\nReliance Digital and Meesho are mentioned in a neutral context, focused on technology and marketing trends. Flipkart faces negative sentiment due to concerns over profitability and employment conditions in its logistics operations. Amazon India is also viewed negatively, potentially due to competition from Chinese companies like Shein and Temu.\n\n**3. Consumer Sentiment Drivers**\nThe negative sentiment may be driven by concerns over the impact of international competition on local retailers, as well as questions about the sustainability of quick-commerce models and their effect on employment conditions. The positive sentiment around Snapdeal is not explicitly stated, but it may be due to the brand's ability to adapt to changing market trends.\n\n**4. Strategic Insight**\nFor market observers, a key takeaway is to monitor the evolving competitive landscape, particularly the rise of Chinese companies and their potential to disrupt the Indian ecommerce market. This may require Indian ecommerce players to reassess their strategies, focus on innovation, and prioritize consumer needs to remain competitive.",
+            "most_positive_topic": "expansion",
+            "most_negative_topic": "competition",
+            "fastest_rising_topic": "expansion",
+            "fastest_declining_topic": "competition",
+            "rag_market_explanation": "Here's a concise analysis of the current Indian ecommerce market sentiment:\n\n**1. Key Market Signals**: \nThe news context highlights a mix of market trends, including a focus on technology, expansion, and funding. However, the overall market direction is bearish, indicating a slowdown.\n\n**2. Brand Impact**: \nMeesho, Nykaa, and Flipkart are mentioned in the news, with Nykaa having a positive sentiment due to the growth of experiential marketing. However, the top positive brand is Snapdeal, and the top negative brand is Ajio, which are not mentioned in the news context.\n\n**3. Consumer Sentiment Drivers**: \nThe sentiment is driven by the bearish market direction, with the fastest declining topic being competition. This suggests that consumers may be cautious about the market, leading to a decline in competitive spirit among brands. On the other hand, the growth of experiential marketing and the focus on expansion may be driving positive sentiment for certain brands like Nykaa.\n\n**4. Strategic Insight**: \nFor market observers, a key strategic takeaway is to focus on expansion and technology-driven initiatives, as these topics are rising in prominence, while being cautious of the overall bearish market direction and the declining competitive spirit.",
             "rag_sources": [
-                "\nBrand: Reliance Digital\nTopic: technology\nSentiment: neutral\nNews: 4 Essential B2B Marketing Trends 2022 for Manufacturing Executives Discover essential B2B marketing trends for 2022 tailored for man",
-                "\nBrand: Meesho\nTopic: technology\nSentiment: neutral\nNews: 24 stocks in focus today: Tata Power, UltraTech Cement, Go Digit, RailTel, Lupin, Cipla, GAIL & more Explore today\u2019s stock market highlights f",
-                "\nBrand: Amazon India\nTopic: technology\nSentiment: neutral\nNews: David McWilliams: Two Chinese companies, Shein and Temu, are undercutting retailers in every country If the Chinese juggernaut continues",
-                "\nBrand: Flipkart\nTopic: logistics\nSentiment: negative\nNews: Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to h",
-                "\nBrand: Reliance Digital\nTopic: other\nSentiment: neutral\nNews: Digital Marketing Solutions | Leadpages Grow your brand with powerful Digital Marketing Solutions. Reach the right audience, boost engage"
+                "\nBrand: meesho\nTopic: technology\nSentiment: neutral\nNews: 24 stocks in focus today: Tata Power, UltraTech Cement, Go Digit, RailTel, Lupin, Cipla, GAIL & more Explore today\u2019s stock market highlights f",
+                "\nBrand: nykaa\nTopic: technology\nSentiment: positive\nNews: India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report India live events: The report, titled Be",
+                "\nBrand: amazon india\nTopic: other\nSentiment: positive\nNews: How to get a bigger pie of the EU garment market Zero tariffs apart, focus on quality and synthetics and strengthening the weaving and\u00a0proce",
+                "\nBrand: flipkart\nTopic: expansion\nSentiment: neutral\nNews: Startup Mafia 3.0: Razorpay, Cred, Meesho help spawn 200+ founders India\u2019s new-generation startups are creating a fresh wave of founders, wit",
+                "\nBrand: amazon india\nTopic: funding\nSentiment: neutral\nNews: IPO shake-up ahead; 5G phones drive data boom Due to valuation gaps and market volatility, several new-age startups will rethink their publ"
             ]
         },
         "event_signals": {
@@ -32,88 +32,93 @@
             "complaint_pressure": "Low",
             "complaint_ratio": 0.0,
             "sector_heat": "High Narrative Heat",
-            "heat_ratio": 1.58,
+            "heat_ratio": 4.59,
             "competition_brands": [],
             "complaint_brands": []
         },
         "topic_sentiment_matrix": {
             "topic_sentiment_matrix": [
                 {
-                    "topic": "funding",
-                    "article_volume": 4,
-                    "avg_sentiment": 0.5
+                    "topic": "expansion",
+                    "article_volume": 12,
+                    "avg_sentiment": 0.333
                 },
                 {
                     "topic": "other",
-                    "article_volume": 16,
-                    "avg_sentiment": 0.062
+                    "article_volume": 10,
+                    "avg_sentiment": 0.2
                 },
                 {
-                    "topic": "expansion",
-                    "article_volume": 5,
-                    "avg_sentiment": 0.0
+                    "topic": "funding",
+                    "article_volume": 10,
+                    "avg_sentiment": 0.1
                 },
                 {
-                    "topic": "customer_complaints",
-                    "article_volume": 3,
-                    "avg_sentiment": 0.0
+                    "topic": "discounts",
+                    "article_volume": 14,
+                    "avg_sentiment": -0.071
                 },
                 {
                     "topic": "technology",
                     "article_volume": 16,
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "regulation",
-                    "article_volume": 5,
-                    "avg_sentiment": -0.2
-                },
-                {
-                    "topic": "discounts",
-                    "article_volume": 24,
-                    "avg_sentiment": -0.208
+                    "avg_sentiment": -0.125
                 },
                 {
                     "topic": "logistics",
-                    "article_volume": 4,
-                    "avg_sentiment": -0.5
+                    "article_volume": 3,
+                    "avg_sentiment": -0.333
+                },
+                {
+                    "topic": "customer_complaints",
+                    "article_volume": 3,
+                    "avg_sentiment": -0.333
+                },
+                {
+                    "topic": "regulation",
+                    "article_volume": 3,
+                    "avg_sentiment": -0.333
+                },
+                {
+                    "topic": "competition",
+                    "article_volume": 1,
+                    "avg_sentiment": -1.0
                 }
             ]
         },
         "topic_momentum": {
             "top_rising_topics": [
                 {
+                    "topic": "expansion",
+                    "momentum": 8
+                },
+                {
                     "topic": "technology",
-                    "momentum": 2
+                    "momentum": 7
                 },
                 {
-                    "topic": "customer_complaints",
-                    "momentum": 1
-                },
-                {
-                    "topic": "other",
-                    "momentum": 1
+                    "topic": "funding",
+                    "momentum": 6
                 }
             ],
             "top_declining_topics": [
                 {
-                    "topic": "funding",
-                    "momentum": -1
+                    "topic": "competition",
+                    "momentum": 1
                 },
                 {
                     "topic": "logistics",
-                    "momentum": -1
+                    "momentum": 1
                 },
                 {
-                    "topic": "discounts",
-                    "momentum": 0
+                    "topic": "regulation",
+                    "momentum": 1
                 }
             ]
         },
         "market_drivers": {
             "drivers": [
                 {
-                    "topic_group": "Innovation",
+                    "topic_group": "Misc",
                     "change": "0",
                     "pct_change": 0.0
                 }
@@ -122,790 +127,810 @@
         "narrative_intelligence": {
             "narrative_attribution": {
                 "discounts": [
-                    "BigBasket",
-                    "Myntra"
-                ],
-                "technology": [
-                    "Meesho",
-                    "Amazon India"
+                    "myntra",
+                    "bigbasket"
                 ],
                 "other": [
-                    "Nykaa",
-                    "Reliance Digital"
+                    "amazon india",
+                    "bigbasket"
                 ],
-                "regulation": [
-                    "Meesho",
-                    "Myntra"
-                ],
-                "logistics": [
-                    "BigBasket",
-                    "Reliance Digital"
+                "technology": [
+                    "meesho",
+                    "nykaa"
                 ],
                 "expansion": [
-                    "Myntra",
-                    "Flipkart"
+                    "flipkart",
+                    "meesho"
                 ],
-                "customer_complaints": [
-                    "Meesho",
-                    "Amazon India"
+                "logistics": [
+                    "bigbasket",
+                    "amazon india"
                 ],
                 "funding": [
-                    "Myntra",
-                    "Nykaa"
+                    "flipkart",
+                    "myntra"
+                ],
+                "competition": [
+                    "flipkart"
+                ],
+                "customer_complaints": [
+                    "flipkart",
+                    "meesho"
+                ],
+                "regulation": [
+                    "meesho",
+                    "myntra"
                 ]
             },
             "topic_brand_sentiment_matrix": [
                 {
+                    "topic": "competition",
+                    "brand": "flipkart",
+                    "avg_sentiment": -1.0
+                },
+                {
                     "topic": "customer_complaints",
-                    "brand": "Ajio",
+                    "brand": "flipkart",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "customer_complaints",
-                    "brand": "Amazon India",
-                    "avg_sentiment": 0.0
+                    "brand": "meesho",
+                    "avg_sentiment": -1.0
                 },
                 {
                     "topic": "customer_complaints",
-                    "brand": "Meesho",
+                    "brand": "reliance digital",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "discounts",
-                    "brand": "BigBasket",
-                    "avg_sentiment": -0.2
-                },
-                {
-                    "topic": "discounts",
-                    "brand": "Flipkart",
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "discounts",
-                    "brand": "Meesho",
+                    "brand": "amazon india",
                     "avg_sentiment": -0.5
                 },
                 {
                     "topic": "discounts",
-                    "brand": "Myntra",
+                    "brand": "bigbasket",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "discounts",
-                    "brand": "Nykaa",
+                    "brand": "meesho",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "discounts",
-                    "brand": "Reliance Digital",
-                    "avg_sentiment": -1.0
+                    "brand": "myntra",
+                    "avg_sentiment": 0.0
                 },
                 {
                     "topic": "discounts",
-                    "brand": "Snapdeal",
-                    "avg_sentiment": -0.667
+                    "brand": "nykaa",
+                    "avg_sentiment": 0.0
                 },
                 {
                     "topic": "discounts",
-                    "brand": "Tata Cliq",
+                    "brand": "snapdeal",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "ajio",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "amazon india",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "flipkart",
+                    "avg_sentiment": 0.667
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "meesho",
+                    "avg_sentiment": 0.5
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "myntra",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "nykaa",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "reliance digital",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "expansion",
+                    "brand": "snapdeal",
                     "avg_sentiment": 1.0
                 },
                 {
-                    "topic": "expansion",
-                    "brand": "Flipkart",
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "expansion",
-                    "brand": "Meesho",
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "expansion",
-                    "brand": "Myntra",
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "expansion",
-                    "brand": "Nykaa",
-                    "avg_sentiment": 0.0
-                },
-                {
                     "topic": "funding",
-                    "brand": "Ajio",
+                    "brand": "ajio",
                     "avg_sentiment": 1.0
                 },
                 {
                     "topic": "funding",
-                    "brand": "Amazon India",
-                    "avg_sentiment": 1.0
-                },
-                {
-                    "topic": "funding",
-                    "brand": "Myntra",
+                    "brand": "amazon india",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "funding",
-                    "brand": "Nykaa",
+                    "brand": "flipkart",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "funding",
+                    "brand": "meesho",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "funding",
+                    "brand": "myntra",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "funding",
+                    "brand": "nykaa",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "funding",
+                    "brand": "reliance digital",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "logistics",
-                    "brand": "BigBasket",
+                    "brand": "amazon india",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "logistics",
+                    "brand": "bigbasket",
                     "avg_sentiment": -0.5
-                },
-                {
-                    "topic": "logistics",
-                    "brand": "Flipkart",
-                    "avg_sentiment": -1.0
-                },
-                {
-                    "topic": "logistics",
-                    "brand": "Reliance Digital",
-                    "avg_sentiment": 0.0
                 },
                 {
                     "topic": "other",
-                    "brand": "Ajio",
+                    "brand": "ajio",
                     "avg_sentiment": 0.5
                 },
                 {
                     "topic": "other",
-                    "brand": "Amazon India",
+                    "brand": "amazon india",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "other",
-                    "brand": "BigBasket",
-                    "avg_sentiment": 1.0
+                    "brand": "bigbasket",
+                    "avg_sentiment": 0.5
                 },
                 {
                     "topic": "other",
-                    "brand": "Flipkart",
+                    "brand": "meesho",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "other",
-                    "brand": "Nykaa",
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "other",
-                    "brand": "Reliance Digital",
-                    "avg_sentiment": -0.25
-                },
-                {
-                    "topic": "regulation",
-                    "brand": "Flipkart",
-                    "avg_sentiment": 1.0
-                },
-                {
-                    "topic": "regulation",
-                    "brand": "Meesho",
-                    "avg_sentiment": -0.5
-                },
-                {
-                    "topic": "regulation",
-                    "brand": "Myntra",
+                    "brand": "nykaa",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "regulation",
-                    "brand": "Nykaa",
+                    "brand": "meesho",
                     "avg_sentiment": -1.0
                 },
                 {
-                    "topic": "technology",
-                    "brand": "Amazon India",
+                    "topic": "regulation",
+                    "brand": "myntra",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "regulation",
+                    "brand": "reliance digital",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "technology",
-                    "brand": "BigBasket",
+                    "brand": "bigbasket",
                     "avg_sentiment": -0.5
                 },
                 {
                     "topic": "technology",
-                    "brand": "Flipkart",
-                    "avg_sentiment": 1.0
+                    "brand": "flipkart",
+                    "avg_sentiment": -0.667
                 },
                 {
                     "topic": "technology",
-                    "brand": "Meesho",
+                    "brand": "meesho",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "technology",
-                    "brand": "Myntra",
+                    "brand": "myntra",
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "technology",
-                    "brand": "Nykaa",
-                    "avg_sentiment": 0.0
+                    "brand": "nykaa",
+                    "avg_sentiment": 0.333
                 },
                 {
                     "topic": "technology",
-                    "brand": "Reliance Digital",
+                    "brand": "reliance digital",
                     "avg_sentiment": 0.0
                 }
             ],
             "narrative_risks": [
                 {
-                    "topic": "logistics",
-                    "avg_sentiment": -0.5,
+                    "topic": "competition",
+                    "avg_sentiment": -1.0,
                     "affected_brands": [
-                        "BigBasket",
-                        "Flipkart",
-                        "Reliance Digital"
+                        "flipkart"
                     ]
                 },
                 {
-                    "topic": "discounts",
-                    "avg_sentiment": -0.208,
+                    "topic": "customer_complaints",
+                    "avg_sentiment": -0.333,
                     "affected_brands": [
-                        "Myntra",
-                        "BigBasket",
-                        "Flipkart"
+                        "flipkart",
+                        "meesho",
+                        "reliance digital"
                     ]
                 },
                 {
                     "topic": "regulation",
-                    "avg_sentiment": -0.2,
+                    "avg_sentiment": -0.333,
                     "affected_brands": [
-                        "Meesho",
-                        "Flipkart",
-                        "Myntra"
+                        "meesho",
+                        "myntra",
+                        "reliance digital"
                     ]
                 }
             ],
             "topic_impact_scores": [
                 {
-                    "topic": "discounts",
-                    "avg_sentiment": -0.208,
-                    "volume": 24,
-                    "impact_score": 0.065
-                },
-                {
-                    "topic": "funding",
-                    "avg_sentiment": 0.5,
-                    "volume": 4,
-                    "impact_score": 0.026
-                },
-                {
-                    "topic": "logistics",
-                    "avg_sentiment": -0.5,
-                    "volume": 4,
-                    "impact_score": 0.026
+                    "topic": "expansion",
+                    "avg_sentiment": 0.333,
+                    "volume": 12,
+                    "impact_score": 0.053
                 },
                 {
                     "topic": "other",
-                    "avg_sentiment": 0.062,
-                    "volume": 16,
-                    "impact_score": 0.013
+                    "avg_sentiment": 0.2,
+                    "volume": 10,
+                    "impact_score": 0.026
                 },
                 {
-                    "topic": "regulation",
-                    "avg_sentiment": -0.2,
-                    "volume": 5,
+                    "topic": "technology",
+                    "avg_sentiment": -0.125,
+                    "volume": 16,
+                    "impact_score": 0.026
+                },
+                {
+                    "topic": "competition",
+                    "avg_sentiment": -1.0,
+                    "volume": 1,
                     "impact_score": 0.013
                 },
                 {
                     "topic": "customer_complaints",
-                    "avg_sentiment": 0.0,
+                    "avg_sentiment": -0.333,
                     "volume": 3,
-                    "impact_score": 0.0
+                    "impact_score": 0.013
                 },
                 {
-                    "topic": "expansion",
-                    "avg_sentiment": 0.0,
-                    "volume": 5,
-                    "impact_score": 0.0
+                    "topic": "discounts",
+                    "avg_sentiment": -0.071,
+                    "volume": 14,
+                    "impact_score": 0.013
                 },
                 {
-                    "topic": "technology",
-                    "avg_sentiment": 0.0,
-                    "volume": 16,
-                    "impact_score": 0.0
+                    "topic": "funding",
+                    "avg_sentiment": 0.1,
+                    "volume": 10,
+                    "impact_score": 0.013
+                },
+                {
+                    "topic": "logistics",
+                    "avg_sentiment": -0.333,
+                    "volume": 3,
+                    "impact_score": 0.013
+                },
+                {
+                    "topic": "regulation",
+                    "avg_sentiment": -0.333,
+                    "volume": 3,
+                    "impact_score": 0.013
                 }
             ]
         },
         "rag_market_insight": [
-            "Here's the analysis of the Indian e-commerce market trends:\n\n**1. Key Market Signals**\nThe main signals emerging from the news are:\n- The rise of Chinese companies (Shein and Temu) undercutting retailers globally.\n- Trends in B2B marketing for manufacturing executives.\n- Expansion of e-commerce players (Flipkart and Amazon) in the quick commerce space.\n- Concerns over employment conditions and profitability in the quick commerce space.\n\n**2. Brand Impact**\nThe e-commerce brands most affected are:\n- Amazon India, facing competition from Chinese companies.\n- Flipkart, expanding in the quick commerce space while facing challenges with profitability and employment conditions.\n- Reliance Digital, with a focus on B2B marketing trends.\n- Meesho, with a presence in the broader e-commerce market, although not directly mentioned in the context of these trends.\n\n**3. Consumer Sentiment Drivers**\nThe sentiment is neutral for most brands, with a negative sentiment for Flipkart due to concerns over employment conditions and profitability in the quick commerce space. The rise of Chinese companies may also impact consumer sentiment if it leads to job losses or concerns over product quality.\n\n**4. Strategic Insight**\nA concise strategic takeaway for market observers is: **Indian e-commerce players must focus on innovative marketing strategies, strategic expansions, and social responsibility to stay competitive in the face of rising global competition and evolving consumer expectations.**",
+            "Here's the analysis of the current trends in the Indian e-commerce market:\n\n**1. Key Market Signals**\nThe main signals emerging from the news include:\n- Growing demand for experiential marketing and experience-led consumption\n- Increasing focus on quality and technology in the garment sector\n- Impact of AI on D2C startups and traditional e-commerce models\n- Market volatility affecting IPO plans for startups\n\n**2. Brand Impact**\nThe ecommerce brands most affected are:\n- Amazon India (garment market and funding/IPO plans)\n- Nykaa (experiential marketing and technology)\n- Myntra (technology and AI disruption in D2C startups)\n- Meesho (technology and market trends)\n\n**3. Consumer Sentiment Drivers**\nSentiment is positive due to:\n- Increasing preference for experiences over products (78% of Indian consumers)\n- Growing demand for high-quality products and innovative technologies\n- Excitement around new technologies like AI and their potential to enhance shopping experiences\n\n**4. Strategic Insight**\nOne concise strategic takeaway for market observers is: \n**Indian e-commerce players should focus on experiential marketing, investing in technology (like AI), and enhancing product quality to capitalize on shifting consumer preferences and stay competitive in a volatile market.**",
             [
-                "\nBrand: Amazon India\nTopic: technology\nSentiment: neutral\nNews: David McWilliams: Two Chinese companies, Shein and Temu, are undercutting retailers in every country If the Chinese juggernaut continues",
-                "\nBrand: Reliance Digital\nTopic: technology\nSentiment: neutral\nNews: 4 Essential B2B Marketing Trends 2022 for Manufacturing Executives Discover essential B2B marketing trends for 2022 tailored for man",
-                "\nBrand: Meesho\nTopic: technology\nSentiment: neutral\nNews: 24 stocks in focus today: Tata Power, UltraTech Cement, Go Digit, RailTel, Lupin, Cipla, GAIL & more Explore today\u2019s stock market highlights f",
-                "\nBrand: Flipkart\nTopic: logistics\nSentiment: negative\nNews: Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to h",
-                "\nBrand: Flipkart\nTopic: expansion\nSentiment: neutral\nNews: Ecomm players catching up in qcomm; Iran's tech targets Happy Friday! Ecommerce players are beefing up in the quick commerce space. This and "
+                "\nBrand: amazon india\nTopic: other\nSentiment: positive\nNews: How to get a bigger pie of the EU garment market Zero tariffs apart, focus on quality and synthetics and strengthening the weaving and\u00a0proce",
+                "\nBrand: nykaa\nTopic: technology\nSentiment: positive\nNews: India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report India live events: The report, titled Be",
+                "\nBrand: meesho\nTopic: technology\nSentiment: neutral\nNews: 24 stocks in focus today: Tata Power, UltraTech Cement, Go Digit, RailTel, Lupin, Cipla, GAIL & more Explore today\u2019s stock market highlights f",
+                "\nBrand: amazon india\nTopic: funding\nSentiment: neutral\nNews: IPO shake-up ahead; 5G phones drive data boom Due to valuation gaps and market volatility, several new-age startups will rethink their publ",
+                "\nBrand: myntra\nTopic: technology\nSentiment: neutral\nNews: The AI tsunami that is engulfing D2C startups Explore how AI is disrupting D2C startups by transforming search behavior and challenging tradit"
             ]
         ],
-        "rag_market_risk": "**Ecommerce Market Risk Analysis**\n\n### 1. Key Market Signals\nThe main signals emerging from the news include:\n- Expansion of dark stores by Amazon and Flipkart, indicating a shift towards quick commerce.\n- Profitability checks and debates over employment conditions in the last-mile delivery space.\n- Global economic and banking tensions, particularly involving Iran, which may indirectly impact ecommerce operations.\n\n### 2. Brand Impact\nThe ecommerce brands most affected are:\n- Flipkart: Facing negative sentiment due to logistics and expansion challenges.\n- Amazon India: Impacted by the broader technological and logistical shifts, but with neutral sentiment.\n- BigBasket: Also facing logistical challenges, similar to Flipkart.\n\n### 3. Consumer Sentiment Drivers\nSentiment is driven by concerns over:\n- Employment conditions in last-mile delivery services (negative for Flipkart and BigBasket).\n- The race towards quick commerce and its implications on profitability and service quality.\n\n### 4. Strategic Insight\nA key strategic takeaway is that ecommerce players need to balance their expansion into quick commerce with the need to maintain profitable operations and address concerns over employment conditions and logistics efficiency to mitigate emerging market risks.\n\n**Detected Risks:**\n\n1. **Logistics Risk**: Challenges in last-mile delivery and the profitability of quick commerce models.\n2. **Competition Pressure**: Intensifying competition in the quick commerce space, potentially affecting profitability and service quality.\n3. **Regulatory Risk**: Potential regulatory scrutiny over employment conditions in the ecommerce and delivery sectors.\n4. **Consumer Complaints**: Possible dissatisfaction with delivery services and employment practices.\n5. **Technology Disruption**: Less directly mentioned but the underlying technological advancements driving quick commerce could disrupt traditional business models."
+        "rag_market_risk": "**Emerging Market Risks Analysis**\n\n### Key Market Signals\nMain signals emerging from the news include:\n- Expansion of dark stores by Flipkart and Amazon, potentially impacting logistics and quick commerce.\n- Profitability concerns for pioneers in quick commerce (Swiggy, Zepto).\n- Debate over employment conditions in last-mile delivery.\n- Impact of LPG crisis on migrant labour across sectors.\n- Role of AI in disrupting D2C startups and traditional e-commerce models.\n\n### Brand Impact\nEcommerce brands most affected are:\n- Bigbasket (logistics concerns and other positive news)\n- Amazon India (expansion and positive sentiment in EU garment market, negative sentiment due to LPG crisis)\n- Flipkart (expansion of dark stores)\n- Myntra (neutral sentiment regarding AI and D2C startups)\n\n### Consumer Sentiment Drivers\nSentiment is driven by factors such as:\n- Efficiency and reliability of logistics (negative for Bigbasket)\n- Market expansion and quality focus (positive for Amazon India in the EU garment market)\n- Labour disruptions and crisis (negative for Amazon India due to LPG crisis)\n\n### Strategic Insight\nFor market observers, a key strategic takeaway is to monitor the impact of dark store expansion and AI disruption on traditional e-commerce models, as well as the evolving regulatory and labour environments, to anticipate and mitigate emerging risks.\n\n**Detected Risks:**\n\n1. **Logistics Risk**: Bigbasket faces negative sentiment due to logistics concerns.\n2. **Competition Pressure**: Expansion of dark stores by Flipkart and Amazon increases competition pressure.\n3. **Regulatory Risk**: Debate over employment conditions may lead to regulatory changes affecting last-mile delivery.\n4. **Technology Disruption**: AI's role in disrupting D2C startups and traditional models poses a risk to brands like Myntra.\n5. **Consumer Complaints**: Labour disruptions due to the LPG crisis may lead to consumer complaints if service is impacted."
     },
     "forecasting": {
         "market_forecast": {
             "trend_direction": "Bearish",
-            "trend_slope": -0.0187,
-            "volatility": 0.4504,
-            "confidence_score": 0.55,
+            "trend_slope": -0.0296,
+            "volatility": 0.3324,
+            "confidence_score": 0.668,
             "evaluation": {
-                "MAE": 0.3536,
-                "RMSE": 0.4431,
-                "R2": -3.2286
+                "MAE": 0.1808,
+                "RMSE": 0.2317,
+                "R2": -1.6322
             },
             "feature_importance": {
-                "time_index": 0.113,
-                "sentiment_lag_1": 0.036,
-                "sentiment_lag_2": 0.126,
-                "rolling_mean_3": 0.212,
-                "sentiment_momentum": 0.105,
-                "sentiment_acceleration": 0.049,
-                "sin_week": 0.085,
-                "cos_week": 0.048,
-                "topic_momentum_score": 0.043,
-                "avg_topic_sentiment": 0.047,
-                "event_intensity": 0.039,
-                "topic_intensity_3": 0.008,
-                "topic_intensity_5": 0.091
+                "time_index": 0.052,
+                "sentiment_lag_1": 0.011,
+                "sentiment_lag_2": 0.088,
+                "rolling_mean_3": 0.045,
+                "sentiment_momentum": 0.218,
+                "sentiment_acceleration": 0.047,
+                "sin_week": 0.177,
+                "cos_week": 0.031,
+                "topic_momentum_score": 0.011,
+                "avg_topic_sentiment": 0.008,
+                "event_intensity": 0.003,
+                "topic_intensity_3": 0.055,
+                "topic_intensity_5": 0.025,
+                "final_trend_score": 0.228,
+                "trend_velocity": 0.0,
+                "trend_sentiment_signal": 0.0
             },
             "forecast_drivers": [
                 {
-                    "driver": "rolling mean 3",
-                    "importance": 0.212
+                    "driver": "final trend score",
+                    "importance": 0.228
                 },
                 {
-                    "driver": "sentiment lag 2",
-                    "importance": 0.126
+                    "driver": "sentiment momentum",
+                    "importance": 0.218
                 },
                 {
-                    "driver": "time index",
-                    "importance": 0.113
+                    "driver": "sin week",
+                    "importance": 0.177
                 }
             ],
-            "rag_forecast_explanation": "Based on the provided news context, here's the analysis of the predicted ecommerce market sentiment trend:\n\n**1. Key Market Signals**\nThe main signals emerging from the news are:\n- Ecommerce players expanding into quick commerce space\n- Profitability checks and employment condition debates in the last-mile delivery revenue stream\n- Neutral sentiment towards technology and expansion, but negative sentiment towards logistics\n\n**2. Brand Impact**\nThe ecommerce brands most affected are:\n- Flipkart, due to its expansion into quick commerce and logistics challenges\n- Amazon, also expanding into quick commerce and facing logistics concerns\n- BigBasket, impacted by the logistics and quick commerce trends\n- Reliance Digital and Meesho, with a focus on technology, but less directly affected by the quick commerce and logistics issues\n\n**3. Consumer Sentiment Drivers**\nThe sentiment is driven negative due to:\n- Concerns over employment conditions in the last-mile, instant delivery revenue stream\n- Profitability checks at pioneers in the quick commerce space, such as Swiggy and Zepto\n- Potential impact of logistics challenges on customer experience and satisfaction\n\n**4. Strategic Insight**\nA concise strategic takeaway for market observers is:\n- Ecommerce players should prioritize sustainable and efficient logistics operations to mitigate the negative impact on consumer sentiment and maintain a competitive edge in the quick commerce space.",
+            "rag_forecast_explanation": "Here's the analysis of the predicted ecommerce market sentiment trend:\n\n**1. Key Market Signals**\nThe main signals emerging from the news are the potential IPO of Flipkart, the impact of AI on D2C startups, and the concerns around competition and gas crisis in the ecommerce industry.\n\n**2. Brand Impact**\nThe ecommerce brands most affected are Flipkart, Myntra, and Meesho, as they are directly or indirectly mentioned in the news articles. Flipkart is specifically mentioned in the context of its potential IPO, while Myntra is referenced in the article about AI disrupting D2C startups.\n\n**3. Consumer Sentiment Drivers**\nThe sentiment is predicted to be bearish, which may be driven by concerns around competition, gas crisis, and the potential risks associated with IPOs. The negative sentiment around Flipkart's competition and the gas crisis may be impacting the overall market sentiment.\n\n**4. Strategic Insight**\nThe strategic takeaway for market observers is to closely monitor the developments around Flipkart's IPO and the impact of AI on D2C startups, as these factors may continue to influence the ecommerce market sentiment in the near term.",
             "rag_forecast_sources": [
-                "\nBrand: Flipkart\nTopic: expansion\nSentiment: neutral\nNews: Ecomm players catching up in qcomm; Iran's tech targets Happy Friday! Ecommerce players are beefing up in the quick commerce space. This and ",
-                "\nBrand: Reliance Digital\nTopic: technology\nSentiment: neutral\nNews: 4 Essential B2B Marketing Trends 2022 for Manufacturing Executives Discover essential B2B marketing trends for 2022 tailored for man",
-                "\nBrand: Meesho\nTopic: technology\nSentiment: neutral\nNews: 24 stocks in focus today: Tata Power, UltraTech Cement, Go Digit, RailTel, Lupin, Cipla, GAIL & more Explore today\u2019s stock market highlights f",
-                "\nBrand: Flipkart\nTopic: logistics\nSentiment: negative\nNews: Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to h",
-                "\nBrand: BigBasket\nTopic: logistics\nSentiment: negative\nNews: Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to "
+                "\nBrand: meesho\nTopic: technology\nSentiment: neutral\nNews: 24 stocks in focus today: Tata Power, UltraTech Cement, Go Digit, RailTel, Lupin, Cipla, GAIL & more Explore today\u2019s stock market highlights f",
+                "\nBrand: ajio\nTopic: other\nSentiment: neutral\nNews: Judge of the Day: Marketing must own the P&L, says Arpan Biswas Judge of the Day: Marketing must own the P&L, says Arpan Biswasthedrum.com\n",
+                "\nBrand: myntra\nTopic: technology\nSentiment: neutral\nNews: The AI tsunami that is engulfing D2C startups Explore how AI is disrupting D2C startups by transforming search behavior and challenging tradit",
+                "\nBrand: flipkart\nTopic: competition\nSentiment: negative\nNews: Aggressively buy Eternal shares now after 40% crash! Why JM Financial feels gas crisis impact on Zomato is overstated Eternal shares have ",
+                "\nBrand: myntra\nTopic: discounts\nSentiment: neutral\nNews: Walmart-backed Flipkart to invite banks for IPO pitch in April Flipkart IPO: Flipkart is moving towards a public listing. Banks will be invited"
             ],
             "forecasts": {
                 "7_day_forecast": [
-                    -0.0156,
-                    -0.1196,
-                    -0.0974,
-                    -0.0659,
-                    -0.1211,
-                    -0.1414,
-                    -0.1743
+                    -0.1887,
+                    -0.0321,
+                    -0.022,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214
                 ],
                 "30_day_forecast": [
-                    -0.0156,
-                    -0.1196,
-                    -0.0974,
-                    -0.0659,
-                    -0.1211,
-                    -0.1414,
-                    -0.1743,
-                    -0.1723,
-                    -0.1528,
-                    -0.1293,
-                    -0.1009,
-                    -0.1486,
-                    -0.1678,
-                    -0.1725,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528
+                    -0.1887,
+                    -0.0321,
+                    -0.022,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319
                 ],
                 "90_day_forecast": [
-                    -0.0156,
-                    -0.1196,
-                    -0.0974,
-                    -0.0659,
-                    -0.1211,
-                    -0.1414,
-                    -0.1743,
-                    -0.1723,
-                    -0.1528,
-                    -0.1293,
-                    -0.1009,
-                    -0.1486,
-                    -0.1678,
-                    -0.1725,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.2035,
-                    -0.1838,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678,
-                    -0.1728,
-                    -0.1769,
-                    -0.1528,
-                    -0.1293,
-                    -0.1063,
-                    -0.1486,
-                    -0.1678
+                    -0.1887,
+                    -0.0321,
+                    -0.022,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0085,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213,
+                    -0.0214,
+                    -0.1891,
+                    -0.0319,
+                    -0.0084,
+                    -0.0134,
+                    -0.0195,
+                    -0.0213
                 ]
             }
         },
         "brand_forecast": {
             "brand_forecasts": [
                 {
-                    "brand": "Meesho",
-                    "trend_direction": "Improving",
-                    "trend_slope": 0.0333,
+                    "brand": "bigbasket",
+                    "trend_direction": "Declining",
+                    "trend_slope": -0.0714,
                     "forecasts": {
                         "7_day": [
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225
                         ],
                         "30_day": [
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225
                         ],
                         "90_day": [
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267,
-                            -0.0267
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225,
+                            -0.1225
                         ]
                     }
                 },
                 {
-                    "brand": "BigBasket",
-                    "trend_direction": "Declining",
-                    "trend_slope": -0.0833,
+                    "brand": "nykaa",
+                    "trend_direction": "Stable",
+                    "trend_slope": -0.0,
                     "forecasts": {
                         "7_day": [
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07
                         ],
                         "30_day": [
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07
                         ],
                         "90_day": [
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375,
-                            -0.375
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07,
+                            0.07
                         ]
                     }
                 }
@@ -915,102 +940,116 @@
     "explainability": {
         "topic_sentiment_matrix": [
             {
-                "topic": "funding",
-                "sentiment_score": 0.5
+                "topic": "expansion",
+                "sentiment_score": 0.3333333333333333
             },
             {
                 "topic": "other",
-                "sentiment_score": 0.0625
+                "sentiment_score": 0.2
             },
             {
-                "topic": "expansion",
-                "sentiment_score": 0.0
-            },
-            {
-                "topic": "customer_complaints",
-                "sentiment_score": 0.0
-            },
-            {
-                "topic": "technology",
-                "sentiment_score": 0.0
-            },
-            {
-                "topic": "regulation",
-                "sentiment_score": -0.2
+                "topic": "funding",
+                "sentiment_score": 0.1
             },
             {
                 "topic": "discounts",
-                "sentiment_score": -0.20833333333333334
+                "sentiment_score": -0.07142857142857142
+            },
+            {
+                "topic": "technology",
+                "sentiment_score": -0.125
             },
             {
                 "topic": "logistics",
-                "sentiment_score": -0.5
+                "sentiment_score": -0.3333333333333333
+            },
+            {
+                "topic": "customer_complaints",
+                "sentiment_score": -0.3333333333333333
+            },
+            {
+                "topic": "regulation",
+                "sentiment_score": -0.3333333333333333
+            },
+            {
+                "topic": "competition",
+                "sentiment_score": -1.0
             }
         ],
         "topic_explainability": {
-            "technology": {
-                "avg_sentiment": 0.0,
-                "example_articles": [
-                    "Travel fintech Scapia in talks with General Catalyst to raise $50-60 million Scapia is in early talks to raise $50\u201360 million led by US VC General Catalyst, aiming to expand its co-branded credit cards and travel bookings. Founded by Anil Goteti, Scapia grew revenue 70% YoY to Rs 40.4 crore and cut losses, competing with Uni Cards, Ni\u2026",
-                    "Anil Kapoor\u2019s 17-year-old film still pays him over Rs 3 lakh: Actor reveals total amount he has earned so far Actor Anil Kapoor recently revealed that he still receives payments from the 2008 Oscar-winning film Slumdog Millionaire, nearly 17 years after its release. Speaking at the India Today Conclave 2026, the veteran star shared that he had received a cheque of 3,\u2026",
-                    "Sunday Sweets: Around the World in 80 Days In 1873, Jules Verne published\u00a0Around the World in 80 Days, the story of Phileas Fogg and his attempt to circumnavigate the globe to win a bet. Now, we can accomplish the same feat in just over two days, with another couple of days added in to get through air\u2026"
-                ]
-            },
-            "discounts": {
-                "avg_sentiment": -0.208,
-                "example_articles": [
-                    "Flipkart calls Re 1 milk offer a limited promotion after Bamul moves CCI The Walmart-backed ecommerce platform clarified that it runs promotional offers periodically on select products on its marketplace and remains committed to working with farmers, cooperatives and sellers across India to expand market access and support their g\u2026",
-                    "'Milk Not A Marketing Gimmick, But Livelihood Of Farmers': BAMUL President Slams Flipkart's Re 1 Milk Offer BAMUL President D K Suresh wrote an email to PM Modi seeking an investigation into \"predatory pricing\" of milk by the quick commerce platform.",
-                    "BAMUL president slams Flipkart over selling milk for Re 1 per litre Flipkart faces accusations of selling milk for just Re 1. Bengaluru Milk Union president D K Suresh claims this is a discount campaign hurting farmers and cooperatives. He has complained to the Competition Commission of India and written to Prime Minister Nar\u2026"
-                ]
-            },
             "other": {
-                "avg_sentiment": 0.062,
+                "avg_sentiment": 0.2,
                 "example_articles": [
-                    "From go-karting to pizza-making: India Inc turns to curated activities for deeper employee bonding Indian companies are embracing new ways for employees to connect. Activities like horse riding and pizza making are replacing traditional large offsites. This shift focuses on building deeper relationships through shared experiences. Companies like SAP, Flipk\u2026",
-                    "Operation\u00a0Sindoor: The Untold Story of India\u2019s deep strikes Inside Pakistan The book is an authoritative participant narrative that seeks to shape both scholarly and public understandings of how India responds to Pakistan-sponsored terrorism",
-                    "From go-karting to pizza-making: India Inc turns to curated activities for deeper employee bonding Indian companies are embracing new ways for employees to connect. Activities like horse riding and pizza making are replacing traditional large offsites. This shift focuses on building deeper relationships through shared experiences. Companies like SAP, Flipk\u2026"
-                ]
-            },
-            "expansion": {
-                "avg_sentiment": 0.0,
-                "example_articles": [
-                    "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards",
-                    "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards",
-                    "Flipkart completes reverse flip to India, clears path for domestic IPO Flipkart's reverse flip to India clears the way for a domestic IPO, marking a significant milestone for the e-commerce giant."
-                ]
-            },
-            "logistics": {
-                "avg_sentiment": -0.5,
-                "example_articles": [
-                    "Gas refill dispatches nosedive 25% in Madhya Pradesh, curbs on commercial supply bite LPG cylinder deliveries across Madhya Pradesh saw a sharp decline on Thursday. This reduction stemmed from global fuel supply chain issues and increased consumer bookings. Oil companies adjusted deliveries to commercial establishments. Despite adequate fuel s\u2026",
-                    "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to have coincided with the profitability check at pioneers in this space -Swiggy and IPO-bound Zepto \u2013 and amid a broader debate over employment conditions in the last-mile, instant delivery revenue stre\u2026",
-                    "Data, design and dosa batter: How Instamart is turning your 10-min craving into a private label empire Private labels are usually invisible and price-led. But Swiggy Instamart wants them to be visible and aspirational. By blending hyperlocal data with bold design, Swiggy\u2019s Instamart is trying to build an FMCG food and beverages brand within its delivery app ec\u2026"
-                ]
-            },
-            "regulation": {
-                "avg_sentiment": -0.2,
-                "example_articles": [
-                    "Better Piped Natural Gas (PNG) coverage could have eased supply situation: Experts Madhya Pradesh faces LPG supply concerns, lagging behind neighboring states in Piped Natural Gas (PNG) connections. Despite government assurances of sufficient LPG, experts suggest wider PNG distribution could alleviate current cooking gas stress. The state's\u2026",
-                    "IPO-bound Flipkart shifts domicile to India IPO-bound Flipkart has shifted its domicile to India, having secured government nod for an internal restructuring that now makes Flipkart Internet the holding entity of the Group.",
-                    "Meesho shares plunge 10% on Rs 1,500 crore tax demand; down 44% from Dec high Shares of Meesho fell 10% to hit the lower circuit after the company revealed a Rs 1,500-crore tax demand from the Income Tax Department, nearly half of its Q3 operating revenue. The demand relates to the 2023-24 assessment year. Meesho said it disagrees with\u2026"
-                ]
-            },
-            "customer_complaints": {
-                "avg_sentiment": 0.0,
-                "example_articles": [
-                    "Sitaare Zameen Par OTT release confirmed: When and where to watch Aamir Khan\u2019s sports drama nearly a year after its theatrical release? Reason behind the delay Aamir Khan's sports comedy-drama Sitaare Zameen Par, after an experimental pay-per-view release, is finally heading for its digital debut. This marks the first Hindi theatrical film to premiere directly on the platform SonyLiv, nearly a year after its theatri\u2026",
-                    "Meesho receives \u20b91,500 crore income tax demand for FY23; plans to challenge order According to the filing, the Assessment Unit of the Income Tax Department issued an assessment order under Section 143(3) of the Income-tax Act, 1961, along with a demand notice under Section 156",
-                    "Fractal Industries IPO opens today. Check GMP, price band, subscription and other details At the upper band of Rs 216, the IPO is commanding a pre-issue market cap of around Rs 169.5 crore. Shares are proposed to be listed on the BSE SME platform on February 23. The IPO is entirely a fresh issue of 22.68 lakh shares aggregating to Rs 49 crore. The\u2026"
+                    "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil The global luxury fashion market is set for substantial growth, expanding from $257.45 billion in 2025 to $337.18 billion by 2033, at a CAGR of 3.43%. Factors propelling this growth include rising disposable incomes, changing consumer behaviors, and heightene\u2026",
+                    "Judge of the Day: Marketing must own the P&L, says Arpan Biswas Judge of the Day: Marketing must own the P&L, says Arpan Biswasthedrum.com",
+                    "Invincible Season 4 Part 1 Episodes 1 to 3 release time, schedule and how to watch: What to expect from Invincible new season? Global streaming timings worldwide Invincible Season 4 Part 1 Episodes 1 to 3 release time, schedule and how to watch is confirmed. The first three episodes release together on March 18, 2026 on Prime Video. The season has eight episodes with weekly releases after premiere and no midseason bre\u2026"
                 ]
             },
             "funding": {
-                "avg_sentiment": 0.5,
+                "avg_sentiment": 0.1,
                 "example_articles": [
-                    "Ember Cookware bets on safer kitchen products, aims for \u20b9100 crore ARR by 2027 Ember Cookware aims for \u20b9100 crore ARR by 2027 as demand grows for non-toxic kitchen products in India. The startup raised $3.2 million to expand innovation and reach.",
-                    "Gift Card Business and Investment Intelligence Report 2026: Market to Reach $865 Billion by 2030 - KPIs on Market Size, Retail & Corporate Spend, Competitive Landscape, and Consumer Demographics Key opportunities in the global gift card market include the integration of gift cards into digital wallets and payment platforms, the shift toward programmable spend tools for corporate and B2B gifting, the consolidation into closed-loop ecosystem strategies\u2026",
-                    "Fractal Industries shares to list today. Check GMP ahead of debut Fractal Industries is poised for its BSE SME debut with modest listing gains expected around 3%. The Rs 49 crore IPO, fully subscribed 5.44 times, will fund working capital and corporate needs.  The garment manufacturer, serving major e-commerce platforms, re\u2026"
+                    "Fractal Industries shares to list today. Check GMP ahead of debut Fractal Industries is poised for its BSE SME debut with modest listing gains expected around 3%. The Rs 49 crore IPO, fully subscribed 5.44 times, will fund working capital and corporate needs.  The garment manufacturer, serving major e-commerce platforms, re\u2026",
+                    "IPO shake-up ahead; 5G phones drive data boom Due to valuation gaps and market volatility, several new-age startups will rethink their public listing plans. This and more in today's ETtech Top 5.",
+                    "IPO shake-up ahead; 5G phones drive data boom Due to valuation gaps and market volatility, several new-age startups will rethink their public listing plans. This and more in today's ETtech Top 5."
                 ]
+            },
+            "expansion": {
+                "avg_sentiment": 0.333,
+                "example_articles": [
+                    "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line Reliance fashion platform AJIO has launched a special merchandise collection. This range is inspired by the spy thriller Dhurandhar. The collection features apparel like graphic T-shirts and signature tees. It also includes limited-edition signed Pathanis. De\u2026",
+                    "Global taskforce launched to hunt down overseas scammers UK drives international action to go after scammers at the Global Fraud Summit, hosted by the United Nations in Vienna on 16 - 17 March.",
+                    "Xiaomi Poco X8 Pro Max receives global release with 120 Hz AMOELD display and massive battery The Poco X8 Pro Max is now available globally. Packing an 8,500 mAh battery and a 9,000 mAh battery in India, the Poco X8 Pro Max also features other high-end hardware that belies its sub-$500 launch price."
+                ]
+            },
+            "discounts": {
+                "avg_sentiment": -0.071,
+                "example_articles": [
+                    "Amazon offers 1-hour, 3-hour deliveries for US customers for a fee Amazon offers 1-hour, 3-hour deliveries for US customers for a feebostonherald.com",
+                    "As LPG shortage hits food supply, migrant workers and truck drivers leave Maharashtra Gas shortages are hitting factory canteens and street stalls, squeezing food access and incomes for workers, drivers, and gig employees. With costs rising, many are returning to their villages, while biomass cooking offers limited relief",
+                    "T20 final, Women\u2019s Day drive sales for quick commerce, food delivery apps Zomato started a three-day weekend offer for the match beginning on Friday, while Swiggy launched a 'Rs 75 cash back' offer and 'predict and win' games for Sunday. Quick commerce apps like Zepto, Amazon Now, Blinkit, Instamart, BigBasket and Flipkart Minutes \u2026"
+                ]
+            },
+            "logistics": {
+                "avg_sentiment": -0.333,
+                "example_articles": [
+                    "Amazon launches 1-hour, 3-hour delivery options: Here\u2019s what it will cost you The e-commerce giant said it started testing the express delivery service late last year and expanding it this month.",
+                    "Data, design and dosa batter: How Instamart is turning your 10-min craving into a private label empire Private labels are usually invisible and price-led. But Swiggy Instamart wants them to be visible and aspirational. By blending hyperlocal data with bold design, Swiggy\u2019s Instamart is trying to build an FMCG food and beverages brand within its delivery app ec\u2026",
+                    "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to have coincided with the profitability check at pioneers in this space -Swiggy and IPO-bound Zepto \u2013 and amid a broader debate over employment conditions in the last-mile, instant delivery revenue stre\u2026"
+                ]
+            },
+            "technology": {
+                "avg_sentiment": -0.125,
+                "example_articles": [
+                    "Meet Muhammad Aziz, the bank official feeding hundreds daily outside Hyderabad\u2019s NIMS hospital Muhammad Aziz, a bank official, has been a beacon of hope for the needy for nearly ten years. He distributes hundreds of food packets daily outside NIMS Hospital in Hyderabad. What began as a small effort with his mother has blossomed into a large-scale opera\u2026",
+                    "Axis Bank\u2019s Airtel Credit Card Devalued: Lounge Access Removed, Cashback Structure Reworked from April 2026 The Airtel Axis Bank Credit Card has been sharply restructured, because all the benefits now depend on how much you spend on the card. Here are the details. \nThe post Axis Bank\u2019s Airtel Credit Card Devalued: Lounge Access Removed, Cashback Structure Reworked \u2026",
+                    "QSR chains stay resilient amid LPG shortage: Karan Taurani India's food service industry faces temporary LPG supply constraints. Smaller restaurants are feeling the pinch, while major quick-service restaurant chains are largely unaffected. Experts suggest QSRs are adapting by rationalizing menus and increasing relian\u2026"
+                ]
+            },
+            "customer_complaints": {
+                "avg_sentiment": -0.333,
+                "example_articles": [
+                    "India Glycols announces Rs 7.5/share dividend. Check smallcap's record date, dividend yield India Glycols declared an interim dividend of Rs 7.5 per share for FY2025-26, with March 23 set as the record date. According to Trendlyne, the company has issued 23 dividends so far. Over the past year, it paid Rs 5 per share, translating to a dividend yield\u2026",
+                    "Half of new-age listings fall below issue price amid market volatility New-age firms listed over the past year remain under pressure from US-Iran tensions and volatile markets, with many trading below issue price. In addition, PhonePe delaying its IPO may impact others. While a few stocks show gains, several continue to struggle\u2026",
+                    "UK Digital Identity Policy - Issues, Choices and Questions in 850 words How do we ensure that UK ID policy is effective and meaningful? 850 words, with 14 key actions and 12 foundational questions that need to be answered before moving forward on the introduction of a ..."
+                ]
+            },
+            "competition": {
+                "avg_sentiment": -1.0,
+                "example_articles": [
+                    "Aggressively buy Eternal shares now after 40% crash! Why JM Financial feels gas crisis impact on Zomato is overstated Eternal shares have corrected sharply, but JM Financial sees the decline as an opportunity, maintaining a bullish stance. The brokerage believes concerns around the LPG crisis and competition are overstated, and expects steady growth in Zomato and Blinkit bus\u2026"
+                ]
+            },
+            "regulation": {
+                "avg_sentiment": -0.333,
+                "example_articles": [
+                    "Meesho shares plunge 10% on Rs 1,500 crore tax demand; down 44% from Dec high Shares of Meesho fell 10% to hit the lower circuit after the company revealed a Rs 1,500-crore tax demand from the Income Tax Department, nearly half of its Q3 operating revenue. The demand relates to the 2023-24 assessment year. Meesho said it disagrees with\u2026",
+                    "IPO-bound Flipkart shifts domicile to India IPO-bound Flipkart has shifted its domicile to India, having secured government nod for an internal restructuring that now makes Flipkart Internet the holding entity of the Group.",
+                    "IRS Warns of Most Dangerous 2026 Tax Scams Targeting SMBs The \u201cDirty Dozen\u201d list of tax scams released by the IRS this year reads less like a seasonal advisory and more like a snapshot of a rapidly professionalizing fraud economy. The tax agency wants small and medium-sized business (SMB) owners to know that crimina\u2026"
+                ]
+            },
+            "NaN": {
+                "avg_sentiment": NaN,
+                "example_articles": []
             }
         }
     }

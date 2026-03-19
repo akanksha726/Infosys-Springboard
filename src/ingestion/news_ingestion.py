@@ -1,19 +1,26 @@
 import requests
 import pandas as pd
 import os
-from datetime import datetime
 from config import NEWS_API_KEY, ECOMMERCE_BRANDS
+from datetime import datetime, timedelta
+import time
 
 BASE_DIR = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "..")
 )
+def should_fetch_news(file_path, hours=6):
+    if not os.path.exists(file_path):
+        return True
 
+    last_modified = datetime.fromtimestamp(os.path.getmtime(file_path))
+    now = datetime.now()
 
+    return (now - last_modified) > timedelta(hours=hours)
 # ------------------------------------------------
 # Fetch News
 # ------------------------------------------------
 
-def fetch_news_for_brands(brands, page_size=10):
+def fetch_news_for_brands(brands, page_size=5):
 
     all_news = []
 
@@ -33,12 +40,19 @@ def fetch_news_for_brands(brands, page_size=10):
 
         try:
 
-            response = requests.get(url, params=params)
+            response = requests.get(url, params=params, timeout=5)
 
-            if response.status_code != 200:
-                print(f"API Error for {brand}: {response.status_code}")
+            # AFTER request
+            time.sleep(1.5)
+
+            if response.status_code == 429:
+                print(f"Rate limit hit for {brand}. Waiting 10 sec...")
+                time.sleep(10)
                 continue
 
+            elif response.status_code != 200:
+                print(f"API Error for {brand}: {response.status_code}")
+                continue
             data = response.json()
 
             articles = data.get("articles", [])

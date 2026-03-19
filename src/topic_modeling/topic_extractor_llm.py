@@ -255,7 +255,12 @@ def run_topic_extraction():
     # ----------------------------
 
     df["topic"] = topics
-    df["topic_confidence"] = confidences
+    # Fix length mismatch
+    min_len = min(len(df), len(confidences))
+
+    df = df.iloc[:min_len].copy()
+
+    df["topic_confidence"] = confidences[:min_len]
 
     df["topic_group"] = df["topic"].map(TOPIC_GROUPS)
     df["topic_group"] = df["topic_group"].fillna("Misc")

@@ -21,8 +21,8 @@ def run_event_signals():
     # 1️⃣ Date Processing
     # ---------------------------
 
-    df["Published_Date"] = pd.to_datetime(df["Published_Date"])
-    df["date"] = df["Published_Date"].dt.date
+    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = df["date"].dt.date
 
     df["topic"] = df["topic"].fillna("Other")
     df["finbert_label"] = df["finbert_label"].fillna("neutral")
@@ -128,14 +128,14 @@ def run_event_signals():
     # ---------------------------
 
     competition_brands = (
-        df[df["competition_flag"]]["Brand"]
+        df[df["competition_flag"]]["brand"]
         .value_counts()
         .index
         .tolist()
     )
 
     complaint_brands = (
-        df[df["complaint_flag"]]["Brand"]
+        df[df["complaint_flag"]]["brand"]
         .value_counts()
         .index
         .tolist()

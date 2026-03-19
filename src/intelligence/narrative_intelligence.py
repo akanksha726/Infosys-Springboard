@@ -16,7 +16,7 @@ from src.utils.data_loader import load_master_dataset
 def run_narrative_attribution(df):
 
     topic_brand = (
-        df.groupby(["topic", "Brand"])
+        df.groupby(["topic", "brand"])
         .size()
         .reset_index(name="count")
     )
@@ -31,7 +31,7 @@ def run_narrative_attribution(df):
 
     for topic in dominant["topic"].unique():
 
-        brands = dominant[dominant["topic"] == topic]["Brand"].tolist()
+        brands = dominant[dominant["topic"] == topic]["brand"].tolist()
 
         attribution[topic] = brands
 
@@ -53,7 +53,7 @@ def run_topic_brand_sentiment_matrix(df):
     df["sentiment_score"] = df["finbert_label"].map(mapping)
 
     matrix = (
-        df.groupby(["topic", "Brand"])["sentiment_score"]
+        df.groupby(["topic", "brand"])["sentiment_score"]
         .mean()
         .reset_index()
     )
@@ -64,7 +64,7 @@ def run_topic_brand_sentiment_matrix(df):
 
         result.append({
             "topic": row["topic"],
-            "brand": row["Brand"],
+            "brand": row["brand"],
             "avg_sentiment": round(float(row["sentiment_score"]), 3)
         })
 
@@ -98,7 +98,7 @@ def run_narrative_risk_detector(df):
     for topic, score in risk_topics.items():
 
         affected_brands = (
-            df[df["topic"] == topic]["Brand"]
+            df[df["topic"] == topic]["brand"]
             .value_counts()
             .head(3)
             .index

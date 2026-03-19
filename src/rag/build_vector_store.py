@@ -30,10 +30,10 @@ def build_documents(df):
     for _, row in df.iterrows():
 
         text = f"""
-Brand: {row['Brand']}
+Brand: {row['brand']}
 Topic: {row['topic']}
 Sentiment: {row['finbert_label']}
-News: {row['Combined_Text'][:1000]}
+News: {row['combined_text'][:1000]}
 """
 
         documents.append(Document(page_content=text))

@@ -13,8 +13,8 @@ def run_brand_daily_index():
 
     df = pd.read_csv(input_path)
 
-    df["Published_Date"] = pd.to_datetime(df["Published_Date"])
-    df["date"] = df["Published_Date"].dt.date
+    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = df["date"].dt.date
 
     sentiment_mapping = {
         "positive": 1,
@@ -28,7 +28,7 @@ def run_brand_daily_index():
     # 1️⃣ Sentiment Index
     # -----------------------------
     sentiment_index = (
-        df.groupby(["date", "Brand"])["sentiment_score"]
+        df.groupby(["date", "brand"])["sentiment_score"]
         .mean()
         .reset_index(name="sentiment_index")
     )
@@ -37,7 +37,7 @@ def run_brand_daily_index():
     # 2️⃣ Topic Counts
     # -----------------------------
     topic_counts = (
-        df.groupby(["date", "Brand", "topic"])
+        df.groupby(["date", "brand", "topic"])
         .size()
         .unstack(fill_value=0)
         .reset_index()
@@ -49,7 +49,7 @@ def run_brand_daily_index():
     brand_metrics = pd.merge(
         sentiment_index,
         topic_counts,
-        on=["date", "Brand"],
+        on=["date", "brand"],
         how="left"
     )
 

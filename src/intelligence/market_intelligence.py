@@ -25,8 +25,8 @@ def run_market_intelligence():
 
     master_df = load_master_dataset()
 
-    master_df["Published_Date"] = pd.to_datetime(master_df["Published_Date"])
-    master_df["date"] = master_df["Published_Date"].dt.date
+    master_df["date"] = pd.to_datetime(master_df["date"])
+    master_df["date"] = master_df["date"].dt.date
 
     # -------------------------
     # 1️⃣ Topic Trend Intelligence
@@ -93,17 +93,43 @@ def run_market_intelligence():
 
     daily_df = load_daily_metrics()
 
+    # -------------------------
+    # 🔥 MERGE FINAL TREND INTO DAILY DATA (NEW)
+    # -------------------------
+
+    # convert dates to datetime
+    daily_df["date"] = pd.to_datetime(daily_df["date"])
+    master_df["date"] = pd.to_datetime(master_df["date"])
+
+    # aggregate final trend from master dataset
+    trend_daily = (
+        master_df.groupby("date")["final_trend_score"]
+        .mean()
+        .reset_index()
+    )
+
+    # merge into daily_df
+    daily_df = pd.merge(
+        daily_df,
+        trend_daily,
+        on="date",
+        how="left"
+    )
+
+    # fill missing values
+    daily_df["final_trend_score"] = daily_df["final_trend_score"].fillna(0)
+
     daily_df = daily_df.sort_values("date")
     daily_df["time_index"] = range(len(daily_df))
 
     X = daily_df[["time_index"]]
-    y = daily_df["sentiment_index"]
+    y = daily_df["final_trend_score"]
 
     model = LinearRegression()
     model.fit(X, y)
 
     market_slope = model.coef_[0]
-    current_sentiment = daily_df["sentiment_index"].iloc[-1]
+    current_sentiment = daily_df["final_trend_score"].iloc[-1]
 
     if market_slope > 0:
         market_direction = "Bullish"
@@ -120,9 +146,9 @@ def run_market_intelligence():
 
     momentum_results = []
 
-    for brand in brand_df["Brand"].unique():
+    for brand in brand_df["brand"].unique():
 
-        temp = brand_df[brand_df["Brand"] == brand].sort_values("date")
+        temp = brand_df[brand_df["brand"] == brand].sort_values("date")
 
         if len(temp) < 2:
             continue
@@ -150,9 +176,9 @@ def run_market_intelligence():
 
     volatility_results = []
 
-    for brand in brand_df["Brand"].unique():
+    for brand in brand_df["brand"].unique():
 
-        temp = brand_df[brand_df["Brand"] == brand]
+        temp = brand_df[brand_df["brand"] == brand]
 
         if len(temp) < 2:
             continue
@@ -186,6 +212,7 @@ def run_market_intelligence():
 
     The fastest rising topic is {fastest_rising_topic},
     while the fastest declining topic is {fastest_declining_topic}.
+
     """
 
     # -------------------------

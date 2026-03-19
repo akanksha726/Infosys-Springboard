@@ -1,4 +1,5 @@
 from src.ingestion.news_ingestion import fetch_news_for_brands, save_news_to_csv
+from src.ingestion.news_ingestion import should_fetch_news
 from src.preprocessing.text_preprocessing import preprocess_news_data
 from src.sentiment.finbert_analyzer import run_finbert
 from src.analytics.daily_sentiment_index import run_daily_sentiment_index
@@ -13,6 +14,7 @@ from src.intelligence.market_driver_detector import detect_market_drivers
 from src.narrative.explainability_engine import run_explainability_engine
 from src.topic_modeling.topic_extractor_llm import run_topic_extraction
 from src.utils.build_master_dataset import build_master_dataset
+from src.visualization.trend_visualization import run_all_trend_visuals
 from src.analytics.topic_sentiment_matrix import run_topic_sentiment_matrix
 from src.analytics.topic_momentum_tracker import run_topic_momentum_tracker
 from src.intelligence.narrative_intelligence import run_narrative_intelligence
@@ -20,11 +22,12 @@ from src.narrative.narrative_summary import generate_market_report
 from src.rag.build_vector_store import build_vector_store
 from src.rag.rag_engine import generate_rag_response
 from src.rag.rag_engine import generate_market_risk_signal
+from config import ECOMMERCE_BRANDS
 
+import pandas as pd
 import json
 from datetime import datetime
 import os
-
 
 def main():
 
@@ -32,37 +35,47 @@ def main():
 
     # 1️⃣ Ingestion
     print("Running ingestion...")
-    brands = [
-        "Flipkart",
-        "Amazon India",
-        "Myntra",
-        "Snapdeal",
-        "Meesho",
-        "Ajio",
-        "BigBasket",
-        "Nykaa",
-        "Reliance Digital",
-        "Tata Cliq"
-    ]
-
-    news_data = fetch_news_for_brands(brands)
-    save_news_to_csv(news_data)
-
-    # 2️⃣ Preprocessing
+    brands = ECOMMERCE_BRANDS
+    news_file = os.path.join(BASE_DIR, "data", "raw", "news_data.csv")
+    news_updated = False
+    if should_fetch_news(news_file, hours=6):
+        print("Fetching fresh news...")
+        news_data = fetch_news_for_brands(brands)
+        save_news_to_csv(news_data)
+        news_updated = True
+    else:
+        print("Using cached news data (no API call)")
+     # 2️⃣ Preprocessing
     print("Running preprocessing...")
     preprocess_news_data()
 
+    # -------------------------
     # 3️⃣ Sentiment Analysis
-    print("Running FinBERT sentiment analysis...")
-    run_finbert()
+    # -------------------------
+
+    if news_updated:
+        print("Running FinBERT (new data)...")
+        run_finbert()
+    else:
+        print("Skipping FinBERT (no new data)")
 
     # 4️⃣ Topic Modeling
-    print("Running topic extraction...")
-    run_topic_extraction()
+    # -------------------------
+    # 4️⃣ Topic Modeling
+    # -------------------------
+
+    if news_updated:
+        print("Running topic extraction (new data)...")
+        run_topic_extraction()
+    else:
+        print("Skipping topic extraction (no new data)")
 
     # 5️⃣ Build Master Dataset
     print("Building master dataset...")
     build_master_dataset()
+
+    print("Generating trend graphs...")
+    run_all_trend_visuals()
 
     # 5️⃣.1️⃣ Build RAG Vector Store
     print("Building vector store for RAG...")
@@ -158,6 +171,44 @@ def main():
     print("Generating AI market report...")
     generate_market_report(BASE_DIR)
 
+    # -------------------------
+    # 🔥 TOP BRANDS (FOR FRONTEND)
+    # -------------------------
+    master_df = pd.read_csv(os.path.join(BASE_DIR, "data/processed/news_master_dataset.csv"))
+
+    top_brands_df = (
+        master_df.groupby("brand")["final_trend_score"]
+        .mean()
+        .sort_values(ascending=False)
+        .head(5)
+        .reset_index()
+    )
+
+    top_brands = top_brands_df.to_dict(orient="records")
+
+    # trend direction per brand
+    brand_direction = []
+
+    for brand in master_df["brand"].unique():
+        temp = master_df[master_df["brand"] == brand].sort_values("date")
+
+        if len(temp) < 2:
+            continue
+
+        velocity = temp["final_trend_score"].diff().iloc[-1]
+
+        if velocity > 0:
+            direction = "Rising"
+        elif velocity < 0:
+            direction = "Falling"
+        else:
+            direction = "Stable"
+
+        brand_direction.append({
+            "brand": brand,
+            "direction": direction
+        })
+
     # ---------------------------------------
     # Build dashboard-friendly output
     # ---------------------------------------
@@ -170,10 +221,13 @@ def main():
             "trend_direction": market_forecast["trend_direction"],
             "trend_slope": market_forecast["trend_slope"],
             "current_sentiment": market_output["current_sentiment"],
+            "final_trend_score": market_output.get("current_sentiment", 0),
             "volatility": market_forecast["volatility"]
         },
 
         "brand_insights": {
+            "top_brands": top_brands,
+            "brand_direction": brand_direction,
             "top_positive_brand": market_output["top_positive_brand"],
             "top_negative_brand": market_output["top_negative_brand"],
             "most_volatile_brand": market_output["most_volatile_brand"]

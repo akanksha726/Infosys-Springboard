@@ -13,8 +13,8 @@ def run_daily_sentiment_index():
 
     df = pd.read_csv(input_path)
 
-    df["Published_Date"] = pd.to_datetime(df["Published_Date"])
-    df["date"] = df["Published_Date"].dt.date
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    df["date"] = df["date"].dt.date
 
     sentiment_mapping = {
         "positive": 1,

@@ -22,8 +22,8 @@ def run_topic_momentum_tracker():
     # Prepare dates
     # -----------------------------
 
-    df["Published_Date"] = pd.to_datetime(df["Published_Date"])
-    df["date"] = df["Published_Date"].dt.date
+    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = df["date"].dt.date
 
     # -----------------------------
     # Daily topic counts

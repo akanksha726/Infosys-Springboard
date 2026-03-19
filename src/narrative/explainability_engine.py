@@ -49,7 +49,7 @@ def run_explainability_engine(base_dir):
 
         topic_news = df[df["topic"] == topic]
 
-        example_articles = topic_news["Combined_Text"].head(3).tolist()
+        example_articles = topic_news["combined_text"].head(3).tolist()
 
         avg_sentiment = topic_news["sentiment_score"].mean()
 
