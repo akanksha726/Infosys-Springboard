@@ -29,22 +29,38 @@ data/archive/*
 data/cache/
 scripts/data/
 
-# Keep important processed files
+# ---------------------------
+# KEEP IMPORTANT FILES
+# ---------------------------
 !data/processed/
 !data/processed/daily_market_metrics.csv
 !data/processed/brand_daily_metrics.csv
 !data/processed/trend_data_cleaned.csv
+!data/processed/reviews_data.csv
 !data/processed/final_market_signal.json
 
+!data/output/
+!data/output/market_dashboard_data.json
 # Ignore intermediate pipeline files
 data/processed/cleaned_news.csv
 data/processed/news_master_dataset.csv
 data/processed/news_with_topics.csv
 data/processed/finbert_output.csv
 data/processed/finbert_summary.json
+data/processed/consumer_sentiment.csv
+data/processed/trend_data.csv
+data/output/*.png
+# ---------------------------
+# IGNORE INTERMEDIATE FILES
+# ---------------------------
+
+# Ignore images
+data/output/*.png
+
 # Keep folder structure
 !data/raw/.gitkeep
 !data/archive/.gitkeep
+
 # OS
 .DS_Store
 Thumbs.db

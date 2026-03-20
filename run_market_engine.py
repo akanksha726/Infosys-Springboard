@@ -4,6 +4,7 @@ from src.preprocessing.text_preprocessing import preprocess_news_data
 from src.sentiment.finbert_analyzer import run_finbert
 from src.analytics.daily_sentiment_index import run_daily_sentiment_index
 from src.analytics.brand_daily_index import run_brand_daily_index
+from src.analytics.brand_insights import generate_brand_insights
 from src.models.market_forecast import (
     forecast_market_sentiment,
     forecast_brand_sentiment,
@@ -14,6 +15,7 @@ from src.intelligence.market_driver_detector import detect_market_drivers
 from src.narrative.explainability_engine import run_explainability_engine
 from src.topic_modeling.topic_extractor_llm import run_topic_extraction
 from src.utils.build_master_dataset import build_master_dataset
+from src.consumer.consumer_insights import generate_consumer_insights
 from src.visualization.trend_visualization import run_all_trend_visuals
 from src.analytics.topic_sentiment_matrix import run_topic_sentiment_matrix
 from src.analytics.topic_momentum_tracker import run_topic_momentum_tracker
@@ -171,44 +173,8 @@ def main():
     print("Generating AI market report...")
     generate_market_report(BASE_DIR)
 
-    # -------------------------
-    # 🔥 TOP BRANDS (FOR FRONTEND)
-    # -------------------------
-    master_df = pd.read_csv(os.path.join(BASE_DIR, "data/processed/news_master_dataset.csv"))
-
-    top_brands_df = (
-        master_df.groupby("brand")["final_trend_score"]
-        .mean()
-        .sort_values(ascending=False)
-        .head(5)
-        .reset_index()
-    )
-
-    top_brands = top_brands_df.to_dict(orient="records")
-
-    # trend direction per brand
-    brand_direction = []
-
-    for brand in master_df["brand"].unique():
-        temp = master_df[master_df["brand"] == brand].sort_values("date")
-
-        if len(temp) < 2:
-            continue
-
-        velocity = temp["final_trend_score"].diff().iloc[-1]
-
-        if velocity > 0:
-            direction = "Rising"
-        elif velocity < 0:
-            direction = "Falling"
-        else:
-            direction = "Stable"
-
-        brand_direction.append({
-            "brand": brand,
-            "direction": direction
-        })
-
+    brand_insights = generate_brand_insights(BASE_DIR)
+    consumer_insights = generate_consumer_insights(BASE_DIR)
     # ---------------------------------------
     # Build dashboard-friendly output
     # ---------------------------------------
@@ -226,12 +192,12 @@ def main():
         },
 
         "brand_insights": {
-            "top_brands": top_brands,
-            "brand_direction": brand_direction,
+            **brand_insights,
             "top_positive_brand": market_output["top_positive_brand"],
             "top_negative_brand": market_output["top_negative_brand"],
             "most_volatile_brand": market_output["most_volatile_brand"]
         },
+        "consumer_insights": consumer_insights,
 
         "topic_insights": {
             "top_topics": market_output["top_topics"],

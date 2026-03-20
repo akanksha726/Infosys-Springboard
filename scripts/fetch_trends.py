@@ -5,7 +5,7 @@ from config import ECOMMERCE_BRANDS, SERP_API_KEY
 
 API_KEY = SERP_API_KEY
 brands = ECOMMERCE_BRANDS
-OUTPUT_PATH = "data/processed/trend_data.csv"
+OUTPUT_PATH = "../data/processed/trend_data.csv"
 
 # ---------------------------
 # Helper: split into chunks of 5

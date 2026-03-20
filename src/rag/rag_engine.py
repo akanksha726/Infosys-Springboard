@@ -1,9 +1,11 @@
 import os
 from dotenv import load_dotenv
-
+import sys
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+from src.rag.build_vector_store import build_vector_store
 from groq import Groq
 
 
@@ -22,6 +24,18 @@ embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
+# -----------------------------
+# Ensure vector store exists
+# -----------------------------
+index_file = os.path.join(VECTOR_PATH, "index.faiss")
+
+if not os.path.exists(index_file):
+    print("⚠️ Vector store not found. Building now...")
+    build_vector_store()
+
+# -----------------------------
+# Load vector store
+# -----------------------------
 vector_store = FAISS.load_local(
     VECTOR_PATH,
     embedding_model,

@@ -7,7 +7,7 @@ OUTPUT_PATH = os.path.join(
     BASE_DIR, "..", "data", "processed", "trend_data_cleaned.csv"
 )
 
-INPUT_PATH = "data/processed/trend_data.csv"
+INPUT_PATH = "../data/processed/trend_data.csv"
 
 # ---------------------------
 # LOAD DATA
