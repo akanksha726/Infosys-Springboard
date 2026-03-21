@@ -50,6 +50,7 @@ data/processed/finbert_summary.json
 data/processed/consumer_sentiment.csv
 data/processed/trend_data.csv
 data/output/*.png
+data/output/*.json
 # ---------------------------
 # IGNORE INTERMEDIATE FILES
 # ---------------------------

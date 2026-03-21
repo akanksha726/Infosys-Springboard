@@ -1,33 +1,33 @@
 {
-    "timestamp": "2026-03-20 20:02:10.094861",
+    "timestamp": "2026-03-21 10:36:46.921303",
     "market_overview": {
         "trend_direction": "Bearish",
-        "trend_slope": -0.0792,
-        "current_sentiment": 0.336995,
-        "final_trend_score": 0.336995,
-        "volatility": 0.4203
+        "trend_slope": -0.0678,
+        "current_sentiment": 0.335664,
+        "final_trend_score": 0.335664,
+        "volatility": 0.4132
     },
     "brand_insights": {
         "top_brands": [
             {
                 "brand": "ajio",
-                "final_trend_score": 0.6522333253026008
+                "final_trend_score": 0.6522333357334137
             },
             {
                 "brand": "nykaa",
-                "final_trend_score": 0.5197874120871225
+                "final_trend_score": 0.5322342651089033
             },
             {
                 "brand": "reliance digital",
-                "final_trend_score": 0.434
+                "final_trend_score": 0.41868266292051837
             },
             {
                 "brand": "flipkart",
-                "final_trend_score": 0.4057385049661001
+                "final_trend_score": 0.38614933421876696
             },
             {
                 "brand": "snapdeal",
-                "final_trend_score": 0.3764080762863159
+                "final_trend_score": 0.376408052444458
             }
         ],
         "brand_direction": [
@@ -37,7 +37,7 @@
             },
             {
                 "brand": "amazon india",
-                "direction": "Stable"
+                "direction": "Falling"
             },
             {
                 "brand": "bigbasket",
@@ -49,7 +49,7 @@
             },
             {
                 "brand": "meesho",
-                "direction": "Rising"
+                "direction": "Stable"
             },
             {
                 "brand": "myntra",
@@ -57,7 +57,7 @@
             },
             {
                 "brand": "nykaa",
-                "direction": "Stable"
+                "direction": "Falling"
             },
             {
                 "brand": "reliance digital",
@@ -65,240 +65,249 @@
             }
         ],
         "top_positive_brand": "meesho",
-        "top_negative_brand": "flipkart",
-        "most_volatile_brand": "meesho"
+        "top_negative_brand": "nykaa",
+        "most_volatile_brand": "nykaa"
     },
     "consumer_insights": {
         "brand_sentiment": [
             {
                 "brand": "snapdeal",
-                "final_consumer_sentiment": 0.0564228017782342
-            },
-            {
-                "brand": "bigbasket",
-                "final_consumer_sentiment": -0.0692431202222561
-            },
-            {
-                "brand": "amazon india",
-                "final_consumer_sentiment": -0.1098998698028358
-            },
-            {
-                "brand": "meesho",
-                "final_consumer_sentiment": -0.1262195544772678
+                "final_consumer_sentiment": -0.0476185414874762
             },
             {
                 "brand": "reliance digital",
-                "final_consumer_sentiment": -0.1628796836137771
+                "final_consumer_sentiment": -0.0680039171445167
             },
             {
                 "brand": "tata cliq",
-                "final_consumer_sentiment": -0.1666899641752243
+                "final_consumer_sentiment": -0.0760554079423871
+            },
+            {
+                "brand": "amazon india",
+                "final_consumer_sentiment": -0.1283719374422441
             },
             {
                 "brand": "flipkart",
-                "final_consumer_sentiment": -0.1875201342006524
+                "final_consumer_sentiment": -0.1470397568478876
             },
             {
                 "brand": "nykaa",
-                "final_consumer_sentiment": -0.1930546805593702
+                "final_consumer_sentiment": -0.1613079183631473
             },
             {
                 "brand": "ajio",
-                "final_consumer_sentiment": -0.2307640336061778
+                "final_consumer_sentiment": -0.1854932606220245
+            },
+            {
+                "brand": "meesho",
+                "final_consumer_sentiment": -0.2231848312587273
             },
             {
                 "brand": "myntra",
-                "final_consumer_sentiment": -0.2460755147613011
+                "final_consumer_sentiment": -0.232026007408049
+            },
+            {
+                "brand": "bigbasket",
+                "final_consumer_sentiment": -0.2363350407497302
             }
         ],
         "top_positive_brands": [
             {
                 "brand": "snapdeal",
-                "final_consumer_sentiment": 0.0564228017782342
+                "final_consumer_sentiment": -0.0476185414874762
             },
             {
-                "brand": "bigbasket",
-                "final_consumer_sentiment": -0.0692431202222561
+                "brand": "reliance digital",
+                "final_consumer_sentiment": -0.0680039171445167
             },
             {
-                "brand": "amazon india",
-                "final_consumer_sentiment": -0.1098998698028358
+                "brand": "tata cliq",
+                "final_consumer_sentiment": -0.0760554079423871
             }
         ],
         "top_negative_brands": [
             {
+                "brand": "bigbasket",
+                "final_consumer_sentiment": -0.2363350407497302
+            },
+            {
                 "brand": "myntra",
-                "final_consumer_sentiment": -0.2460755147613011
+                "final_consumer_sentiment": -0.232026007408049
             },
             {
-                "brand": "ajio",
-                "final_consumer_sentiment": -0.2307640336061778
-            },
-            {
-                "brand": "nykaa",
-                "final_consumer_sentiment": -0.1930546805593702
+                "brand": "meesho",
+                "final_consumer_sentiment": -0.2231848312587273
             }
         ],
         "sentiment_distribution": {
-            "positive": 1,
-            "negative": 9,
+            "positive": 0,
+            "negative": 10,
             "neutral": 0
         },
         "consumer_ai_insight": [
-            "Here's the analysis:\n\n**1. Key Market Signals**\nThe main signals emerging from the news are: \n- Expansion of dark stores by Flipkart and Amazon, potentially affecting profitability of quick-commerce pioneers like Swiggy and Zepto.\n- Launch of new merchandise lines and brands by various e-commerce platforms, such as AJIO and Myntra.\n- Growing demand for experiential marketing and shift towards participation-led consumption.\n- emergence of farmer-run companies and niche produce in the agricultural sector.\n\n**2. Brand Impact**\nThe brands most affected are:\n- Bigbasket (logistics challenges and changing agricultural landscape)\n- Myntra (launch of new lifestyle accessories brand)\n- AJIO (expansion through new merchandise line)\n- Nykaa (growing demand for experiential marketing)\n\n**3. Consumer Sentiment Drivers**\nThe sentiment trends might be driven by:\n- Positive sentiment towards Snapdeal, Bigbasket, and Amazon India possibly due to their adaptability to changing market conditions, innovative offerings, and focus on customer convenience.\n- Negative sentiment towards Myntra, AJIO, and Nykaa might be due to concerns over employment conditions, lack of unique offerings, or perceived disconnection from emerging consumer preferences.\n\n**4. Strategic Insight**\nOne concise strategic takeaway for market observers is: E-commerce platforms that prioritize innovation, customer convenience, and adaptability to shifting consumer preferences are likely to maintain a positive sentiment, while those that fail to evolve may face negative sentiment trends.",
+            "Here's the analysis of the sentiment trends for the given ecommerce brands:\n\n**1. Key Market Signals**\nThe main signals emerging from the news are:\n- Expansion and growth of new startups (Startup Mafia 2.0)\n- Debate over employment conditions in last-mile delivery\n- Correction in the AI boom and its impact on funding\n- Resurgence of old gadgets and increase in sales\n- Introduction of new technologies like live shopping capabilities\n\n**2. Brand Impact**\nThe brands most affected by these signals are:\n- Snapdeal (positive sentiment due to expansion and growth of new startups)\n- Bigbasket (negative sentiment due to debate over employment conditions in last-mile delivery)\n- Tata Cliq (positive sentiment due to increase in sales of old gadgets)\n- Reliance Digital (neutral sentiment due to introduction of new technologies like live shopping)\n- Meesho (neutral sentiment due to correction in the AI boom and its impact on funding)\n\n**3. Consumer Sentiment Drivers**\nThe sentiment is driven by the following factors:\n- Positive sentiment for Snapdeal and Tata Cliq due to growth and increase in sales, indicating a strong market presence and customer interest.\n- Negative sentiment for Bigbasket due to concerns over employment conditions, indicating a potential negative impact on the brand's reputation.\n- Neutral sentiment for Reliance Digital and Meesho due to the introduction of new technologies and correction in the AI boom, indicating a wait-and-see approach from consumers.\n\n**4. Strategic Insight**\nOne concise strategic takeaway for market observers is: **Focus on sustainable growth and customer-centric strategies**, as brands that prioritize these aspects (like Snapdeal and Tata Cliq) are likely to experience positive sentiment, while those facing challenges in these areas (like Bigbasket) may experience negative sentiment.",
             [
                 "\nBrand: bigbasket\nTopic: logistics\nSentiment: negative\nNews: Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to ",
-                "\nBrand: myntra\nTopic: discounts\nSentiment: neutral\nNews: Malaika Arora launches lifestyle accessories brand Maejoy The brand has co-created with Exceed Entertainment and Myntra Jabong India Private Li",
-                "\nBrand: ajio\nTopic: expansion\nSentiment: neutral\nNews: Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line Reliance fashion platform AJIO has launched a special merchandise",
-                "\nBrand: nykaa\nTopic: other\nSentiment: positive\nNews: India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report India live events: The report, titled Beyond ",
-                "\nBrand: bigbasket\nTopic: other\nSentiment: neutral\nNews: From Buddha rice to zero-pesticide chana: How farmer-run companies are finding their edge Tired of being at the mercy of traders, some small far"
+                "\nBrand: snapdeal\nTopic: expansion\nSentiment: positive\nNews: Startup Mafia 2.0 going strong: Zomato, Freshworks, Zoho alumni launch 360 firms In 2023, ET reported that the second generation of the star",
+                "\nBrand: meesho\nTopic: funding\nSentiment: neutral\nNews: Exclusive: AI boom due for correction, strongest firms will endure: First Round Capital cofounder Howard Morgan In venture investing there are tw",
+                "\nBrand: tata cliq\nTopic: discounts\nSentiment: positive\nNews: How Gen X\u2019s favourite gadgets like flip phones, wired earphones are finding a new set of fans: Gen Z According to media reports, retailers ",
+                "\nBrand: reliance digital\nTopic: technology\nSentiment: neutral\nNews: Amaze Announces Live Shopping Capabilities to Enable Direct Connections Between Creators, Brands and Fans Will enable creators and b"
             ]
         ]
     },
     "topic_insights": {
         "top_topics": [
-            "other",
-            "technology",
-            "discounts"
+            "funding",
+            "discounts",
+            "technology"
         ],
-        "fastest_rising_topic": "other",
-        "fastest_declining_topic": "expansion"
+        "fastest_rising_topic": "funding",
+        "fastest_declining_topic": "other"
     },
     "forecast": {
         "7_day": [
-            0.0339,
-            -0.0886,
-            -0.0827,
-            -0.0675,
-            -0.0705,
-            -0.0885,
-            -0.0896
+            -0.0126,
+            -0.0188,
+            -0.02,
+            -0.0039,
+            -0.0263,
+            -0.0262,
+            0.0172
         ],
         "30_day": [
-            0.0339,
-            -0.0886,
-            -0.0827,
-            -0.0675,
-            -0.0705,
-            -0.0885,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071
+            -0.0126,
+            -0.0188,
+            -0.02,
+            -0.0039,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188
         ],
         "90_day": [
-            0.0339,
-            -0.0886,
-            -0.0827,
-            -0.0675,
-            -0.0705,
-            -0.0885,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0854,
-            -0.0733,
-            -0.0637,
-            -0.0885,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873,
-            -0.0896,
-            0.0085,
-            -0.071,
-            -0.0827,
-            -0.0733,
-            -0.0637,
-            -0.0873
+            -0.0126,
+            -0.0188,
+            -0.02,
+            -0.0039,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.019,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262,
+            0.0172,
+            -0.004,
+            -0.0188,
+            -0.02,
+            -0.0027,
+            -0.0263,
+            -0.0262
         ]
     },
-    "ai_insight": "Here's the analysis of the Indian ecommerce market sentiment:\n\n**1. Key Market Signals**\nThe news context indicates a bearish market direction, with geopolitical tensions delaying IPO timelines, and a focus on AI, logistics, and funding. The fastest rising topic is \"other\", while the fastest declining topic is \"expansion\".\n\n**2. Brand Impact**\nFlipkart is experiencing negative sentiment due to customer complaints, while Meesho is seen as a top positive brand, possibly due to its funding news. Amazon India and Myntra have neutral sentiment, with a focus on technology.\n\n**3. Consumer Sentiment Drivers**\nThe negative sentiment in the market may be driven by customer complaints (Flipkart) and logistical issues (BigBasket). The bearish market direction and declining topic of \"expansion\" also indicate a slowdown in the market. On the other hand, the rising topic of \"other\" and the neutral sentiment of Amazon India and Myntra suggest that consumers are still interested in exploring new technologies and innovations.\n\n**4. Strategic Insight**\nIn this bearish market, ecommerce brands should focus on addressing customer complaints and improving their logistical capabilities to regain consumer trust. Additionally, investing in emerging technologies like AI can help brands stay competitive and prepare for future growth.",
-    "risk_signals": "**Ecommerce Market Risk Analysis**\n\n**1. Key Market Signals**\nMain signals emerging from the news include:\n- Expansion of dark stores by Flipkart and Amazon\n- AI disruption in D2C startups\n- Geopolitical tensions affecting IPO timelines\n- Shift towards experiential marketing in the live events market\n\n**2. Brand Impact**\nEcommerce brands most affected are:\n- Bigbasket (logistics challenges)\n- Flipkart (customer complaints and expansion into quick commerce)\n- Myntra (technology disruption through AI)\n- Meesho (funding and potential correction in the AI boom)\n- Nykaa (positive impact from the live events market)\n\n**3. Consumer Sentiment Drivers**\nConsumer sentiment is driven by:\n- Negative sentiment towards Bigbasket and Flipkart due to logistics issues and customer complaints\n- Neutral sentiment towards Myntra and Meesho due to the impact of AI and funding\n- Positive sentiment towards Nykaa due to the growing live events market\n\n**4. Strategic Insight**\nFor market observers, a key strategic takeaway is to monitor the **logistics risk** and **competition pressure** as major players like Flipkart and Amazon expand into quick commerce, potentially disrupting the market and affecting smaller players like Bigbasket and Zepto.\n\n**Detected Risks:**\n1. **Regulatory risk**: Potential impact of geopolitical tensions on IPO timelines\n2. **Logistics risk**: Challenges faced by Bigbasket and potential disruption from dark stores expansion\n3. **Competition pressure**: Intensifying competition in quick commerce and AI-driven D2C startups\n4. **Consumer complaints**: Negative sentiment towards Flipkart due to customer complaints\n5. **Technology disruption**: AI-driven transformation in D2C startups affecting traditional e-commerce models, notably for Myntra."
+    "ai_insight": "Here's the analysis of the current Indian ecommerce market sentiment:\n\n**1. Key Market Signals**\nThe main signals emerging from the news are: \n- Geopolitical tensions affecting IPO timelines\n- Startups relocating headquarters to India\n- Consumers preferring experiential spending\n- Inventory pressure and Gulf war concerns leading to festival discounts\n- AI disruption in D2C startups\n\n**2. Brand Impact**\nThe most affected brands are:\n- Flipkart (negative sentiment due to customer complaints and discounts)\n- Nykaa (positive sentiment due to experiential marketing, but ironically listed as Top Negative Brand)\n- Meesho (neutral sentiment due to funding, listed as Top Positive Brand)\n- Myntra (neutral sentiment due to technology)\n\n**3. Consumer Sentiment Drivers**\nThe sentiment is bearish due to:\n- Geopolitical tensions and concerns over the Gulf war\n- Inventory pressure and discounts, indicating a slowdown in sales\n- Consumers prioritizing experiential spending over products, which may impact ecommerce sales\n- AI disruption, which may challenge traditional ecommerce models\n\n**4. Strategic Insight**\nFor market observers, a key strategic takeaway is to monitor the impact of geopolitical tensions and AI disruption on consumer spending habits and ecommerce business models, as these factors may continue to drive the bearish market sentiment.",
+    "risk_signals": "**Ecommerce Market Risk Analysis**\n\n### 1. Key Market Signals\nThe main signals emerging from the news include:\n- Geopolitical tensions (Gulf war concerns) affecting consumer spending and IPO timelines.\n- Increased competition and inventory pressure leading to discounts.\n- Rising concerns over employment conditions in last-mile delivery.\n- AI disruption in D2C startups and traditional ecommerce models.\n- Regulatory and valuation considerations influencing startup headquarters relocation.\n\n### 2. Brand Impact\nThe ecommerce brands most affected are:\n- **Flipkart** and **Amazon**, with their quick commerce foray and discount strategies.\n- **Swiggy** and **Zepto**, facing profitability checks and debates over employment conditions.\n- **Myntra**, considering the impact of AI on D2C startups and traditional ecommerce.\n- **Nykaa**, in the context of competition and valuation considerations.\n\n### 3. Consumer Sentiment Drivers\nSentiment is driven by:\n- **Negative Sentiment**: Concerns over geopolitical tensions, inventory pressure, and employment conditions contribute to negative sentiment.\n- **Neutral Sentiment**: The impact of AI on D2C startups and ecommerce models is seen as a transformative force without a clear positive or negative leaning.\n\n### 4. Strategic Insight\nFor market observers, a key strategic takeaway is to **monitor the balance between quick commerce expansion and sustainable logistics practices**, as the industry faces pressures from consumer demand, geopolitical factors, and regulatory considerations.\n\n**Detected Market Risks:**\n1. **Logistics Risk**: Concerns over last-mile delivery employment conditions and sustainability.\n2. **Competition Pressure**: Increasing competition among ecommerce players, especially in quick commerce.\n3. **Consumer Complaints**: Potential for complaints related to delivery times, product availability, and employment practices.\n4. **Technology Disruption**: AI's role in transforming search behavior and challenging traditional ecommerce models.\n5. **Regulatory Risk**: Considerations around startup valuations, regulatory tailwinds, and the appeal of domestic versus international listings.",
+    "alerts": [
+        {
+            "type": "TOP_PERFORMER",
+            "brand": "ajio",
+            "message": "ajio is leading the market \ud83d\ude80",
+            "severity": "INFO",
+            "timestamp": "2026-03-21T10:36:37.407069"
+        }
+    ]
 }

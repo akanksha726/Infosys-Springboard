@@ -24,6 +24,7 @@ from src.narrative.narrative_summary import generate_market_report
 from src.rag.build_vector_store import build_vector_store
 from src.rag.rag_engine import generate_rag_response
 from src.rag.rag_engine import generate_market_risk_signal
+from scripts.alerts.alert_engine import generate_alerts
 from config import ECOMMERCE_BRANDS
 
 import pandas as pd
@@ -173,6 +174,15 @@ def main():
     print("Generating AI market report...")
     generate_market_report(BASE_DIR)
 
+    print("Running alerts engine...")
+    generate_alerts()
+    alerts_path = os.path.join(BASE_DIR, "data", "output", "alerts.json")
+
+    if os.path.exists(alerts_path):
+        with open(alerts_path, "r") as f:
+            alerts = json.load(f)
+    else:
+        alerts = []
     brand_insights = generate_brand_insights(BASE_DIR)
     consumer_insights = generate_consumer_insights(BASE_DIR)
     # ---------------------------------------
@@ -213,7 +223,8 @@ def main():
 
         "ai_insight": market_output.get("rag_market_explanation", ""),
 
-        "risk_signals": final_output["current_market_state"].get("rag_market_risk", "")
+        "risk_signals": final_output["current_market_state"].get("rag_market_risk", ""),
+        "alerts": alerts
     }
 
     dashboard_path = os.path.join(

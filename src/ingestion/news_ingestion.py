@@ -109,6 +109,42 @@ def save_news_to_csv(df):
         print("No data to save. Skipping CSV creation.")
         return
 
+    if os.path.exists(file_path):
+        old_df = pd.read_csv(file_path)
+        df = pd.concat([old_df, df], ignore_index=True)
+
+    # remove duplicates
+    df = df.drop_duplicates(subset=["title"])
+
+    # -----------------------------------------
+    # Ensure today's date exists (IMPROVED FIX)
+    # -----------------------------------------
+
+    if "published_at" in df.columns and not df.empty:
+
+        df["Published_Date"] = pd.to_datetime(df["published_at"], errors="coerce")
+        df = df.dropna(subset=["Published_Date"])
+
+        today = pd.Timestamp.now().date()
+
+        if today not in df["Published_Date"].dt.date.values:
+            print("⚠️ No news for today — injecting neutral synthetic row")
+
+            synthetic_row = {
+                "brand": "market",
+                "source": "system_generated",
+                "title": "No major ecommerce news today",
+                "description": "No significant market updates",
+                "content": "",
+                "published_at": pd.Timestamp.now(),
+                "fetched_at": datetime.now()
+            }
+
+            df = pd.concat([df, pd.DataFrame([synthetic_row])], ignore_index=True)
+
+    else:
+        print("⚠️ Skipping date check due to missing data")
+
     df.to_csv(file_path, index=False)
 
     print(f"\nNews data saved to: {file_path}")
