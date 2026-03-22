@@ -7,35 +7,28 @@ from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from src.rag.build_vector_store import build_vector_store
 from groq import Groq
-
-
+from config import ECOMMERCE_BRANDS
+from src.topic_modeling.topic_extractor_llm import TOPIC_KEYWORDS
 load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-
 VECTOR_PATH = os.path.join(BASE_DIR, "vector_store", "news_index")
 
-
+USE_LLM = True  # 🔥 control switch
+ALL_TOPICS = list(TOPIC_KEYWORDS.keys())
 # -----------------------------
-# Load embedding + vector store once
+# Load embedding + vector store
 # -----------------------------
-
 embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
-# -----------------------------
-# Ensure vector store exists
-# -----------------------------
 index_file = os.path.join(VECTOR_PATH, "index.faiss")
 
 if not os.path.exists(index_file):
     print("⚠️ Vector store not found. Building now...")
     build_vector_store()
 
-# -----------------------------
-# Load vector store
-# -----------------------------
 vector_store = FAISS.load_local(
     VECTOR_PATH,
     embedding_model,
@@ -43,166 +36,187 @@ vector_store = FAISS.load_local(
 )
 
 retriever = vector_store.as_retriever(
-    search_kwargs={"k": 8, "fetch_k": 20}
+    search_kwargs={"k": 5}  # 🔥 improved context
 )
-
 
 # -----------------------------
 # LLM client
 # -----------------------------
-
 def get_llm_client():
-
     return Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 
 # -----------------------------
-# RAG response
+# Detect query type
 # -----------------------------
+def detect_query_type(query):
 
+    q = query.lower()
+
+    if any(w in q for w in ["trend", "market", "overall"]):
+        return "trend"
+
+    elif any(w in q for w in ["risk", "alert", "warning"]):
+        return "risk"
+
+    for topic in ALL_TOPICS:
+
+        if topic in q:
+            return "topic"
+
+    if "topic" in q:
+
+        return "topic"
+
+    elif any(w in q for w in ECOMMERCE_BRANDS):
+        return "brand"
+
+    return "general"
+
+
+# -----------------------------
+# Main RAG function
+# -----------------------------
 def generate_rag_response(query):
 
+    query_type = detect_query_type(query)
+    if query_type == "brand" and len(query.split()) <= 3:
+        query = f"How is the brand {query} performing?"
+    detected_topic = None
+    for topic in ALL_TOPICS:
+        if topic in query.lower():
+            detected_topic = topic
+            break
     client = get_llm_client()
 
-    # Improve retrieval with context hint
-    enhanced_query = f"ecommerce market trends {query}"
+    enhanced_query = f"""
+    Indian ecommerce trends, brands like flipkart, amazon, meesho, nykaa, ajio.
+    Focus on sentiment, logistics, funding, discounts.
+    Question: {query}
+    """
 
+    # -----------------------------
+    # Retrieve
+    # -----------------------------
     docs = retriever.invoke(enhanced_query)
+    # topic-focused filtering
+    if detected_topic:
+        docs = [d for d in docs if detected_topic in d.page_content.lower()]
 
-    # Handle empty retrieval (edge case)
     if not docs:
-        return "No relevant information found in the dataset.", []
+        return "No relevant information found.", []
 
+    # -----------------------------
+    # Filter noise
+    # -----------------------------
+    clean_docs = []
+
+    for doc in docs:
+        text = doc.page_content.lower()
+
+        if any(w in text for w in ["crypto", "bitcoin", "war", "iran", "stock", "sensex"]):
+            continue
+
+        clean_docs.append(doc)
+
+    docs = clean_docs
+
+    if not docs:
+        return "No relevant ecommerce information found.", []
+
+    # -----------------------------
+    # Sources
+    # -----------------------------
     sources = [
-        {
-            "source_id": i + 1,
-            "content": doc.page_content[:200]
-        }
-        for i, doc in enumerate(docs)
+        {"source_id": i + 1, "content": d.page_content[:200]}
+        for i, d in enumerate(docs)
     ]
 
+    # -----------------------------
+    # Context
+    # -----------------------------
     context = "\n\n".join([
-        f"[Source {i + 1}]\n{doc.page_content[:400]}"
-        for i, doc in enumerate(docs)
+        f"[Source {i+1}]\n{d.page_content[:400]}"
+        for i, d in enumerate(docs)
     ])
 
+    if not USE_LLM:
+        return context, sources
+
+    # -----------------------------
+    # 🔥 ADAPTIVE PROMPT (CORE FIX)
+    # -----------------------------
     prompt = f"""
-    You are a senior ecommerce market intelligence analyst.
+You are an ecommerce market intelligence assistant.
 
-    Your task is to analyze the provided news context STRICTLY based on evidence.
+QUERY TYPE: {query_type}
 
-    ⚠️ RULES:
-    - Use ONLY the provided context.
-    - DO NOT make assumptions or guesses.
-    - If information is not present, say "Not explicitly mentioned".
-    - Be specific and reference brands/topics from context.
-    - Always reference source numbers like (Source 1), (Source 2).
-    - If a brand is not present in the context, DO NOT mention it.
-    - Do not combine external signals (like top_negative_brand) with retrieved context.
+STRICT RULES:
+- ONLY use given context
+- NO external knowledge
+- NO hallucination
+- If unsure → say "Not explicitly mentioned"
+- Give CLEAR, SYNTHESIZED answers (not raw summaries)
 
-    Context:
-    {context}
+-----------------------
+CONTEXT:
+{context}
+-----------------------
 
-    Question:
-    {query}
+QUESTION:
+{query}
 
-    Provide output using clean bullet points (no numbering).
+-----------------------
 
-    1. Key Market Signals
-    - Bullet points of clear signals from the news.
+INSTRUCTIONS:
 
-    2. Brand Impact
-    - Mention ONLY brands explicitly present in the context.
-    - Explain impact using evidence.
+IF trend:
+- Identify ONE dominant trend
+- Explain WHY it is happening
+- Support with evidence
+- Do NOT list multiple trends.
+- If multiple signals exist, combine them into one unified trend.
 
-    3. Consumer Sentiment Drivers
-    - Link sentiment to actual events/topics in context.
+IF brand:
+- Focus ONLY on that brand
+- Explain performance and sentiment
+- ONLY describe what is explicitly mentioned
+- DO NOT infer or assume outcomes
+- If no clear evidence → say "Not explicitly mentioned"
 
-    4. Strategic Insight
-    - One concise, actionable takeaway.
-    
-    Avoid generic statements like "may", "might", or "could".
-    Keep the answer concise, factual, and evidence-based.
-    """
+IF risk:
+- Identify risks and causes
+
+Topics available:
+discounts, logistics, competition, funding, customer_complaints,
+regulation, expansion, partnership, technology
+
+If query refers to a topic:
+- Focus ONLY on that topic
+- Do NOT mix unrelated topics
+IF topic:
+- Explain topic trends and impact
+
+IF general:
+- Provide concise structured summary
+
+Focus ONLY on ecommerce-related implications, not general technology or macro trends.
+-----------------------
+
+OUTPUT:
+Clear, structured, concise answer.
+"""
+
     try:
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="llama-3.1-8b-instant",  # 🔥 cheaper + stable
             messages=[{"role": "user", "content": prompt}],
         )
 
         answer = response.choices[0].message.content
 
     except Exception as e:
-        print(f"⚠️ LLM skipped due to: {e}")
+        print("⚠️ LLM error:", e)
         answer = "LLM response skipped due to rate limit."
 
     return answer, sources
-
-    return response.choices[0].message.content, sources
-
-
-# -----------------------------
-# Risk signal detector
-# -----------------------------
-
-def generate_market_risk_signal():
-    query = """
-    Analyze ecommerce market risks STRICTLY based on the provided context.
-
-    Classify risks into:
-
-    - Regulatory risk
-    - Logistics risk
-    - Competition pressure
-    - Consumer complaints
-    - Technology disruption
-
-    For each risk:
-    - Mention the affected brand
-    - Provide supporting evidence
-    - Reference sources
-
-    If no evidence exists, say "Not explicitly mentioned".
-
-    Keep output concise and structured.
-    """
-
-    insight, sources = generate_rag_response(query)
-
-    return insight
-
-# -----------------------------
-# Brand Insight Generator
-# -----------------------------
-def generate_brand_ai_insight(market_output):
-    query = """
-    Analyze brand performance trends using ONLY the provided news context.
-
-    - Identify which brands show positive or negative sentiment based strictly on evidence.
-    - Do NOT assume any brand performance unless explicitly supported.
-    - If insufficient data exists, say "Not explicitly mentioned".
-
-    Explain clearly WHY brands are performing this way based ONLY on the context.
-    """
-    insight, _ = generate_rag_response(query)
-
-    return insight
-
-
-# -----------------------------
-# Topic Insight Generator
-# -----------------------------
-def generate_topic_ai_insight(market_output):
-    query = """
-    Explain topic trends in the ecommerce market using ONLY the provided context.
-
-    - Identify which topics are increasing or decreasing based on evidence.
-    - Do NOT rely on external computed metrics.
-    - If not explicitly mentioned, say "Not explicitly mentioned".
-
-    Explain WHY these topics are rising or falling.
-    """
-
-    insight, _ = generate_rag_response(query)
-
-    return insight

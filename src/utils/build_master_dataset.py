@@ -21,8 +21,26 @@ def build_master_dataset():
     cleaned_df = pd.read_csv(cleaned_path)
     finbert_df = pd.read_csv(finbert_path)
     topic_df = pd.read_csv(topic_path)
+    # 🔥 LOAD RAW NEWS (for title + url)
+    raw_news_path = os.path.join(BASE_DIR, "data", "raw", "news_data.csv")
+    raw_df = pd.read_csv(raw_news_path)
+
+    # keep only required columns
+    raw_df = raw_df[["title", "url"]]
 
     master_df = cleaned_df.copy()
+
+    # 🔥 ADD TITLE + URL (SAFE - index aligned)
+    if len(raw_df) == len(master_df):
+        master_df["title"] = raw_df["title"]
+        master_df["url"] = raw_df["url"]
+    else:
+        print("⚠️ Warning: raw_df size mismatch — skipping title/url merge")
+        master_df["title"] = ""
+        master_df["url"] = ""
+
+    master_df["title"] = master_df["title"].fillna("")
+    master_df["url"] = master_df["url"].fillna("")
 
     # -------------------------
     # ADD SENTIMENT + TOPIC

@@ -14,10 +14,21 @@ OUTPUT_PATH = os.path.join(BASE_DIR, "data", "output", "market_report.pdf")
 
 
 def clean_text(text):
-    if not text:
-        return ""
-    return text.replace("*", "<br/>•").replace("\n", "<br/>")
 
+    # 🔥 FIX: handle tuple (answer, sources)
+    if isinstance(text, tuple):
+        text = text[0]
+
+    # 🔥 FIX: handle list
+    if isinstance(text, list):
+        text = " ".join([str(t) for t in text])
+
+    if text is None:
+        return ""
+
+    text = str(text)
+
+    return text.replace("*", "<br/>•").replace("\n", "<br/>")
 
 def generate_pdf_report():
 

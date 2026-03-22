@@ -67,7 +67,7 @@ Top negative brands: {", ".join([b['brand'] for b in top_negative])}
 Explain why these brands might have such sentiment trends.
 """
 
-        consumer_ai_insight = generate_rag_response(consumer_summary)
+        consumer_ai_insight, _ = generate_rag_response(consumer_summary)
 
     except Exception as e:
         print("⚠️ RAG failed:", e)

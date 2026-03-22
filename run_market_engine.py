@@ -23,9 +23,7 @@ from src.analytics.topic_sentiment_matrix import run_topic_sentiment_matrix
 from src.analytics.topic_momentum_tracker import run_topic_momentum_tracker
 from src.intelligence.narrative_intelligence import run_narrative_intelligence
 from src.narrative.narrative_summary import generate_market_report
-from src.rag.build_vector_store import build_vector_store
-from src.rag.rag_engine import generate_market_risk_signal
-from src.rag.rag_engine import generate_brand_ai_insight, generate_topic_ai_insight
+from src.rag.rag_engine import generate_rag_response
 from src.alerts.alert_engine import generate_alerts
 from src.reporting.report_generator import generate_pdf_report
 from config import ECOMMERCE_BRANDS
@@ -96,8 +94,6 @@ def main():
     run_all_trend_visuals()
 
     # 5️⃣.1️⃣ Build RAG Vector Store
-    print("Building vector store for RAG...")
-    build_vector_store()
 
     # 6️⃣ Trend Indexes
     print("Generating daily sentiment index...")
@@ -129,18 +125,16 @@ def main():
     narrative_output = run_narrative_intelligence()
 
     print("Generating AI market risk signals...")
-    market_risk_signal = generate_market_risk_signal()
+    market_risk_signal,_ = generate_rag_response("What are the key risks in the ecommerce market and why?")
 
     # 🔮 AI Market Insight (RAG)
     print("Generating AI market insight...")
 
-
-
     print("Generating brand AI insight...")
-    brand_ai_insight = generate_brand_ai_insight(market_output)
+    brand_ai_insight,_ = generate_rag_response("Which brands are performing well and why?")
 
     print("Generating topic AI insight...")
-    topic_ai_insight = generate_topic_ai_insight(market_output)
+    topic_ai_insight,_ = generate_rag_response("What topics are trending in the ecommerce market and why?")
 
     # 🔟 Forecast Engine
     print("Running market forecast...")
@@ -192,7 +186,7 @@ def main():
         "data/processed/final_market_signal.json"
     )
 
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(final_output, f, indent=4, default=str)
 
     print("Final market signal saved.")
@@ -255,7 +249,8 @@ def main():
         "brand_ai_insight": brand_ai_insight,
         "topic_ai_insight": topic_ai_insight,
         "risk_signals": final_output["current_market_state"].get("rag_market_risk", ""),
-        "alerts": alerts
+        "alerts": alerts,
+        "explainability": explainability_output
     }
 
     dashboard_path = os.path.join(
@@ -265,7 +260,7 @@ def main():
 
     os.makedirs(os.path.dirname(dashboard_path), exist_ok=True)
 
-    with open(dashboard_path, "w") as f:
+    with open(dashboard_path, "w", encoding="utf-8") as f:
         json.dump(dashboard_output, f, indent=4)
 
     print("Dashboard data exported")

@@ -73,6 +73,8 @@ def fetch_news_for_brands(brands, page_size=5):
 
                     "content": article.get("content"),
 
+                    "url": article.get("url", ""),
+
                     "published_at": article.get("publishedAt"),
 
                     "fetched_at": datetime.now()
@@ -136,6 +138,7 @@ def save_news_to_csv(df):
                 "title": "No major ecommerce news today",
                 "description": "No significant market updates",
                 "content": "",
+                "url": "",
                 "published_at": pd.Timestamp.now(),
                 "fetched_at": datetime.now()
             }
@@ -151,3 +154,34 @@ def save_news_to_csv(df):
 
     print(f"Rows saved: {len(df)}")
 
+# ------------------------------------------------
+# MAIN (RUN FILE DIRECTLY)
+# ------------------------------------------------
+
+def main():
+
+    print("Running News Ingestion...")
+
+    brands = ECOMMERCE_BRANDS
+
+    output_path = os.path.join(BASE_DIR, "data", "raw", "news_data.csv")
+
+    # check caching
+    if should_fetch_news(output_path, hours=6):
+        print("Fetching fresh news...")
+
+        df = fetch_news_for_brands(brands)
+
+        save_news_to_csv(df)
+
+    else:
+        print("Using cached news data (no API call)")
+
+    print("News ingestion completed.")
+
+
+# ------------------------------------------------
+# ENTRY POINT
+# ------------------------------------------------
+if __name__ == "__main__":
+    main()

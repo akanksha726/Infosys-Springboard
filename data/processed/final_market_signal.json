@@ -1,58 +1,30 @@
 {
-    "timestamp": "2026-03-22 00:46:48.377348",
+    "timestamp": "2026-03-23 00:22:30.941178",
     "current_market_state": {
         "market_signals": {
             "market_direction": "Bearish",
-            "market_slope": -0.040155,
-            "current_sentiment": 0.195144,
+            "market_slope": -0.011876,
+            "current_sentiment": 0.504244,
             "top_positive_brand": "meesho",
             "top_negative_brand": "nykaa",
             "most_volatile_brand": "meesho",
             "top_topics": [
                 "technology",
                 "other",
-                "funding"
+                "partnership"
             ],
-            "most_positive_topic": "expansion",
+            "most_positive_topic": "funding",
             "most_negative_topic": "logistics",
-            "fastest_rising_topic": "technology",
-            "fastest_declining_topic": "partnership",
-            "market_shock": -0.12277475996942319,
-            "avg_sentiment_volatility": 0.06327466037249758,
-            "narrative_risk": 0.029411764705882353,
-            "rag_market_explanation": "LLM response skipped due to rate limit.",
+            "fastest_rising_topic": "other",
+            "fastest_declining_topic": "competition",
+            "market_shock": 0.0174821041168306,
+            "avg_sentiment_volatility": 0.054985739922821505,
+            "narrative_risk": 0.1,
+            "rag_market_explanation": "**Market Trend Analysis**\n\nThe dominant trend in the Indian ecommerce market is:\n\n**Declining Sentiment towards Competition**\n\nThe Fastest Declining Topic is 'competition' with a neutral sentiment towards nykaa, indicating a shift in investor perception. The market direction is Bearish with a Market Shock of 0.017, suggesting a minor setback. Additionally, the Volatility is 0.055, indicating a moderate level of uncertainty.\n\n**Reasons behind the Decline:**\n\n1. HDFC Securities' Broker's Call recommending selling FSN E-commerce Ventures (which operates under the Nykaa brand) due to medium-term growth concerns.\n2. The Top Negative Brand is nykaa, highlighting a negative sentiment towards the brand.\n\n**Impact on the Market:**\n\nThe decline in competition sentiment may indicate a potential shift in investor preferences towards alternative ecommerce platforms or services. This could lead to increased competition in the market, further affecting the sentiment towards nykaa and other players.\n\n**Key Takeaways:**\n\n- Market sentiment is declining towards competition\n- Investment confidence in nykaa is low\n- Market volatility suggests uncertainty",
             "rag_sources": [
                 {
                     "source_id": 1,
-                    "content": "\nBrand: flipkart\nTopic: technology\nSentiment: negative\nNews: From frenzy to freeze: Retail investors slow down as IPO demand drops Most IPOs fail to attract full retail subscription as grey-market pre"
-                },
-                {
-                    "source_id": 2,
-                    "content": "\nBrand: flipkart\nTopic: discounts\nSentiment: negative\nNews: Retailers roll out festival discounts amid inventory pressure, Gulf war concerns As concerns over the Gulf war loom large, Indian retailers "
-                },
-                {
-                    "source_id": 3,
-                    "content": "\nBrand: meesho\nTopic: funding\nSentiment: neutral\nNews: Exclusive: AI boom due for correction, strongest firms will endure: First Round Capital cofounder Howard Morgan In venture investing there are tw"
-                },
-                {
-                    "source_id": 4,
-                    "content": "\nBrand: reliance digital\nTopic: other\nSentiment: neutral\nNews: Bitcoin Beyond the Halving: Why CoinEx Sees a More Selective, Institutional Crypto Cycle Ahead HONG KONG, March 20, 2026 (GLOBE NEWSWIRE)"
-                },
-                {
-                    "source_id": 5,
-                    "content": "\nBrand: flipkart\nTopic: customer_complaints\nSentiment: negative\nNews: War slows IPOs, but startups keep bringing headquarters home Though geopolitical tensions are delaying IPO timelines, India\u2019s tech"
-                },
-                {
-                    "source_id": 6,
-                    "content": "\nBrand: flipkart\nTopic: funding\nSentiment: negative\nNews: The Iran war is sending shockwaves through the world's busiest IPO market Market volatility and geopolitical tensions have choked liquidity in"
-                },
-                {
-                    "source_id": 7,
-                    "content": "\nBrand: flipkart\nTopic: technology\nSentiment: negative\nNews: Share Market Highlights: Sensex, Nifty climb on IT rebound; rupee slips to 93.71/USD Sensex, Nifty updates on 20 March 2026: \u00a0BSE Sensex ro"
-                },
-                {
-                    "source_id": 8,
-                    "content": "\nBrand: nykaa\nTopic: other\nSentiment: positive\nNews: India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report India live events: The report, titled Beyond "
+                    "content": "\nBrand: nykaa\nTopic: competition\nSentiment: neutral\nNews: Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell) HDFC Securities recommends selling FSN E-commerce Ventures with a target price of \u20b9205, citing "
                 }
             ]
         },
@@ -62,45 +34,35 @@
             "complaint_pressure": "Low",
             "complaint_ratio": 0.0,
             "sector_heat": "High Narrative Heat",
-            "heat_ratio": 3.61,
+            "heat_ratio": 2.69,
             "competition_brands": [],
             "complaint_brands": []
         },
         "topic_sentiment_matrix": {
             "topic_sentiment_matrix": [
                 {
+                    "topic": "funding",
+                    "article_volume": 5,
+                    "avg_sentiment": 0.4
+                },
+                {
                     "topic": "expansion",
-                    "article_volume": 4,
-                    "avg_sentiment": 0.5
+                    "article_volume": 3,
+                    "avg_sentiment": 0.333
                 },
                 {
                     "topic": "other",
-                    "article_volume": 15,
-                    "avg_sentiment": 0.133
-                },
-                {
-                    "topic": "funding",
-                    "article_volume": 12,
-                    "avg_sentiment": 0.083
+                    "article_volume": 8,
+                    "avg_sentiment": 0.25
                 },
                 {
                     "topic": "competition",
-                    "article_volume": 2,
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "customer_complaints",
-                    "article_volume": 2,
+                    "article_volume": 1,
                     "avg_sentiment": 0.0
                 },
                 {
                     "topic": "discounts",
-                    "article_volume": 14,
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "regulation",
-                    "article_volume": 2,
+                    "article_volume": 10,
                     "avg_sentiment": 0.0
                 },
                 {
@@ -110,8 +72,13 @@
                 },
                 {
                     "topic": "technology",
-                    "article_volume": 22,
-                    "avg_sentiment": -0.136
+                    "article_volume": 6,
+                    "avg_sentiment": -0.167
+                },
+                {
+                    "topic": "customer_complaints",
+                    "article_volume": 1,
+                    "avg_sentiment": -1.0
                 },
                 {
                     "topic": "logistics",
@@ -123,42 +90,42 @@
         "topic_momentum": {
             "top_rising_topics": [
                 {
-                    "topic": "technology",
-                    "momentum": 9
-                },
-                {
                     "topic": "other",
-                    "momentum": 5
+                    "momentum": 2
                 },
                 {
-                    "topic": "funding",
-                    "momentum": 3
+                    "topic": "partnership",
+                    "momentum": 2
+                },
+                {
+                    "topic": "customer_complaints",
+                    "momentum": 1
                 }
             ],
             "top_declining_topics": [
                 {
-                    "topic": "partnership",
-                    "momentum": -2
+                    "topic": "competition",
+                    "momentum": 0
                 },
                 {
-                    "topic": "competition",
-                    "momentum": -1
+                    "topic": "discounts",
+                    "momentum": 0
                 },
                 {
                     "topic": "expansion",
-                    "momentum": -1
+                    "momentum": 0
                 }
             ]
         },
         "market_drivers": {
             "drivers": [
                 {
-                    "topic_group": "Misc",
+                    "topic_group": "Innovation",
                     "change": "1",
                     "pct_change": 100
                 },
                 {
-                    "topic_group": "Innovation",
+                    "topic_group": "Misc",
                     "change": "-1",
                     "pct_change": -100.0
                 }
@@ -166,51 +133,40 @@
         },
         "narrative_intelligence": {
             "narrative_attribution": {
+                "discounts": [
+                    "bigbasket",
+                    "meesho"
+                ],
+                "funding": [
+                    "meesho",
+                    "ajio"
+                ],
                 "other": [
                     "reliance digital",
                     "ajio"
                 ],
-                "technology": [
-                    "flipkart",
-                    "amazon india"
-                ],
-                "discounts": [
-                    "amazon india",
-                    "bigbasket"
-                ],
-                "funding": [
-                    "flipkart",
-                    "reliance digital"
-                ],
                 "partnership": [
                     "reliance digital"
                 ],
-                "competition": [
-                    "amazon india",
-                    "nykaa"
-                ],
-                "customer_complaints": [
+                "technology": [
                     "amazon india",
                     "flipkart"
                 ],
+                "customer_complaints": [
+                    "flipkart"
+                ],
+                "competition": [
+                    "nykaa"
+                ],
                 "expansion": [
-                    "ajio",
-                    "snapdeal"
+                    "myntra",
+                    "meesho"
                 ],
                 "logistics": [
                     "bigbasket"
-                ],
-                "regulation": [
-                    "flipkart",
-                    "amazon india"
                 ]
             },
             "topic_brand_sentiment_matrix": [
-                {
-                    "topic": "competition",
-                    "brand": "amazon india",
-                    "avg_sentiment": 0.0
-                },
                 {
                     "topic": "competition",
                     "brand": "nykaa",
@@ -218,18 +174,8 @@
                 },
                 {
                     "topic": "customer_complaints",
-                    "brand": "amazon india",
-                    "avg_sentiment": 1.0
-                },
-                {
-                    "topic": "customer_complaints",
                     "brand": "flipkart",
                     "avg_sentiment": -1.0
-                },
-                {
-                    "topic": "discounts",
-                    "brand": "amazon india",
-                    "avg_sentiment": 0.25
                 },
                 {
                     "topic": "discounts",
@@ -239,7 +185,7 @@
                 {
                     "topic": "discounts",
                     "brand": "flipkart",
-                    "avg_sentiment": -0.5
+                    "avg_sentiment": 0.0
                 },
                 {
                     "topic": "discounts",
@@ -249,6 +195,11 @@
                 {
                     "topic": "discounts",
                     "brand": "myntra",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "discounts",
+                    "brand": "snapdeal",
                     "avg_sentiment": 0.0
                 },
                 {
@@ -263,7 +214,7 @@
                 },
                 {
                     "topic": "expansion",
-                    "brand": "amazon india",
+                    "brand": "meesho",
                     "avg_sentiment": 1.0
                 },
                 {
@@ -272,24 +223,9 @@
                     "avg_sentiment": 0.0
                 },
                 {
-                    "topic": "expansion",
-                    "brand": "snapdeal",
-                    "avg_sentiment": 1.0
-                },
-                {
                     "topic": "funding",
                     "brand": "ajio",
                     "avg_sentiment": 1.0
-                },
-                {
-                    "topic": "funding",
-                    "brand": "amazon india",
-                    "avg_sentiment": 1.0
-                },
-                {
-                    "topic": "funding",
-                    "brand": "flipkart",
-                    "avg_sentiment": -0.667
                 },
                 {
                     "topic": "funding",
@@ -304,11 +240,6 @@
                 {
                     "topic": "funding",
                     "brand": "nykaa",
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "funding",
-                    "brand": "reliance digital",
                     "avg_sentiment": 0.0
                 },
                 {
@@ -333,6 +264,11 @@
                 },
                 {
                     "topic": "other",
+                    "brand": "flipkart",
+                    "avg_sentiment": 0.0
+                },
+                {
+                    "topic": "other",
                     "brand": "nykaa",
                     "avg_sentiment": 1.0
                 },
@@ -347,24 +283,14 @@
                     "avg_sentiment": 0.0
                 },
                 {
-                    "topic": "regulation",
+                    "topic": "technology",
                     "brand": "amazon india",
                     "avg_sentiment": 0.0
                 },
                 {
-                    "topic": "regulation",
-                    "brand": "flipkart",
-                    "avg_sentiment": 0.0
-                },
-                {
-                    "topic": "technology",
-                    "brand": "amazon india",
-                    "avg_sentiment": -0.143
-                },
-                {
                     "topic": "technology",
                     "brand": "flipkart",
-                    "avg_sentiment": -0.25
+                    "avg_sentiment": -1.0
                 },
                 {
                     "topic": "technology",
@@ -384,6 +310,13 @@
             ],
             "narrative_risks": [
                 {
+                    "topic": "customer_complaints",
+                    "avg_sentiment": -1.0,
+                    "affected_brands": [
+                        "flipkart"
+                    ]
+                },
+                {
                     "topic": "logistics",
                     "avg_sentiment": -1.0,
                     "affected_brands": [
@@ -392,70 +325,61 @@
                 },
                 {
                     "topic": "technology",
-                    "avg_sentiment": -0.136,
+                    "avg_sentiment": -0.167,
                     "affected_brands": [
+                        "amazon india",
                         "flipkart",
-                        "amazon india",
-                        "reliance digital"
-                    ]
-                },
-                {
-                    "topic": "discounts",
-                    "avg_sentiment": 0.0,
-                    "affected_brands": [
-                        "amazon india",
-                        "bigbasket",
-                        "flipkart"
+                        "myntra"
                     ]
                 }
             ],
             "topic_impact_scores": [
                 {
-                    "topic": "technology",
-                    "avg_sentiment": -0.136,
-                    "volume": 22,
-                    "impact_score": 0.039
-                },
-                {
-                    "topic": "expansion",
-                    "avg_sentiment": 0.5,
-                    "volume": 4,
-                    "impact_score": 0.026
+                    "topic": "funding",
+                    "avg_sentiment": 0.4,
+                    "volume": 5,
+                    "impact_score": 0.054
                 },
                 {
                     "topic": "other",
-                    "avg_sentiment": 0.133,
-                    "volume": 15,
-                    "impact_score": 0.026
+                    "avg_sentiment": 0.25,
+                    "volume": 8,
+                    "impact_score": 0.054
                 },
                 {
-                    "topic": "funding",
-                    "avg_sentiment": 0.083,
-                    "volume": 12,
-                    "impact_score": 0.013
+                    "topic": "customer_complaints",
+                    "avg_sentiment": -1.0,
+                    "volume": 1,
+                    "impact_score": 0.027
+                },
+                {
+                    "topic": "expansion",
+                    "avg_sentiment": 0.333,
+                    "volume": 3,
+                    "impact_score": 0.027
                 },
                 {
                     "topic": "logistics",
                     "avg_sentiment": -1.0,
                     "volume": 1,
-                    "impact_score": 0.013
+                    "impact_score": 0.027
+                },
+                {
+                    "topic": "technology",
+                    "avg_sentiment": -0.167,
+                    "volume": 6,
+                    "impact_score": 0.027
                 },
                 {
                     "topic": "competition",
                     "avg_sentiment": 0.0,
-                    "volume": 2,
-                    "impact_score": 0.0
-                },
-                {
-                    "topic": "customer_complaints",
-                    "avg_sentiment": 0.0,
-                    "volume": 2,
+                    "volume": 1,
                     "impact_score": 0.0
                 },
                 {
                     "topic": "discounts",
                     "avg_sentiment": 0.0,
-                    "volume": 14,
+                    "volume": 10,
                     "impact_score": 0.0
                 },
                 {
@@ -463,231 +387,213 @@
                     "avg_sentiment": 0.0,
                     "volume": 2,
                     "impact_score": 0.0
-                },
-                {
-                    "topic": "regulation",
-                    "avg_sentiment": 0.0,
-                    "volume": 2,
-                    "impact_score": 0.0
                 }
             ]
         },
-        "rag_market_insight": "LLM response skipped due to rate limit.",
-        "rag_market_risk": "LLM response skipped due to rate limit."
+        "rag_market_insight": "**Market Trend Analysis**\n\nThe dominant trend in the Indian ecommerce market is:\n\n**Declining Sentiment towards Competition**\n\nThe Fastest Declining Topic is 'competition' with a neutral sentiment towards nykaa, indicating a shift in investor perception. The market direction is Bearish with a Market Shock of 0.017, suggesting a minor setback. Additionally, the Volatility is 0.055, indicating a moderate level of uncertainty.\n\n**Reasons behind the Decline:**\n\n1. HDFC Securities' Broker's Call recommending selling FSN E-commerce Ventures (which operates under the Nykaa brand) due to medium-term growth concerns.\n2. The Top Negative Brand is nykaa, highlighting a negative sentiment towards the brand.\n\n**Impact on the Market:**\n\nThe decline in competition sentiment may indicate a potential shift in investor preferences towards alternative ecommerce platforms or services. This could lead to increased competition in the market, further affecting the sentiment towards nykaa and other players.\n\n**Key Takeaways:**\n\n- Market sentiment is declining towards competition\n- Investment confidence in nykaa is low\n- Market volatility suggests uncertainty",
+        "rag_market_risk": "Based on the given context, the dominant trend in the ecommerce market is:\n\n**Trend:** Increased Competition and Consolidation Risks\n\n**Why it is happening:** The trend is evident due to the following signals:\n- Flipkart's group CFO is exiting, which may indicate organizational changes and potential risks to the company's stability.\n- HDFC Securities recommends selling FSN E-commerce Ventures (Nykaa) citing medium-term growth concerns, which suggests that investors are cautious about the company's prospects.\n- This trend could be exacerbated by the competition in the Indian ecommerce market, where multiple players like Amazon, Flipkart, and Reliance Digital are vying for market share.\n\n**Support with evidence:** The news articles indicate a potential shift in the ecommerce market, with players reassessing their strategies and investors becoming cautious about the medium-term growth prospects of some companies.\n\n**Key risks:**\n\n- Organizational instability and change\n- Investor caution and potential exits from some ecommerce companies\n- Increased competition, which may lead to consolidation or risks for individual players\n\n**Focus on the topic:** Competition\n\nThe trend of increased competition and consolidation risks in the ecommerce market suggests that companies may need to reassess their strategies, organizational structures, or even consider partnerships or exits to stay competitive."
     },
     "forecasting": {
         "market_forecast": {
             "trend_direction": "Bearish",
-            "trend_slope": -0.0688,
-            "volatility": 0.4142,
-            "confidence_score": 0.586,
+            "trend_slope": -0.0555,
+            "volatility": 0.4448,
+            "confidence_score": 0.555,
             "evaluation": {
-                "MAE": 0.3424,
-                "RMSE": 0.4348,
-                "R2": -3.5238
+                "MAE": 0.37,
+                "RMSE": 0.4897,
+                "R2": -1.0946
             },
             "feature_importance": {
-                "time_index": 0.261,
-                "sentiment_lag_1": 0.025,
-                "sentiment_lag_2": 0.005,
-                "rolling_mean_3": 0.029,
-                "sentiment_momentum": 0.048,
-                "sentiment_acceleration": 0.05,
-                "sin_week": 0.036,
-                "cos_week": 0.022,
-                "topic_momentum_score": 0.062,
-                "avg_topic_sentiment": 0.004,
-                "event_intensity": 0.004,
-                "topic_intensity_3": 0.243,
-                "topic_intensity_5": 0.012,
-                "final_trend_score": 0.11,
+                "time_index": 0.199,
+                "sentiment_lag_1": 0.048,
+                "sentiment_lag_2": 0.003,
+                "rolling_mean_3": 0.026,
+                "sentiment_momentum": 0.192,
+                "sentiment_acceleration": 0.04,
+                "sin_week": 0.016,
+                "cos_week": 0.02,
+                "topic_momentum_score": 0.025,
+                "avg_topic_sentiment": 0.016,
+                "event_intensity": 0.012,
+                "topic_intensity_3": 0.175,
+                "topic_intensity_5": 0.02,
+                "final_trend_score": 0.126,
                 "trend_velocity": 0.0,
                 "trend_sentiment_signal": 0.0,
-                "narrative_risk_score": 0.0,
-                "market_shock": 0.088
+                "narrative_risk_score": 0.033,
+                "market_shock": 0.05
             },
             "forecast_drivers": [
                 {
                     "driver": "time index",
-                    "importance": 0.261
+                    "importance": 0.199
+                },
+                {
+                    "driver": "sentiment momentum",
+                    "importance": 0.192
                 },
                 {
                     "driver": "topic intensity 3",
-                    "importance": 0.243
-                },
-                {
-                    "driver": "final trend score",
-                    "importance": 0.11
+                    "importance": 0.175
                 }
             ],
-            "rag_forecast_explanation": "LLM response skipped due to rate limit.",
+            "rag_forecast_explanation": "**Predicted Ecommerce Market Sentiment Trend:**\n\nThe predicted ecommerce market sentiment trend is **Bearish**, driven by multiple key forecast drivers.\n\n**Dominant Trend:**\n\nThe dominant trend is a decrease in positive sentiment, which is driving the bearish market sentiment trend.\n\n**Explanation:**\n\nThe decline in positive sentiment is likely due to a combination of factors, including:\n\n1. **Decrease in Positive News:** Only one brand, Reliance Digital, has positive news, while other brands have neutral or no sentiment.\n2. **Increasing Market Volatility:** Market volatility is high, indicating an unstable market environment, which can lead to decreased investor confidence and, subsequently, a decrease in market sentiment.\n3. **Neutral Sentiment from Major Brands:** Brands like Myntra, Amazon India, and Nykaa have either neutral or no sentiment, which is contributing to the overall decrease in positive sentiment.\n\n**Supporting Evidence:**\n\n* Reliance Digital's positive news and sentiment (Source 1)\n* Market volatility (0.4448) indicating an unstable market environment (Source: Given data)\n* Neutral sentiment from major brands (Source 2, 3, and 4)\n\n**Unified Trend:** A Bearish market sentiment trend due to a decrease in positive sentiment, increasing market volatility, and neutral sentiment from major brands.",
             "rag_forecast_sources": [
                 {
                     "source_id": 1,
-                    "content": "\nBrand: flipkart\nTopic: technology\nSentiment: negative\nNews: Share Market Highlights: Sensex, Nifty climb on IT rebound; rupee slips to 93.71/USD Sensex, Nifty updates on 20 March 2026: \u00a0BSE Sensex ro"
+                    "content": "\nBrand: reliance digital\nTopic: technology\nSentiment: positive\nNews: Riding volatile market waves Kotak Aggressive Hybrid Fund, with 65\u201380 per cent in equity, enables participation in market upswings,"
                 },
                 {
                     "source_id": 2,
-                    "content": "\nBrand: reliance digital\nTopic: other\nSentiment: neutral\nNews: Bitcoin Beyond the Halving: Why CoinEx Sees a More Selective, Institutional Crypto Cycle Ahead HONG KONG, March 20, 2026 (GLOBE NEWSWIRE)"
-                },
-                {
-                    "source_id": 3,
-                    "content": "\nBrand: flipkart\nTopic: technology\nSentiment: negative\nNews: From frenzy to freeze: Retail investors slow down as IPO demand drops Most IPOs fail to attract full retail subscription as grey-market pre"
-                },
-                {
-                    "source_id": 4,
-                    "content": "\nBrand: flipkart\nTopic: discounts\nSentiment: negative\nNews: Retailers roll out festival discounts amid inventory pressure, Gulf war concerns As concerns over the Gulf war loom large, Indian retailers "
-                },
-                {
-                    "source_id": 5,
                     "content": "\nBrand: myntra\nTopic: technology\nSentiment: neutral\nNews: The AI tsunami that is engulfing D2C startups Explore how AI is disrupting D2C startups by transforming search behavior and challenging tradit"
                 },
                 {
-                    "source_id": 6,
-                    "content": "\nBrand: meesho\nTopic: funding\nSentiment: neutral\nNews: Exclusive: AI boom due for correction, strongest firms will endure: First Round Capital cofounder Howard Morgan In venture investing there are tw"
+                    "source_id": 3,
+                    "content": "\nBrand: amazon india\nTopic: discounts\nSentiment: positive\nNews: Amazon Pay expands vehicle insurance offerings in India \n"
                 },
                 {
-                    "source_id": 7,
-                    "content": "\nBrand: ajio\nTopic: other\nSentiment: neutral\nNews: Judge of the Day: Marketing must own the P&L, says Arpan Biswas Judge of the Day: Marketing must own the P&L, says Arpan Biswasthedrum.com\n"
+                    "source_id": 4,
+                    "content": "\nBrand: nykaa\nTopic: competition\nSentiment: neutral\nNews: Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell) HDFC Securities recommends selling FSN E-commerce Ventures with a target price of \u20b9205, citing "
                 },
                 {
-                    "source_id": 8,
-                    "content": "\nBrand: bigbasket\nTopic: logistics\nSentiment: negative\nNews: Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to "
+                    "source_id": 5,
+                    "content": "\nBrand: reliance digital\nTopic: technology\nSentiment: neutral\nNews: How can digital marketing grow my business in Ahmedabad? - Accurate InfoTech (AIT) How can digital marketing grow my business in Ahm"
                 }
             ],
             "forecasts": {
                 "7_day_forecast": [
-                    -0.0631,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316
+                    0.0597,
+                    0.144,
+                    0.0968,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015
                 ],
                 "30_day_forecast": [
-                    -0.0631,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274
+                    0.0597,
+                    0.144,
+                    0.0968,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983
                 ],
                 "90_day_forecast": [
-                    -0.0631,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651,
-                    -0.0316,
-                    -0.0568,
-                    -0.0274,
-                    -0.0373,
-                    0.0196,
-                    -0.057,
-                    -0.0651
+                    0.0597,
+                    0.144,
+                    0.0968,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028,
+                    0.1015,
+                    0.1348,
+                    0.0983,
+                    0.0935,
+                    0.0925,
+                    0.1003,
+                    0.1028
                 ]
             }
         },
@@ -695,281 +601,151 @@
             "brand_forecasts": [
                 {
                     "brand": "flipkart",
-                    "trend_direction": "Declining",
-                    "trend_slope": -0.1667,
+                    "trend_direction": "Insufficient Data",
+                    "trend_slope": 0,
                     "forecasts": {
-                        "7_day": [
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394
-                        ],
-                        "30_day": [
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394
-                        ],
-                        "90_day": [
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394,
-                            -0.394
-                        ]
+                        "7_day": [],
+                        "30_day": [],
+                        "90_day": []
                     }
                 },
                 {
                     "brand": "amazon india",
-                    "trend_direction": "Declining",
-                    "trend_slope": -0.0333,
+                    "trend_direction": "Stable",
+                    "trend_slope": 0.0,
                     "forecasts": {
                         "7_day": [
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
                         ],
                         "30_day": [
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
                         ],
                         "90_day": [
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753,
-                            0.1753
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
                         ]
                     }
                 },
@@ -1129,137 +905,137 @@
                     "trend_slope": 0.5,
                     "forecasts": {
                         "7_day": [
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24
+                            0.3633,
+                            0.5133,
+                            0.6633,
+                            0.8133,
+                            0.9633,
+                            1.0,
+                            1.0
                         ],
                         "30_day": [
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24
+                            0.3633,
+                            0.5133,
+                            0.6633,
+                            0.8133,
+                            0.9633,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
                         ],
                         "90_day": [
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24,
-                            0.24
+                            0.3633,
+                            0.5133,
+                            0.6633,
+                            0.8133,
+                            0.9633,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
                         ]
                     }
                 },
@@ -1269,137 +1045,137 @@
                     "trend_slope": -0.5,
                     "forecasts": {
                         "7_day": [
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05
+                            0.16,
+                            0.01,
+                            -0.14,
+                            -0.29,
+                            -0.44,
+                            -0.59,
+                            -0.74
                         ],
                         "30_day": [
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05
+                            0.16,
+                            0.01,
+                            -0.14,
+                            -0.29,
+                            -0.44,
+                            -0.59,
+                            -0.74,
+                            -0.89,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0
                         ],
                         "90_day": [
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05,
-                            0.05
+                            0.16,
+                            0.01,
+                            -0.14,
+                            -0.29,
+                            -0.44,
+                            -0.59,
+                            -0.74,
+                            -0.89,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0
                         ]
                     }
                 },
@@ -1409,137 +1185,137 @@
                     "trend_slope": -0.05,
                     "forecasts": {
                         "7_day": [
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11
+                            -0.055,
+                            -0.07,
+                            -0.085,
+                            -0.1,
+                            -0.115,
+                            -0.13,
+                            -0.145
                         ],
                         "30_day": [
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11
+                            -0.055,
+                            -0.07,
+                            -0.085,
+                            -0.1,
+                            -0.115,
+                            -0.13,
+                            -0.145,
+                            -0.16,
+                            -0.175,
+                            -0.19,
+                            -0.205,
+                            -0.22,
+                            -0.235,
+                            -0.25,
+                            -0.265,
+                            -0.28,
+                            -0.295,
+                            -0.31,
+                            -0.325,
+                            -0.34,
+                            -0.355,
+                            -0.37,
+                            -0.385,
+                            -0.4,
+                            -0.415,
+                            -0.43,
+                            -0.445,
+                            -0.46,
+                            -0.475,
+                            -0.49
                         ],
                         "90_day": [
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11,
-                            -0.11
+                            -0.055,
+                            -0.07,
+                            -0.085,
+                            -0.1,
+                            -0.115,
+                            -0.13,
+                            -0.145,
+                            -0.16,
+                            -0.175,
+                            -0.19,
+                            -0.205,
+                            -0.22,
+                            -0.235,
+                            -0.25,
+                            -0.265,
+                            -0.28,
+                            -0.295,
+                            -0.31,
+                            -0.325,
+                            -0.34,
+                            -0.355,
+                            -0.37,
+                            -0.385,
+                            -0.4,
+                            -0.415,
+                            -0.43,
+                            -0.445,
+                            -0.46,
+                            -0.475,
+                            -0.49,
+                            -0.505,
+                            -0.52,
+                            -0.535,
+                            -0.55,
+                            -0.565,
+                            -0.58,
+                            -0.595,
+                            -0.61,
+                            -0.625,
+                            -0.64,
+                            -0.655,
+                            -0.67,
+                            -0.685,
+                            -0.7,
+                            -0.715,
+                            -0.73,
+                            -0.745,
+                            -0.76,
+                            -0.775,
+                            -0.79,
+                            -0.805,
+                            -0.82,
+                            -0.835,
+                            -0.85,
+                            -0.865,
+                            -0.88,
+                            -0.895,
+                            -0.91,
+                            -0.925,
+                            -0.94,
+                            -0.955,
+                            -0.97,
+                            -0.985,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0
                         ]
                     }
                 },
@@ -1550,277 +1326,147 @@
                     "forecasts": {
                         "7_day": [
                             0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26
+                            0.11,
+                            -0.04,
+                            -0.19,
+                            -0.34,
+                            -0.49,
+                            -0.64
                         ],
                         "30_day": [
                             0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26
+                            0.11,
+                            -0.04,
+                            -0.19,
+                            -0.34,
+                            -0.49,
+                            -0.64,
+                            -0.79,
+                            -0.94,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0
                         ],
                         "90_day": [
                             0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26,
-                            0.26
+                            0.11,
+                            -0.04,
+                            -0.19,
+                            -0.34,
+                            -0.49,
+                            -0.64,
+                            -0.79,
+                            -0.94,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0,
+                            -1.0
                         ]
                     }
                 },
                 {
                     "brand": "reliance digital",
-                    "trend_direction": "Stable",
-                    "trend_slope": 0.0,
+                    "trend_direction": "Insufficient Data",
+                    "trend_slope": 0,
                     "forecasts": {
-                        "7_day": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0
-                        ],
-                        "30_day": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0
-                        ],
-                        "90_day": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.0
-                        ]
+                        "7_day": [],
+                        "30_day": [],
+                        "90_day": []
                     }
                 },
                 {
@@ -1839,31 +1485,23 @@
     "explainability": {
         "topic_sentiment_matrix": [
             {
+                "topic": "funding",
+                "sentiment_score": 0.4
+            },
+            {
                 "topic": "expansion",
-                "sentiment_score": 0.5
+                "sentiment_score": 0.3333333333333333
             },
             {
                 "topic": "other",
-                "sentiment_score": 0.13333333333333333
-            },
-            {
-                "topic": "funding",
-                "sentiment_score": 0.08333333333333333
+                "sentiment_score": 0.25
             },
             {
                 "topic": "competition",
                 "sentiment_score": 0.0
             },
             {
-                "topic": "customer_complaints",
-                "sentiment_score": 0.0
-            },
-            {
                 "topic": "discounts",
-                "sentiment_score": 0.0
-            },
-            {
-                "topic": "regulation",
                 "sentiment_score": 0.0
             },
             {
@@ -1872,7 +1510,11 @@
             },
             {
                 "topic": "technology",
-                "sentiment_score": -0.13636363636363635
+                "sentiment_score": -0.16666666666666666
+            },
+            {
+                "topic": "customer_complaints",
+                "sentiment_score": -1.0
             },
             {
                 "topic": "logistics",
@@ -1881,64 +1523,43 @@
         ],
         "topic_explainability": {
             "other": {
-                "avg_sentiment": 0.133,
+                "avg_sentiment": 0.25,
                 "example_articles": [
                     "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil The global luxury fashion market is set for substantial growth, expanding from $257.45 billion in 2025 to $337.18 billion by 2033, at a CAGR of 3.43%. Factors propelling this growth include rising disposable incomes, changing consumer behaviors, and heightene\u2026",
                     "Judge of the Day: Marketing must own the P&L, says Arpan Biswas Judge of the Day: Marketing must own the P&L, says Arpan Biswasthedrum.com",
-                    "The 50: \"Life mein kuch bada ya chota nahi hota\" Riddhi Dogra reminisces what her Jawan co-star Shahrukh Khan shared Riddhi Dogra's humility shone in The 50 when Kiku Sharda compared her work with Lovekesh Kataria to that with Shah Rukh Khan. Dogra responded by quoting SRK, emphasizing that one's own mindset, not the stature of co-stars, defines their worth. This moment hig\u2026"
+                    "Why the Iran War May Have Just Killed the AI Boom The stock market spent the first week of the Iran war doing something strange: mostly shrugging. Oil spiked. Insurance markets effectively collapsed. Amazon had two data centers blown up. And the Nasdaq dipped, steadied, and the conversation shifted within da\u2026"
                 ]
             },
             "funding": {
-                "avg_sentiment": 0.083,
+                "avg_sentiment": 0.4,
                 "example_articles": [
                     "Fractal Industries shares to list today. Check GMP ahead of debut Fractal Industries is poised for its BSE SME debut with modest listing gains expected around 3%. The Rs 49 crore IPO, fully subscribed 5.44 times, will fund working capital and corporate needs.  The garment manufacturer, serving major e-commerce platforms, re\u2026",
-                    "Prime Video ups the ante with 55-title India slate, expands theatrical push Prime Video unveiled its largest-ever Indian Originals slate, featuring nearly 55 series and films across Hindi, Tamil, and Telugu. The platform is also venturing into theatrical releases through Amazon MGM Studios India, showcasing a significant investment i\u2026",
-                    "Google, Microsoft, Amazon Top Gen Z's Dream Employer List: Insights from 37,000+ Students in Unstop Talent Report 2026 - www.lokmattimes.com Google, Microsoft, Amazon Top Gen Z's Dream Employer List: Insights from 37,000+ Students in Unstop Talent Report 2026 - India PR Distribution New Delhi [India], March 19: The report highlights Gen Z's most desirable or \"dream\" companies across ... - Latest N\u2026"
+                    "Uni\u2019s valuation slashed; Howard Morgan on AI, venture investing, more Happy Thursday! Fintech startup Uni is staring at a steep valuation cut as it looks to raise fresh capital amid regulatory headwinds. This and more in today\u2019s ETtech Morning Dispatch.",
+                    "Exclusive: AI boom due for correction, strongest firms will endure: First Round Capital cofounder Howard Morgan In venture investing there are two ways to make money\u2014buy low and sell high, or buy high and sell higher. In a bubble, everybody thinks buy high, sell higher works forever. But that only works inside the bubble. As soon as the bubble bursts, you go back to ne\u2026"
                 ]
             },
             "expansion": {
-                "avg_sentiment": 0.5,
+                "avg_sentiment": 0.333,
                 "example_articles": [
                     "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line Reliance fashion platform AJIO has launched a special merchandise collection. This range is inspired by the spy thriller Dhurandhar. The collection features apparel like graphic T-shirts and signature tees. It also includes limited-edition signed Pathanis. De\u2026",
-                    "Indigenous drone production ecosystem needed for strategic autonomy: Rajnath India News: NEW DELHI: Defence minister Rajnath Singh on Thursday stressed the urgent need to build a drone production ecosystem in the country to ensure strategi.",
-                    "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards"
-                ]
-            },
-            "competition": {
-                "avg_sentiment": 0.0,
-                "example_articles": [
-                    "Nobody Cared: A Letter to the Enablers of American Collapse The President of the United States has made $4.05 billion from the office he holds. Not before he held it. From it. Through cryptocurrency schemes that his own pre-presidential self called \u201ca scam.\u201d Through stablecoin ventures seeded by the United Arab Emirat\u2026",
-                    "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell) HDFC Securities recommends selling FSN E-commerce Ventures with a target price of \u20b9205, citing medium-term growth concerns."
+                    "Google, Microsoft, Amazon Top Gen Z's Dream Employer List: Insights from 37,000+ Students in Unstop Talent Report 2026 - www.lokmattimes.com Google, Microsoft, Amazon Top Gen Z's Dream Employer List: Insights from 37,000+ Students in Unstop Talent Report 2026 - India PR Distribution New Delhi [India], March 19: The report highlights Gen Z's most desirable or \"dream\" companies across ... - Latest N\u2026",
+                    "The AI tsunami that is engulfing D2C startups Explore how AI is disrupting D2C startups by transforming search behavior and challenging traditional e-commerce models."
                 ]
             },
             "technology": {
-                "avg_sentiment": -0.136,
+                "avg_sentiment": -0.167,
                 "example_articles": [
-                    "Semicon firms seek sops; Howard Morgan on AI valuation risks The semiconductor industry is asking for more support as India pushes to grow its chip ecosystem. This and more in today's ETtech Top 5.",
-                    "\u2018Project Hail Mary\u2019 To Orbit Around $100M+ WW Opening; \u2018Ready Or Not 2\u2019 $14M WW \u2013 Preview There\u2019s already excellent word of mouth for Amazon MGM Studios\u2019 sci-fi dramedy, Project Hail Mary, with a 98% Rotten Tomatoes audience score and 95% certified fresh from critics. The global outlook is around $100M+ with a 90% offshore footprint or 82 markets.\u2026",
-                    "Catholic bishops demand 'withdrawal or revision' of Maharashtra's new anti-conversion law Catholic bishops in Maharashtra have voiced \"deep disappointment and strong protest\" against the recently passed Maharashtra Freedom of Religion Act 2026. They are demanding its \"withdrawal or substantial revision,\" asserting that the law undermines the const\u2026"
+                    "Retro roots, Gen Z vibes: With free WiFi, games & coffee, India Post flexes for the young Inside the IIT-Bombay campus in Powai where he once spent four years, alumnus Rajan Verma is reading a book that does not belong to him. Titled \u2018Zero .",
+                    "Will tech writers survive AI? Perspectives from two professors, Nupoor Ranade and Jeremy Merritt In this podcast, I chat with two professors \u2014 Nupoor Ranade (Carnegie Mellon) and Jeremy Merritt (James Madison University) \u2014 about how AI is reshaping the technical writing profession from the academic side. We discuss dropping enrollments, misconceptions ab\u2026",
+                    "Peace to open corridor for animal movement Contiguous forests in Chhattisgarh, specifically Achanakmar and Udanti sanctuaries, offer Sunabeda a significant opportunity to boost its animal populations. This natural connectivity facilitates the dispersal of herbivores and carnivores, promoting genetic e\u2026"
                 ]
             },
             "discounts": {
                 "avg_sentiment": 0.0,
                 "example_articles": [
-                    "Powerbeats Pro 2 gets a Nike edition for $249.99, but the standard version is down to $200 Beats and Nike have jointly announced a special edition of the Powerbeats Pro 2 with a custom finish for the earbuds and charging case. However, there's a deal on the standard colors on Amazon for those who wish to save some money.",
-                    "AI startup Yotta seeks $4 billion valuation ahead of planned IPO The Mumbai-based company is aiming to secure roughly $500 million to $600 million in capital and then file its formal listing documents within weeks, according to people familiar with the matter. It plans to raise a similar amount in the public offering.",
-                    "I might have grown up on classic Lego, but I've got my eye on these 12 modern sets thanks to some tempting Amazon discounts Who said Lego was just for kids? If, like me, you love the popular building blocks, I've picked my favourites currently discounted by up to 33% on Amazon's Big Smile Sale."
-                ]
-            },
-            "regulation": {
-                "avg_sentiment": 0.0,
-                "example_articles": [
-                    "Livestock landscapes as ecological filters: Effects of the tree cover gradient on the taxonomic and functional diversity of granivorous birds in the Colombian Amazon Land-use intensification in cattle-ranching landscapes of the Colombian Amazon generates continuous gradients of tree cover that modify the structure of productive mosaics and may function as environmental filters. The effects of this gradient may vary depend\u2026",
-                    "Govt hits illegal betting, gambling; Flipkart group CFO quits The government is intensifying its crackdown on illegal betting and gambling platforms. This and more in today's ETtech Top 5."
-                ]
-            },
-            "customer_complaints": {
-                "avg_sentiment": 0.0,
-                "example_articles": [
-                    "Dhurandhar: The Revenge screening sees audience support despite delay A technical glitch delayed the Wednesday evening screening of Dhurandhar: The Revenge in Kolkata. Instead of demanding refunds, audiences at several halls displayed remarkable patience and understanding, allowing the show to proceed smoothly. This goodwill hi\u2026",
-                    "War slows IPOs, but startups keep bringing headquarters home Though geopolitical tensions are delaying IPO timelines, India\u2019s tech startups are pressing ahead with plans to relocate their headquarters back home. Richer valuations, deep domestic liquidity, regulatory tailwinds and waning US listing appeal are driving th\u2026"
+                    "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage Eternal-owned Blinkit is offering discounts of up to 72% on cooktops; most products are already out of stock and only limited options are still available. Similarly, Instamart is offering discounts of up to 60% on hobs, and some products are already sold out.\u2026",
+                    "Easing China FDI norms unlikely to unlock fast capital for startups The government's move is expected to speed up dealmaking for global venture funds with limited Chinese capital in their investor base. It could also make it easier for venture capital and private equity firms to raise money from Chinese limited partners (LPs)\u2026",
+                    "bl.Interviews: Dr Shyam Mohan, Managing Director, Motoray Mobility The Tata Punch EV is put through its paces on the streets of Kochi while also exploring the city\u2019s unique Kochi Water Metro. The 2026 Punch EV offers an ARAI-certified range of around 460 km, and this drive looks at how the car performs in city conditions \u2014 f\u2026"
                 ]
             },
             "logistics": {
@@ -1947,13 +1568,637 @@
                     "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to have coincided with the profitability check at pioneers in this space -Swiggy and IPO-bound Zepto \u2013 and amid a broader debate over employment conditions in the last-mile, instant delivery revenue stre\u2026"
                 ]
             },
+            "customer_complaints": {
+                "avg_sentiment": -1.0,
+                "example_articles": [
+                    "Happy Eid-ul-Fitr 2026: Top 30 Eid Mubarak Wishes, Messages and Quotes to share with your friends and family on Eid Eid morning in 2026 brings a wave of digital greetings, but the article champions genuine, human messages. It offers a collection of heartfelt Eid-ul-Fitr wishes, categorized for family, colleagues, friends, and reflective sentiments, encouraging authentic co\u2026"
+                ]
+            },
+            "competition": {
+                "avg_sentiment": 0.0,
+                "example_articles": [
+                    "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell) HDFC Securities recommends selling FSN E-commerce Ventures with a target price of \u20b9205, citing medium-term growth concerns."
+                ]
+            },
             "partnership": {
                 "avg_sentiment": 0.0,
                 "example_articles": [
-                    "PodcastOne (Nasdaq: PODC) Renews Exclusive Rights and Distribution Agreement with A+E Networks for Podcasts Cold Case Files, I Survived, American Justice, City Confidential and Ancient Aliens Total Combined Downloads Across All Five Podcasts Tops 200 Million with Over 1,100 Episodes Produced Total Combined Downloads Across All Five Podcasts Tops 200 Million with Over 1,100 Episodes Produced",
-                    "LiveOne (Nasdaq: LVO) Announces B2B Partnership with Samsung TV; Expands Reach to 100M+ Smart TVs Samsung adds ~10\u201315M new devices annually Targets the $100B+ Connected TV market Delivers music, podcasts, vodcasts, 10+ hours of video content, and live entertainment directly to the living room Expands B2B partnerships with Amazon, Apple, DAX, Paramount, Sp\u2026"
+                    "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation This year, America will celebrate the 250th anniversary of the Declaration of Independence, a document that came into existence during a period of transformational thinking about the relationship between the people and how they are governed. In an era of Euro\u2026",
+                    "How can digital marketing grow my business in Ahmedabad? - Accurate InfoTech (AIT) How can digital marketing grow my business in Ahmedabad. Accurate InfoTech (AIT) provides expert SEO, PPC, and social media strategies to scale your ROI in 2026."
                 ]
             }
+        },
+        "top_positive_articles": [
+            {
+                "title": "Google, Microsoft, Amazon Top Gen Z's Dream Employer List: Insights from 37,000+ Students in Unstop Talent Report 2026 - www.lokmattimes.com",
+                "url": "https://www.lokmattimes.com/business/google-microsoft-amazon-top-gen-zs-dream-employer-list-insights-from-37000-students-in-unstop-talent-report-2026/",
+                "brand": "meesho",
+                "topic": "expansion",
+                "weighted_sentiment": 0.88204026222229
+            },
+            {
+                "title": "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil",
+                "url": "https://www.globenewswire.com/news-release/2026/02/24/3243852/28124/en/Luxury-Fashion-Market-Report-Forecast-and-Company-Analysis-2025-2033-Featuring-Kering-Burberry-Dolce-Gabbana-Giorgio-Armani-Capri-LVMH-Prada-Chanel-Diesel-Industria-de-Diseno-Texti.html",
+                "brand": "ajio",
+                "topic": "other",
+                "weighted_sentiment": 0.8473033308982849
+            },
+            {
+                "title": "Fractal Industries shares to list today. Check GMP ahead of debut",
+                "url": "https://economictimes.indiatimes.com/markets/stocks/news/fractal-industries-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/128736665.cms",
+                "brand": "ajio",
+                "topic": "funding",
+                "weighted_sentiment": 0.7896662354469299
+            },
+            {
+                "title": "India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report",
+                "url": "https://economictimes.indiatimes.com/industry/media/entertainment/indias-rs-13000-crore-live-events-market-fuelling-experiential-marketing-push-bookmyshowey-report/articleshow/129516179.cms",
+                "brand": "nykaa",
+                "topic": "other",
+                "weighted_sentiment": 0.67891925573349
+            },
+            {
+                "title": "Uni\u2019s valuation slashed; Howard Morgan on AI, venture investing, more",
+                "url": "https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/unis-valuation-slashed-howard-morgan-on-ai-venture-investing-more/articleshow/129668684.cms",
+                "brand": "meesho",
+                "topic": "funding",
+                "weighted_sentiment": 0.6039800047874451
+            }
+        ],
+        "top_negative_articles": [
+            {
+                "title": "Meta challenges \u20b910 lakh CCPA penalty in Delhi HC over walkie-talkie sale on Facebook",
+                "url": "https://www.thehindubusinessline.com/info-tech/meta-challenges-10-lakh-ccpa-penalty-in-delhi-hc-over-walkie-talkie-sale-on-facebook/article70757018.ece",
+                "brand": "meesho",
+                "topic": "discounts",
+                "weighted_sentiment": -0.9323209524154664
+            },
+            {
+                "title": "Peace to open corridor for animal movement",
+                "url": "https://timesofindia.indiatimes.com/city/bhubaneswar/peace-to-open-corridor-for-animal-movement/articleshow/129712265.cms",
+                "brand": "flipkart",
+                "topic": "technology",
+                "weighted_sentiment": -0.8463046550750732
+            },
+            {
+                "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
+                "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
+                "brand": "bigbasket",
+                "topic": "logistics",
+                "weighted_sentiment": -0.6295598745346069
+            },
+            {
+                "title": "Happy Eid-ul-Fitr 2026: Top 30 Eid Mubarak Wishes, Messages and Quotes to share with your friends and family on Eid",
+                "url": "https://timesofindia.indiatimes.com/etimes/trending/happy-eid-ul-fitr-2026-top-30-eid-mubarak-wishes-messages-greetings-instagram-facebook-story-and-quotes-to-share-with-your-friends-and-family-on-eid/articleshow/129708564.cms",
+                "brand": "flipkart",
+                "topic": "customer_complaints",
+                "weighted_sentiment": -0.4270028173923492
+            },
+            {
+                "title": "Will tech writers survive AI? Perspectives from two professors, Nupoor Ranade and Jeremy Merritt",
+                "url": "https://idratherbewriting.com/blog/will-tech-writers-survive-ai-academics-nupoor-jeremy",
+                "brand": "amazon india",
+                "topic": "technology",
+                "weighted_sentiment": 0.0
+            }
+        ],
+        "brand_drivers": {
+            "ajio": {
+                "positive_drivers": [
+                    {
+                        "title": "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil",
+                        "url": "https://www.globenewswire.com/news-release/2026/02/24/3243852/28124/en/Luxury-Fashion-Market-Report-Forecast-and-Company-Analysis-2025-2033-Featuring-Kering-Burberry-Dolce-Gabbana-Giorgio-Armani-Capri-LVMH-Prada-Chanel-Diesel-Industria-de-Diseno-Texti.html",
+                        "topic": "other",
+                        "weighted_sentiment": 0.8473033308982849
+                    },
+                    {
+                        "title": "Fractal Industries shares to list today. Check GMP ahead of debut",
+                        "url": "https://economictimes.indiatimes.com/markets/stocks/news/fractal-industries-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/128736665.cms",
+                        "topic": "funding",
+                        "weighted_sentiment": 0.7896662354469299
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line",
+                        "url": "https://economictimes.indiatimes.com/industry/services/retail/reliances-e-commerce-platform-cashes-in-on-dhurandhar-hype-with-new-merch-line/articleshow/129610729.cms",
+                        "topic": "expansion",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Judge of the Day: Marketing must own the P&L, says Arpan Biswas",
+                        "url": "https://www.thedrum.com/news/judge-of-the-day-marketing-must-own-the-p-l-says-arpan-biswas",
+                        "topic": "other",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "amazon india": {
+                "positive_drivers": [
+                    {
+                        "title": "Why the Iran War May Have Just Killed the AI Boom",
+                        "url": "https://oilprice.com/Energy/Energy-General/Why-the-Iran-War-May-Have-Just-Killed-the-AI-Boom.html",
+                        "topic": "other",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Retro roots, Gen Z vibes: With free WiFi, games & coffee, India Post flexes for the young",
+                        "url": "https://timesofindia.indiatimes.com/city/mumbai/retro-roots-gen-z-vibes-with-free-wifi-games-coffee-india-post-flexes-for-the-young/articleshow/129707367.cms",
+                        "topic": "technology",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Why the Iran War May Have Just Killed the AI Boom",
+                        "url": "https://oilprice.com/Energy/Energy-General/Why-the-Iran-War-May-Have-Just-Killed-the-AI-Boom.html",
+                        "topic": "other",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Retro roots, Gen Z vibes: With free WiFi, games & coffee, India Post flexes for the young",
+                        "url": "https://timesofindia.indiatimes.com/city/mumbai/retro-roots-gen-z-vibes-with-free-wifi-games-coffee-india-post-flexes-for-the-young/articleshow/129707367.cms",
+                        "topic": "technology",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "bigbasket": {
+                "positive_drivers": [
+                    {
+                        "title": "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/qcomm-sees-brisk-sale-of-induction-stoves-as-people-panic-over-lpg-shortage/articleshow/129400310.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Easing China FDI norms unlikely to unlock fast capital for startups",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/easing-china-fdi-norms-unlikely-to-unlock-fast-capital-for-startups/articleshow/129474289.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
+                        "topic": "logistics",
+                        "weighted_sentiment": -0.6295598745346069
+                    },
+                    {
+                        "title": "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/qcomm-sees-brisk-sale-of-induction-stoves-as-people-panic-over-lpg-shortage/articleshow/129400310.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "flipkart": {
+                "positive_drivers": [
+                    {
+                        "title": "\u2018AI not accurate enough to block calls automatically\u2019: Truecaller CEO Rishit Jhunjhunwala",
+                        "url": "https://economictimes.indiatimes.com/industry/telecom/telecom-news/ai-not-accurate-enough-to-block-calls-automatically-truecaller-ceo-rishit-jhunjhunwala/articleshow/129716005.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "When saving mothers isn\u2019t a good deed",
+                        "url": "https://timesofindia.indiatimes.com/world/mind-field/when-saving-mothers-isnt-a-good-deed/articleshow/129712254.cms",
+                        "topic": "other",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Peace to open corridor for animal movement",
+                        "url": "https://timesofindia.indiatimes.com/city/bhubaneswar/peace-to-open-corridor-for-animal-movement/articleshow/129712265.cms",
+                        "topic": "technology",
+                        "weighted_sentiment": -0.8463046550750732
+                    },
+                    {
+                        "title": "Happy Eid-ul-Fitr 2026: Top 30 Eid Mubarak Wishes, Messages and Quotes to share with your friends and family on Eid",
+                        "url": "https://timesofindia.indiatimes.com/etimes/trending/happy-eid-ul-fitr-2026-top-30-eid-mubarak-wishes-messages-greetings-instagram-facebook-story-and-quotes-to-share-with-your-friends-and-family-on-eid/articleshow/129708564.cms",
+                        "topic": "customer_complaints",
+                        "weighted_sentiment": -0.4270028173923492
+                    }
+                ]
+            },
+            "meesho": {
+                "positive_drivers": [
+                    {
+                        "title": "Google, Microsoft, Amazon Top Gen Z's Dream Employer List: Insights from 37,000+ Students in Unstop Talent Report 2026 - www.lokmattimes.com",
+                        "url": "https://www.lokmattimes.com/business/google-microsoft-amazon-top-gen-zs-dream-employer-list-insights-from-37000-students-in-unstop-talent-report-2026/",
+                        "topic": "expansion",
+                        "weighted_sentiment": 0.88204026222229
+                    },
+                    {
+                        "title": "Uni\u2019s valuation slashed; Howard Morgan on AI, venture investing, more",
+                        "url": "https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/unis-valuation-slashed-howard-morgan-on-ai-venture-investing-more/articleshow/129668684.cms",
+                        "topic": "funding",
+                        "weighted_sentiment": 0.6039800047874451
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Meta challenges \u20b910 lakh CCPA penalty in Delhi HC over walkie-talkie sale on Facebook",
+                        "url": "https://www.thehindubusinessline.com/info-tech/meta-challenges-10-lakh-ccpa-penalty-in-delhi-hc-over-walkie-talkie-sale-on-facebook/article70757018.ece",
+                        "topic": "discounts",
+                        "weighted_sentiment": -0.9323209524154664
+                    },
+                    {
+                        "title": "Meta moves Delhi HC against CCPA order slapping Rs 10 lakh fine for walkie-talkie sale on Facebook",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/meta-moves-delhi-hc-against-ccpa-order-slapping-rs-10-lakh-fine-for-walkie-talkie-sale-on-facebook/articleshow/129649512.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "myntra": {
+                "positive_drivers": [
+                    {
+                        "title": "Gift Card Business and Investment Intelligence Report 2026: Market to Reach $865 Billion by 2030 - KPIs on Market Size, Retail & Corporate Spend, Competitive Landscape, and Consumer Demographics",
+                        "url": "https://www.globenewswire.com/news-release/2026/03/11/3253987/28124/en/Gift-Card-Business-and-Investment-Intelligence-Report-2026-Market-to-Reach-865-Billion-by-2030-KPIs-on-Market-Size-Retail-Corporate-Spend-Competitive-Landscape-and-Consumer-Demogra.html",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards",
+                        "url": "https://www.thehindubusinessline.com/brandhub/pr-release/swiggy-and-hdfc-bank-elevate-everyday-and-travel-rewards-with-the-launch-of-two-new-co-branded-credit-cards/article70734759.ece",
+                        "topic": "funding",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Gift Card Business and Investment Intelligence Report 2026: Market to Reach $865 Billion by 2030 - KPIs on Market Size, Retail & Corporate Spend, Competitive Landscape, and Consumer Demographics",
+                        "url": "https://www.globenewswire.com/news-release/2026/03/11/3253987/28124/en/Gift-Card-Business-and-Investment-Intelligence-Report-2026-Market-to-Reach-865-Billion-by-2030-KPIs-on-Market-Size-Retail-Corporate-Spend-Competitive-Landscape-and-Consumer-Demogra.html",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards",
+                        "url": "https://www.thehindubusinessline.com/brandhub/pr-release/swiggy-and-hdfc-bank-elevate-everyday-and-travel-rewards-with-the-launch-of-two-new-co-branded-credit-cards/article70734759.ece",
+                        "topic": "funding",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "nykaa": {
+                "positive_drivers": [
+                    {
+                        "title": "India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report",
+                        "url": "https://economictimes.indiatimes.com/industry/media/entertainment/indias-rs-13000-crore-live-events-market-fuelling-experiential-marketing-push-bookmyshowey-report/articleshow/129516179.cms",
+                        "topic": "other",
+                        "weighted_sentiment": 0.67891925573349
+                    },
+                    {
+                        "title": "Women In Entertainment: The Power List 2026",
+                        "url": "https://www.hollywoodreporterindia.com/women-in-entertainment/all/women-in-entertainment-the-power-list-2026",
+                        "topic": "technology",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Women In Entertainment: The Power List 2026",
+                        "url": "https://www.hollywoodreporterindia.com/women-in-entertainment/all/women-in-entertainment-the-power-list-2026",
+                        "topic": "technology",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell)",
+                        "url": "https://www.thehindubusinessline.com/markets/brokers-call-fsn-e-commerce-ventures-sell/article70753460.ece",
+                        "topic": "competition",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "reliance digital": {
+                "positive_drivers": [
+                    {
+                        "title": "Riding volatile market waves",
+                        "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/riding-volatile-market-waves/article70760576.ece",
+                        "topic": "technology",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Amazon is reportedly working on making a new phone, because it went so well last time",
+                        "url": "https://www.techradar.com/phones/amazon-is-reportedly-working-on-making-a-new-phone-because-it-went-so-well-last-time",
+                        "topic": "other",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Riding volatile market waves",
+                        "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/riding-volatile-market-waves/article70760576.ece",
+                        "topic": "technology",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Amazon is reportedly working on making a new phone, because it went so well last time",
+                        "url": "https://www.techradar.com/phones/amazon-is-reportedly-working-on-making-a-new-phone-because-it-went-so-well-last-time",
+                        "topic": "other",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "snapdeal": {
+                "positive_drivers": [
+                    {
+                        "title": "Startup Mafia 2.0 going strong: Zomato, Freshworks, Zoho alumni launch 360 firms",
+                        "url": "https://economictimes.indiatimes.com/tech/startups/startup-mafia-2-0-going-strong-zomato-freshworks-zoho-alumni-launch-360-firms/articleshow/129636724.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Startup Mafia 2.0 going strong: Zomato, Freshworks, Zoho alumni launch 360 firms",
+                        "url": "https://economictimes.indiatimes.com/tech/startups/startup-mafia-2-0-going-strong-zomato-freshworks-zoho-alumni-launch-360-firms/articleshow/129636724.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "tata cliq": {
+                "positive_drivers": [
+                    {
+                        "title": "How Gen X\u2019s favourite gadgets like flip phones, wired earphones are finding a new set of fans: Gen Z",
+                        "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/how-gen-xs-favourite-gadgets-like-flip-phones-wired-earphones-are-finding-a-new-set-of-fans-gen-z/articleshow/128893254.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.5162662267684937
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "How Gen X\u2019s favourite gadgets like flip phones, wired earphones are finding a new set of fans: Gen Z",
+                        "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/how-gen-xs-favourite-gadgets-like-flip-phones-wired-earphones-are-finding-a-new-set-of-fans-gen-z/articleshow/128893254.cms",
+                        "topic": "discounts",
+                        "weighted_sentiment": 0.5162662267684937
+                    }
+                ]
+            }
+        },
+        "topic_drivers": {
+            "other": {
+                "positive_drivers": [
+                    {
+                        "title": "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil",
+                        "url": "https://www.globenewswire.com/news-release/2026/02/24/3243852/28124/en/Luxury-Fashion-Market-Report-Forecast-and-Company-Analysis-2025-2033-Featuring-Kering-Burberry-Dolce-Gabbana-Giorgio-Armani-Capri-LVMH-Prada-Chanel-Diesel-Industria-de-Diseno-Texti.html",
+                        "brand": "ajio",
+                        "weighted_sentiment": 0.8473033308982849
+                    },
+                    {
+                        "title": "India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report",
+                        "url": "https://economictimes.indiatimes.com/industry/media/entertainment/indias-rs-13000-crore-live-events-market-fuelling-experiential-marketing-push-bookmyshowey-report/articleshow/129516179.cms",
+                        "brand": "nykaa",
+                        "weighted_sentiment": 0.67891925573349
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Judge of the Day: Marketing must own the P&L, says Arpan Biswas",
+                        "url": "https://www.thedrum.com/news/judge-of-the-day-marketing-must-own-the-p-l-says-arpan-biswas",
+                        "brand": "ajio",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Why the Iran War May Have Just Killed the AI Boom",
+                        "url": "https://oilprice.com/Energy/Energy-General/Why-the-Iran-War-May-Have-Just-Killed-the-AI-Boom.html",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "funding": {
+                "positive_drivers": [
+                    {
+                        "title": "Fractal Industries shares to list today. Check GMP ahead of debut",
+                        "url": "https://economictimes.indiatimes.com/markets/stocks/news/fractal-industries-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/128736665.cms",
+                        "brand": "ajio",
+                        "weighted_sentiment": 0.7896662354469299
+                    },
+                    {
+                        "title": "Uni\u2019s valuation slashed; Howard Morgan on AI, venture investing, more",
+                        "url": "https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/unis-valuation-slashed-howard-morgan-on-ai-venture-investing-more/articleshow/129668684.cms",
+                        "brand": "meesho",
+                        "weighted_sentiment": 0.6039800047874451
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards",
+                        "url": "https://www.thehindubusinessline.com/brandhub/pr-release/swiggy-and-hdfc-bank-elevate-everyday-and-travel-rewards-with-the-launch-of-two-new-co-branded-credit-cards/article70734759.ece",
+                        "brand": "myntra",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Exclusive: AI boom due for correction, strongest firms will endure: First Round Capital cofounder Howard Morgan",
+                        "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-boom-will-correct-but-strongest-companies-will-emerge-stronger-first-round-cofounder-howard-morgan/articleshow/129664235.cms",
+                        "brand": "meesho",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "expansion": {
+                "positive_drivers": [
+                    {
+                        "title": "Google, Microsoft, Amazon Top Gen Z's Dream Employer List: Insights from 37,000+ Students in Unstop Talent Report 2026 - www.lokmattimes.com",
+                        "url": "https://www.lokmattimes.com/business/google-microsoft-amazon-top-gen-zs-dream-employer-list-insights-from-37000-students-in-unstop-talent-report-2026/",
+                        "brand": "meesho",
+                        "weighted_sentiment": 0.88204026222229
+                    },
+                    {
+                        "title": "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line",
+                        "url": "https://economictimes.indiatimes.com/industry/services/retail/reliances-e-commerce-platform-cashes-in-on-dhurandhar-hype-with-new-merch-line/articleshow/129610729.cms",
+                        "brand": "ajio",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line",
+                        "url": "https://economictimes.indiatimes.com/industry/services/retail/reliances-e-commerce-platform-cashes-in-on-dhurandhar-hype-with-new-merch-line/articleshow/129610729.cms",
+                        "brand": "ajio",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "The AI tsunami that is engulfing D2C startups",
+                        "url": "https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/the-ai-tsunami-that-is-engulfing-d2c-startups/article70747510.ece",
+                        "brand": "myntra",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "technology": {
+                "positive_drivers": [
+                    {
+                        "title": "Retro roots, Gen Z vibes: With free WiFi, games & coffee, India Post flexes for the young",
+                        "url": "https://timesofindia.indiatimes.com/city/mumbai/retro-roots-gen-z-vibes-with-free-wifi-games-coffee-india-post-flexes-for-the-young/articleshow/129707367.cms",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "Will tech writers survive AI? Perspectives from two professors, Nupoor Ranade and Jeremy Merritt",
+                        "url": "https://idratherbewriting.com/blog/will-tech-writers-survive-ai-academics-nupoor-jeremy",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Peace to open corridor for animal movement",
+                        "url": "https://timesofindia.indiatimes.com/city/bhubaneswar/peace-to-open-corridor-for-animal-movement/articleshow/129712265.cms",
+                        "brand": "flipkart",
+                        "weighted_sentiment": -0.8463046550750732
+                    },
+                    {
+                        "title": "Retro roots, Gen Z vibes: With free WiFi, games & coffee, India Post flexes for the young",
+                        "url": "https://timesofindia.indiatimes.com/city/mumbai/retro-roots-gen-z-vibes-with-free-wifi-games-coffee-india-post-flexes-for-the-young/articleshow/129707367.cms",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "discounts": {
+                "positive_drivers": [
+                    {
+                        "title": "How Gen X\u2019s favourite gadgets like flip phones, wired earphones are finding a new set of fans: Gen Z",
+                        "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/how-gen-xs-favourite-gadgets-like-flip-phones-wired-earphones-are-finding-a-new-set-of-fans-gen-z/articleshow/128893254.cms",
+                        "brand": "tata cliq",
+                        "weighted_sentiment": 0.5162662267684937
+                    },
+                    {
+                        "title": "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/qcomm-sees-brisk-sale-of-induction-stoves-as-people-panic-over-lpg-shortage/articleshow/129400310.cms",
+                        "brand": "bigbasket",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Meta challenges \u20b910 lakh CCPA penalty in Delhi HC over walkie-talkie sale on Facebook",
+                        "url": "https://www.thehindubusinessline.com/info-tech/meta-challenges-10-lakh-ccpa-penalty-in-delhi-hc-over-walkie-talkie-sale-on-facebook/article70757018.ece",
+                        "brand": "meesho",
+                        "weighted_sentiment": -0.9323209524154664
+                    },
+                    {
+                        "title": "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/qcomm-sees-brisk-sale-of-induction-stoves-as-people-panic-over-lpg-shortage/articleshow/129400310.cms",
+                        "brand": "bigbasket",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "logistics": {
+                "positive_drivers": [
+                    {
+                        "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
+                        "brand": "bigbasket",
+                        "weighted_sentiment": -0.6295598745346069
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
+                        "brand": "bigbasket",
+                        "weighted_sentiment": -0.6295598745346069
+                    }
+                ]
+            },
+            "customer_complaints": {
+                "positive_drivers": [
+                    {
+                        "title": "Happy Eid-ul-Fitr 2026: Top 30 Eid Mubarak Wishes, Messages and Quotes to share with your friends and family on Eid",
+                        "url": "https://timesofindia.indiatimes.com/etimes/trending/happy-eid-ul-fitr-2026-top-30-eid-mubarak-wishes-messages-greetings-instagram-facebook-story-and-quotes-to-share-with-your-friends-and-family-on-eid/articleshow/129708564.cms",
+                        "brand": "flipkart",
+                        "weighted_sentiment": -0.4270028173923492
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Happy Eid-ul-Fitr 2026: Top 30 Eid Mubarak Wishes, Messages and Quotes to share with your friends and family on Eid",
+                        "url": "https://timesofindia.indiatimes.com/etimes/trending/happy-eid-ul-fitr-2026-top-30-eid-mubarak-wishes-messages-greetings-instagram-facebook-story-and-quotes-to-share-with-your-friends-and-family-on-eid/articleshow/129708564.cms",
+                        "brand": "flipkart",
+                        "weighted_sentiment": -0.4270028173923492
+                    }
+                ]
+            },
+            "competition": {
+                "positive_drivers": [
+                    {
+                        "title": "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell)",
+                        "url": "https://www.thehindubusinessline.com/markets/brokers-call-fsn-e-commerce-ventures-sell/article70753460.ece",
+                        "brand": "nykaa",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell)",
+                        "url": "https://www.thehindubusinessline.com/markets/brokers-call-fsn-e-commerce-ventures-sell/article70753460.ece",
+                        "brand": "nykaa",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            },
+            "partnership": {
+                "positive_drivers": [
+                    {
+                        "title": "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation",
+                        "url": "https://corpgov.law.harvard.edu/2026/03/21/remarks-by-commissioner-uyeda-on-investor-choice-and-the-limits-of-sec-regulation/",
+                        "brand": "reliance digital",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "How can digital marketing grow my business in Ahmedabad? - Accurate InfoTech (AIT)",
+                        "url": "https://accurateitc.com/how-can-digital-marketing-grow-my-business-in-ahmedabad/",
+                        "brand": "reliance digital",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation",
+                        "url": "https://corpgov.law.harvard.edu/2026/03/21/remarks-by-commissioner-uyeda-on-investor-choice-and-the-limits-of-sec-regulation/",
+                        "brand": "reliance digital",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "How can digital marketing grow my business in Ahmedabad? - Accurate InfoTech (AIT)",
+                        "url": "https://accurateitc.com/how-can-digital-marketing-grow-my-business-in-ahmedabad/",
+                        "brand": "reliance digital",
+                        "weighted_sentiment": 0.0
+                    }
+                ]
+            }
+        },
+        "top_contributing_brands": [
+            {
+                "brand": "flipkart",
+                "weighted_sentiment": -0.3183268681168556
+            },
+            {
+                "brand": "bigbasket",
+                "weighted_sentiment": -0.12591197490692138
+            },
+            {
+                "brand": "amazon india",
+                "weighted_sentiment": 0.0
+            }
+        ],
+        "sentiment_change": {
+            "direction": "decreased",
+            "delta": -0.1273,
+            "top_reasons": [
+                "Based on the given context and news articles, I will attempt to identify the top 3 reasons for the market sentiment decrease (delta=-0.1273).",
+                "After analyzing the articles, I found that the market sentiment has decreased due to the following reasons:",
+                "**Decrease in Positive Sentiment for Discounts**: News articles like 'Flipkart CFO Sriram Venkataraman exits ahead of IPO' (weighted sentiment: 0.0) and '\u2018AI not accurate enough to block calls automatically\u2019: Truecaller CEO Rishit Jhunjhunwala' (weighted sentiment: 0.0) indicate a lack of positive news on discounts."
+            ],
+            "explanation": "Based on the given context and news articles, I will attempt to identify the top 3 reasons for the market sentiment decrease (delta=-0.1273).\n\nAfter analyzing the articles, I found that the market sentiment has decreased due to the following reasons:\n\n- **Decrease in Positive Sentiment for Discounts**: News articles like 'Flipkart CFO Sriram Venkataraman exits ahead of IPO' (weighted sentiment: 0.0) and '\u2018AI not accurate enough to block calls automatically\u2019: Truecaller CEO Rishit Jhunjhunwala' (weighted sentiment: 0.0) indicate a lack of positive news on discounts.\n- **Lack of Prominent News on Brand Performance**: Only 2 out of 12 articles mention Amazon India (weighted sentiment: 0.0), indicating a lack of prominent news on its brand performance.\n- **Negative Sentiment on Technology and Other Topics**: Articles like 'Peace to open corridor for animal movement' (weighted sentiment: -0.8463046550750732) and 'Happy Eid-ul-Fitr 2026: Top 30 Eid Mubarak Wishes, Messages and Quotes to share with your friends and family on Eid' (weighted sentiment: -0.4270028173923492) contribute to the overall negative market sentiment.\n\nThese reasons may be contributing to the market sentiment decrease (delta=-0.1273)."
         }
     }
 }

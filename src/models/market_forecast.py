@@ -405,15 +405,36 @@ Provide a short explanation of why the forecast may be occurring based on recent
 
 def forecast_brand_sentiment():
 
+    import numpy as np
+    import pandas as pd
+    from sklearn.ensemble import RandomForestRegressor
+
     df = load_brand_metrics()
 
-    if df.empty:
+    # -------------------------
+    # SAFETY CHECK
+    # -------------------------
+    if df is None or df.empty:
         return {"brand_forecasts": []}
 
     # -------------------------
     # PREPROCESS
     # -------------------------
-    df["brand"] = df["brand"].str.strip().str.lower()
+    df["brand"] = df["brand"].astype(str).str.strip().str.lower()
+
+    # 🔥 ensure correct column name
+    if "sentiment_index" not in df.columns:
+        if "sentiment" in df.columns:
+            df["sentiment_index"] = df["sentiment"]
+        elif "score" in df.columns:
+            df["sentiment_index"] = df["score"]
+        else:
+            raise ValueError("❌ sentiment column not found in brand metrics")
+
+    # 🔥 ensure datetime
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    df = df.dropna(subset=["date"])
+
     df = df.sort_values("date")
 
     results = []
@@ -421,14 +442,14 @@ def forecast_brand_sentiment():
     all_brands = [b.lower() for b in ECOMMERCE_BRANDS]
 
     # -------------------------
-    # LOOP OVER ALL BRANDS
+    # LOOP OVER BRANDS
     # -------------------------
     for brand in all_brands:
 
         brand_df = df[df["brand"] == brand].copy()
 
         # -------------------------
-        # HANDLE NO DATA
+        # NO DATA
         # -------------------------
         if brand_df.empty:
             results.append({
@@ -443,8 +464,10 @@ def forecast_brand_sentiment():
             })
             continue
 
+        brand_df = brand_df.sort_values("date")
+
         # -------------------------
-        # MIN DATA CHECK
+        # MIN DATA
         # -------------------------
         if len(brand_df) < 2:
             results.append({
@@ -462,16 +485,12 @@ def forecast_brand_sentiment():
         # -------------------------
         # FEATURE ENGINEERING
         # -------------------------
-        brand_df = brand_df.sort_values("date")
         brand_df["time_index"] = range(len(brand_df))
 
-        feature_cols = ["time_index"]
+        # 🔥 momentum (key fix)
+        brand_df["momentum"] = brand_df["sentiment_index"].diff().fillna(0)
 
-        if "trend_score" in brand_df.columns:
-            feature_cols.append("trend_score")
-
-        if "trend_velocity" in brand_df.columns:
-            feature_cols.append("trend_velocity")
+        feature_cols = ["time_index", "momentum"]
 
         X = brand_df[feature_cols]
         y = brand_df["sentiment_index"]
@@ -488,26 +507,6 @@ def forecast_brand_sentiment():
         model.fit(X, y)
 
         # -------------------------
-        # FORECAST FUNCTION
-        # -------------------------
-        def generate(days):
-
-            future = pd.DataFrame({
-                "time_index": range(len(brand_df), len(brand_df) + days)
-            })
-
-            # fill additional features with last known values
-            for col in feature_cols:
-                if col != "time_index":
-                    future[col] = brand_df[col].tail(3).mean()
-
-            preds = model.predict(future)
-
-            preds = [max(-1, min(1, p)) for p in preds]
-
-            return [round(float(p), 4) for p in preds]
-
-        # -------------------------
         # TREND DETECTION
         # -------------------------
         slope = np.polyfit(
@@ -515,6 +514,7 @@ def forecast_brand_sentiment():
             brand_df["sentiment_index"],
             1
         )[0]
+
         slope = max(-0.5, min(0.5, slope))  # clamp
 
         if slope > 0.01:
@@ -523,6 +523,31 @@ def forecast_brand_sentiment():
             direction = "Declining"
         else:
             direction = "Stable"
+
+        # -------------------------
+        # FORECAST FUNCTION
+        # -------------------------
+        def generate(days):
+
+            future = pd.DataFrame({
+                "time_index": range(len(brand_df), len(brand_df) + days)
+            })
+
+            # 🔥 dynamic momentum
+            last_momentum = brand_df["momentum"].iloc[-1]
+            future["momentum"] = last_momentum
+
+            preds = model.predict(future)
+
+            # 🔥 add trend effect (CRITICAL FIX)
+            preds = [
+                p + slope * i * 0.3 for i, p in enumerate(preds)
+            ]
+
+            # 🔥 clamp values
+            preds = [max(-1, min(1, p)) for p in preds]
+
+            return [round(float(p), 4) for p in preds]
 
         # -------------------------
         # STORE RESULT

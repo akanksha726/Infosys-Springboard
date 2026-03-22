@@ -27,16 +27,74 @@ def build_documents(df):
 
     documents = []
 
+    # ✅ Keep topics consistent with your topic_modeling file
+    VALID_TOPICS = [
+        "technology",
+        "logistics",
+        "discounts",
+        "funding",
+        "competition",
+        "expansion",
+        "partnership",
+        "customer_complaints"
+    ]
+
+    # ❌ Remove noisy macro/finance keywords
+    BLOCK_KEYWORDS = [
+        "crypto", "bitcoin", "sensex", "nifty",
+        "stock", "ipo", "war", "iran"
+    ]
+
     for _, row in df.iterrows():
 
-        text = f"""
+        # -------------------------
+        # Basic safety checks
+        # -------------------------
+        if pd.isna(row.get("brand")) or pd.isna(row.get("combined_text")):
+            continue
+
+        topic = str(row.get("topic", "other")).lower()
+        text = str(row.get("combined_text", ""))
+
+        text_lower = text.lower()
+
+        # -------------------------
+        # Filter irrelevant topics
+        # -------------------------
+        if topic not in VALID_TOPICS:
+            continue
+
+        # -------------------------
+        # Remove noisy finance/news
+        # -------------------------
+        if any(word in text_lower for word in BLOCK_KEYWORDS):
+            continue
+
+        # -------------------------
+        # Build document
+        # -------------------------
+        doc_text = f"""
 Brand: {row['brand']}
-Topic: {row['topic']}
-Sentiment: {row['finbert_label']}
-News: {row['combined_text'][:1000]}
+Topic: {topic}
+Sentiment: {row.get('finbert_label', 'neutral')}
+News: {text[:1000]}
 """
 
-        documents.append(Document(page_content=text))
+        documents.append(
+            Document(
+                page_content=doc_text,
+                metadata={
+                    "brand": str(row["brand"]).lower(),
+                    "topic": topic,
+                    "sentiment": str(row.get("finbert_label", "neutral")).lower()
+                }
+            )
+        )
+
+    print(f"✅ Total documents after filtering: {len(documents)}")
+
+    if len(documents) == 0:
+        raise ValueError("❌ No valid documents after filtering. Check filters.")
 
     return documents
 
@@ -47,7 +105,7 @@ def build_vector_store():
 
     df = load_dataset()
 
-    print("Creating documents...")
+    print("Creating filtered documents...")
 
     documents = build_documents(df)
 
@@ -65,7 +123,7 @@ def build_vector_store():
 
     vector_store.save_local(os.path.join(VECTOR_PATH, "news_index"))
 
-    print("Vector store created successfully")
+    print("✅ Vector store created successfully")
 
 
 if __name__ == "__main__":
