@@ -183,7 +183,7 @@ The `AnimatedNumber` component detects when a numeric value changes between poll
 
 ### Step 1 — Set up Environment Variables
 ```bash
-# Copy example file and fill in your keys
+
 cp .env.example .env
 ```
 ```env
@@ -241,4 +241,3 @@ Open `http://localhost:5173` in your browser.
 
 ---
 
-*Documentation prepared for project mentor review — March 2026*
