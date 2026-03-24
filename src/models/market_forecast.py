@@ -165,7 +165,7 @@ def forecast_market_sentiment():
     # -------------------------
 
     # narrative risk (proxy using topics)
-    risk_topics = ["customer_complaints", "logistics"]
+    risk_topics = ["logistics", "regulation"]
 
     df["narrative_risk_score"] = (
         df[risk_topics].sum(axis=1)

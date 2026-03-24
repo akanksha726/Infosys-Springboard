@@ -26,8 +26,9 @@ embedding_model = HuggingFaceEmbeddings(
 index_file = os.path.join(VECTOR_PATH, "index.faiss")
 
 if not os.path.exists(index_file):
-    print("⚠️ Vector store not found. Building now...")
-    build_vector_store()
+    raise FileNotFoundError(
+        "Vector store not found. Please run pipeline once to generate it."
+    )
 
 vector_store = FAISS.load_local(
     VECTOR_PATH,

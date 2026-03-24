@@ -24,6 +24,7 @@ from src.analytics.topic_momentum_tracker import run_topic_momentum_tracker
 from src.intelligence.narrative_intelligence import run_narrative_intelligence
 from src.narrative.narrative_summary import generate_market_report
 from src.rag.rag_engine import generate_rag_response
+from src.rag.build_vector_store import build_vector_store
 from src.alerts.alert_engine import generate_alerts
 from src.reporting.report_generator import generate_pdf_report
 from config import ECOMMERCE_BRANDS
@@ -89,6 +90,8 @@ def main():
     # 5️⃣ Build Master Dataset
     print("Building master dataset...")
     build_master_dataset()
+
+    build_vector_store()
 
     print("Generating trend graphs...")
     run_all_trend_visuals()
