@@ -140,6 +140,12 @@ def forecast_market_sentiment():
 
     df = load_daily_metrics()
 
+    output_path = os.path.join(
+        BASE_DIR,
+        "data",
+        "processed",
+        "market_forecast_history.csv"
+    )
     master_df = load_master_dataset()
 
     # convert dates
@@ -167,8 +173,11 @@ def forecast_market_sentiment():
     # narrative risk (proxy using topics)
     risk_topics = ["logistics", "regulation"]
 
+    existing_cols = [col for col in risk_topics if col in df.columns]
+
     df["narrative_risk_score"] = (
-        df[risk_topics].sum(axis=1)
+        df[existing_cols].sum(axis=1)
+        if existing_cols else 0
     )
 
     # market shock
@@ -277,9 +286,10 @@ def forecast_market_sentiment():
     evaluation = walk_forward_validation(df, feature_cols)
 
     model = RandomForestRegressor(
-        n_estimators=200,
+        n_estimators=100,
         max_depth=6,
-        random_state=42
+        random_state=42,
+        n_jobs=-1
     )
 
     model.fit(X, y)
@@ -291,7 +301,9 @@ def forecast_market_sentiment():
     drivers = generate_forecast_drivers(feature_importance)
 
     last_index = df["time_index"].iloc[-1]
-    last_values = df.tail(3)["sentiment_index"].tolist()
+    last_values = df.tail(7)["sentiment_index"].tolist()
+
+    slope = np.polyfit(df["time_index"], df["sentiment_index"], 1)[0]
 
     def generate_forecast(days):
 
@@ -335,6 +347,7 @@ def forecast_market_sentiment():
             }])
 
             pred = model.predict(features)[0]
+            pred += slope * 0.2
             pred = max(-1, min(1, pred))
 
             preds.append(round(float(pred), 4))
@@ -348,8 +361,6 @@ def forecast_market_sentiment():
     forecast_7 = generate_forecast(7)
     forecast_30 = generate_forecast(30)
     forecast_90 = generate_forecast(90)
-
-    slope = np.polyfit(df["time_index"], df["sentiment_index"], 1)[0]
 
     trend = "Stable"
 
@@ -373,6 +384,39 @@ Provide a short explanation of why the forecast may be occurring based on recent
 """
 
     rag_forecast_explanation, rag_sources = generate_rag_response(rag_query)
+    run_date = pd.Timestamp.now().date()
+    # -------------------------
+    # SAVE FORECAST HISTORY (NEW)
+    # -------------------------
+
+    forecast_record = pd.DataFrame([{
+        "date": run_date,
+        "trend_direction": trend,
+        "trend_slope": round(float(slope), 4),
+        "volatility": round(volatility, 4),
+        "confidence": round(confidence, 3),
+        "forecast_7": str(forecast_7),
+        "forecast_30": str(forecast_30),
+        "forecast_90": str(forecast_90)
+    }])
+
+    if os.path.exists(output_path):
+        old_df = pd.read_csv(output_path)
+
+        old_df["date"] = pd.to_datetime(old_df["date"])
+        forecast_record["date"] = pd.to_datetime(forecast_record["date"])
+
+        combined = pd.concat([old_df, forecast_record])
+
+        # keep latest run per date
+        combined = combined.drop_duplicates(
+            subset=["date"],
+            keep="last"
+        )
+    else:
+        combined = forecast_record
+
+    combined.to_csv(output_path, index=False)
 
     return {
 
@@ -410,6 +454,16 @@ def forecast_brand_sentiment():
     from sklearn.ensemble import RandomForestRegressor
 
     df = load_brand_metrics()
+
+    output_path = os.path.join(
+        BASE_DIR,
+        "data",
+        "processed",
+        "brand_forecast_history.csv"
+    )
+
+    run_date = pd.Timestamp.now().date()
+    forecast_records = []
 
     # -------------------------
     # SAFETY CHECK
@@ -552,17 +606,49 @@ def forecast_brand_sentiment():
         # -------------------------
         # STORE RESULT
         # -------------------------
+        forecast_7 = generate(7)
+        forecast_30 = generate(30)
+        forecast_90 = generate(90)
+
         results.append({
             "brand": brand,
             "trend_direction": direction,
             "trend_slope": round(float(slope), 4),
             "forecasts": {
-                "7_day": generate(7),
-                "30_day": generate(30),
-                "90_day": generate(90)
+                "7_day": forecast_7,
+                "30_day": forecast_30,
+                "90_day": forecast_90
             }
         })
 
+        # SAVE HISTORY
+        forecast_records.append({
+            "date": run_date,
+            "brand": brand,
+            "trend_direction": direction,
+            "trend_slope": round(float(slope), 4),
+            "forecast_7": str(forecast_7),
+            "forecast_30": str(forecast_30),
+            "forecast_90": str(forecast_90)
+        })
+        forecast_df = pd.DataFrame(forecast_records)
+
+        if os.path.exists(output_path):
+            old_df = pd.read_csv(output_path)
+
+            old_df["date"] = pd.to_datetime(old_df["date"])
+            forecast_df["date"] = pd.to_datetime(forecast_df["date"])
+
+            combined = pd.concat([old_df, forecast_df])
+
+            combined = combined.drop_duplicates(
+                subset=["date", "brand"],
+                keep="last"
+            )
+        else:
+            combined = forecast_df
+
+        combined.to_csv(output_path, index=False)
     return {
         "brand_forecasts": results
     }
