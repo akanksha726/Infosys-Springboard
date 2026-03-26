@@ -19,26 +19,40 @@ ALL_TOPICS = list(TOPIC_KEYWORDS.keys())
 # -----------------------------
 # Load embedding + vector store
 # -----------------------------
-embedding_model = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+_embedding_model = None
 
-index_file = os.path.join(VECTOR_PATH, "index.faiss")
+def get_embedding_model():
+    global _embedding_model
+    if _embedding_model is None:
+        _embedding_model = HuggingFaceEmbeddings(
+            model_name="sentence-transformers/all-MiniLM-L6-v2"
+        )
+    return _embedding_model
 
-if not os.path.exists(index_file):
-    raise FileNotFoundError(
-        "Vector store not found. Please run pipeline once to generate it."
-    )
+retriever = None
 
-vector_store = FAISS.load_local(
-    VECTOR_PATH,
-    embedding_model,
-    allow_dangerous_deserialization=True
-)
+def get_retriever():
+    global retriever
 
-retriever = vector_store.as_retriever(
-    search_kwargs={"k": 5}  # 🔥 improved context
-)
+    if retriever is None:
+        index_file = os.path.join(VECTOR_PATH, "index.faiss")
+
+        if not os.path.exists(index_file):
+            raise FileNotFoundError(
+                "Vector store not found. Run pipeline once."
+            )
+
+        vector_store = FAISS.load_local(
+            VECTOR_PATH,
+            get_embedding_model(),
+            allow_dangerous_deserialization=True
+        )
+
+        retriever = vector_store.as_retriever(
+            search_kwargs={"k": 5}
+        )
+
+    return retriever
 
 # -----------------------------
 # LLM client
@@ -99,7 +113,7 @@ def generate_rag_response(query):
     # -----------------------------
     # Retrieve
     # -----------------------------
-    docs = retriever.invoke(enhanced_query)
+    docs = get_retriever().invoke(enhanced_query)
     # topic-focused filtering
     if detected_topic:
         docs = [d for d in docs if detected_topic in d.page_content.lower()]

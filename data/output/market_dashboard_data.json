@@ -1,33 +1,33 @@
 {
-    "timestamp": "2026-03-23 22:15:31.744487",
+    "timestamp": "2026-03-25 12:41:20.065204",
     "market_overview": {
         "trend_direction": "Bearish",
-        "trend_slope": -0.0515,
-        "current_sentiment": 0.482628,
-        "final_trend_score": 0.482628,
-        "volatility": 0.4337
+        "trend_slope": -0.0366,
+        "current_sentiment": 0.492421,
+        "final_trend_score": 0.492421,
+        "volatility": 0.4088
     },
     "brand_insights": {
         "top_brands": [
             {
-                "brand": "reliance digital",
-                "final_trend_score": 0.7849173105029921
-            },
-            {
                 "brand": "tata cliq",
-                "final_trend_score": 0.7429652617306095
+                "final_trend_score": 0.6366494217411247
             },
             {
                 "brand": "bigbasket",
-                "final_trend_score": 0.7372496446979808
+                "final_trend_score": 0.6032915374705424
+            },
+            {
+                "brand": "reliance digital",
+                "final_trend_score": 0.5981549828054742
             },
             {
                 "brand": "ajio",
-                "final_trend_score": 0.5646207435309931
+                "final_trend_score": 0.5523493899426792
             },
             {
                 "brand": "nykaa",
-                "final_trend_score": 0.5175534249725915
+                "final_trend_score": 0.47920040378084033
             }
         ],
         "brand_direction": [
@@ -37,7 +37,7 @@
             },
             {
                 "brand": "amazon india",
-                "direction": "Stable"
+                "direction": "Rising"
             },
             {
                 "brand": "bigbasket",
@@ -45,7 +45,7 @@
             },
             {
                 "brand": "flipkart",
-                "direction": "Rising"
+                "direction": "Falling"
             },
             {
                 "brand": "meesho",
@@ -61,352 +61,352 @@
             },
             {
                 "brand": "reliance digital",
-                "direction": "Stable"
+                "direction": "Falling"
             }
         ],
-        "top_positive_brand": "flipkart",
+        "top_positive_brand": "meesho",
         "top_negative_brand": "nykaa",
-        "most_volatile_brand": "flipkart"
+        "most_volatile_brand": "amazon india"
     },
     "consumer_insights": {
         "brand_sentiment": [
             {
-                "brand": "nykaa",
-                "final_consumer_sentiment": 0.5580392653193165,
-                "raw_sentiment": 0.1160785306386328
-            },
-            {
                 "brand": "snapdeal",
-                "final_consumer_sentiment": 0.5303599829724236,
-                "raw_sentiment": 0.0607199659448472
-            },
-            {
-                "brand": "myntra",
-                "final_consumer_sentiment": 0.5168297440625961,
-                "raw_sentiment": 0.0336594881251921
-            },
-            {
-                "brand": "reliance digital",
-                "final_consumer_sentiment": 0.496658744169647,
-                "raw_sentiment": -0.006682511660706
-            },
-            {
-                "brand": "ajio",
-                "final_consumer_sentiment": 0.4882417272246112,
-                "raw_sentiment": -0.0235165455507774
-            },
-            {
-                "brand": "meesho",
-                "final_consumer_sentiment": 0.4842417444517118,
-                "raw_sentiment": -0.0315165110965763
+                "final_consumer_sentiment": 0.603905173177353,
+                "raw_sentiment": 0.207810346354706
             },
             {
                 "brand": "amazon india",
-                "final_consumer_sentiment": 0.4830558538313982,
-                "raw_sentiment": -0.0338882923372035
+                "final_consumer_sentiment": 0.5819745744538658,
+                "raw_sentiment": 0.1639491489077315
+            },
+            {
+                "brand": "ajio",
+                "final_consumer_sentiment": 0.5462749813235013,
+                "raw_sentiment": 0.0925499626470026
+            },
+            {
+                "brand": "myntra",
+                "final_consumer_sentiment": 0.531122611363052,
+                "raw_sentiment": 0.0622452227261042
             },
             {
                 "brand": "bigbasket",
-                "final_consumer_sentiment": 0.4824393474705535,
-                "raw_sentiment": -0.0351213050588929
+                "final_consumer_sentiment": 0.4847200676075479,
+                "raw_sentiment": -0.0305598647849041
             },
             {
                 "brand": "flipkart",
-                "final_consumer_sentiment": 0.4805228793685743,
-                "raw_sentiment": -0.0389542412628513
+                "final_consumer_sentiment": 0.4799341086702361,
+                "raw_sentiment": -0.0401317826595277
+            },
+            {
+                "brand": "nykaa",
+                "final_consumer_sentiment": 0.4722850433414867,
+                "raw_sentiment": -0.0554299133170265
             },
             {
                 "brand": "tata cliq",
-                "final_consumer_sentiment": 0.4693190054936191,
-                "raw_sentiment": -0.0613619890127617
+                "final_consumer_sentiment": 0.4510631493531375,
+                "raw_sentiment": -0.0978737012937248
+            },
+            {
+                "brand": "meesho",
+                "final_consumer_sentiment": 0.4465613831942875,
+                "raw_sentiment": -0.1068772336114249
+            },
+            {
+                "brand": "reliance digital",
+                "final_consumer_sentiment": 0.4430352228300808,
+                "raw_sentiment": -0.1139295543398384
             }
         ],
         "top_positive_brands": [
             {
-                "brand": "nykaa",
-                "final_consumer_sentiment": 0.5580392653193165,
-                "raw_sentiment": 0.1160785306386328
-            },
-            {
                 "brand": "snapdeal",
-                "final_consumer_sentiment": 0.5303599829724236,
-                "raw_sentiment": 0.0607199659448472
+                "final_consumer_sentiment": 0.603905173177353,
+                "raw_sentiment": 0.207810346354706
             },
             {
-                "brand": "myntra",
-                "final_consumer_sentiment": 0.5168297440625961,
-                "raw_sentiment": 0.0336594881251921
+                "brand": "amazon india",
+                "final_consumer_sentiment": 0.5819745744538658,
+                "raw_sentiment": 0.1639491489077315
+            },
+            {
+                "brand": "ajio",
+                "final_consumer_sentiment": 0.5462749813235013,
+                "raw_sentiment": 0.0925499626470026
             }
         ],
         "top_negative_brands": [
             {
+                "brand": "reliance digital",
+                "final_consumer_sentiment": 0.4430352228300808,
+                "raw_sentiment": -0.1139295543398384
+            },
+            {
+                "brand": "meesho",
+                "final_consumer_sentiment": 0.4465613831942875,
+                "raw_sentiment": -0.1068772336114249
+            },
+            {
                 "brand": "tata cliq",
-                "final_consumer_sentiment": 0.4693190054936191,
-                "raw_sentiment": -0.0613619890127617
-            },
-            {
-                "brand": "flipkart",
-                "final_consumer_sentiment": 0.4805228793685743,
-                "raw_sentiment": -0.0389542412628513
-            },
-            {
-                "brand": "bigbasket",
-                "final_consumer_sentiment": 0.4824393474705535,
-                "raw_sentiment": -0.0351213050588929
+                "final_consumer_sentiment": 0.4510631493531375,
+                "raw_sentiment": -0.0978737012937248
             }
         ],
         "sentiment_distribution": {
-            "positive": 2,
-            "negative": 1,
-            "neutral": 7
+            "positive": 4,
+            "negative": 4,
+            "neutral": 2
         },
-        "consumer_ai_insight": "Based on the given context, I've identified a dominant trend related to the ecommerce brands mentioned.\n\n**Dominant Trend:** Ecommerce brand sentiment varies based on topic focus.\n\n**Why it's happening:** Ecommerce brands tend to experience positive or negative sentiment based on the specific topic being discussed. For example, Flipkart receives neutral sentiment when discussing discounts, but negative sentiment when discussing the issue of saving mothers.\n\n**Support with evidence:**\n\n- Flipkart's neutral sentiment on discounts in [Source 1] shows that the brand can be viewed positively when discussing topics related to sales and promotions.\n- Flipkart's negative sentiment on maternal health in [Source 5] indicates that the brand may face criticism when discussed alongside social issues.\n- Reliance Digital (AJIO) receives neutral sentiment when discussing expansion in [Source 4], indicating that the brand's growth and new initiatives may be met with indifference.\n\nHowever, a clear trend can be observed when considering top positive and negative brands:\n\n**Top Positive Brands:** Nykaa, Snapdeal, Myntra\n- **Nykaa's positive sentiment might be influenced by its focus on technology and customer experience**. Although not explicitly mentioned, these aspects often contribute to a brand's positive reputation in the ecommerce space.\n- **Snapdeal and Myntra** receive neutral sentiment when discussed (in [Source 3] and [Source 1], respectively), but this may not capture their overall performance.\n\n**Top Negative Brands:** Tata Cliq, Flipkart, Bigbasket\n- **Tata Cliq's negative sentiment might be the result of its relatively poor performance in the ecommerce market**. However, this is not explicitly mentioned in the sources provided.\n- **Flipkart's negative sentiment** when discussing maternal health in [Source 5] contributes to its negative reputation among ecommerce brands.\n\n**In conclusion:** While specific reasons for each brand's sentiment are unclear due to the given context, a trend emerges suggesting that ecommerce brand sentiment varies based on the topic focus. A deeper analysis of each brand's performance and customer experience could provide a more detailed understanding of their respective reputation."
+        "consumer_ai_insight": "Based on the provided context, the top positive brands mentioned are Snapdeal, Amazon India, and AJIO. Here's an explanation for why they might have such sentiment trends:\n\n**Amazon India and AJIO**: Both Amazon India and AJIO have a positive trend. Amazon India's positive sentiment is due to the company's commitment to India as a long-term investment, with significant headroom for e-commerce growth. This is explicitly mentioned in Source 5. Amazon's investment in AI, exports, and jobs also contributes to its positive sentiment.\n\nAJIO's positive sentiment is not explicitly mentioned in the given context, so I won't provide an explanation for it. However, AJIO is mentioned in Source 1 as launching a special merchandise collection inspired by the spy thriller Dhurandhar, which might be a positive development."
     },
     "topic_insights": {
         "top_topics": [
             "technology",
             "other",
-            "funding"
+            "logistics"
         ],
-        "fastest_rising_topic": "technology",
-        "fastest_declining_topic": "discounts"
+        "fastest_rising_topic": "logistics",
+        "fastest_declining_topic": "technology"
     },
     "forecast": {
         "7_day": [
-            0.0392,
-            0.1299,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456
+            0.0781,
+            0.075,
+            0.1374,
+            -0.005,
+            0.064,
+            0.0575,
+            0.103
         ],
         "30_day": [
-            0.0392,
-            0.1299,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421
+            0.0781,
+            0.075,
+            0.1374,
+            -0.005,
+            0.064,
+            0.0575,
+            0.103,
+            0.0805,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09
         ],
         "90_day": [
-            0.0392,
-            0.1299,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1405,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091,
-            0.1456,
-            0.0618,
-            0.1421,
-            0.0511,
-            0.1316,
-            0.0942,
-            0.1091
+            0.0781,
+            0.075,
+            0.1374,
+            -0.005,
+            0.064,
+            0.0575,
+            0.103,
+            0.0805,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0638,
+            0.0575,
+            0.1055,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0658,
+            0.0575,
+            0.103,
+            0.0824,
+            0.09,
+            0.1356,
+            -0.0031,
+            0.0638,
+            0.0575
         ],
         "brand_forecast": {
             "brand_forecasts": [
                 {
                     "brand": "flipkart",
                     "trend_direction": "Improving",
-                    "trend_slope": 0.5,
+                    "trend_slope": 0.05,
                     "forecasts": {
                         "7_day": [
-                            0.675,
-                            0.825,
-                            0.975,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0
+                            0.2075,
+                            0.2225,
+                            0.2375,
+                            0.2525,
+                            0.2675,
+                            0.2825,
+                            0.2975
                         ],
                         "30_day": [
-                            0.675,
-                            0.825,
-                            0.975,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0
+                            0.2075,
+                            0.2225,
+                            0.2375,
+                            0.2525,
+                            0.2675,
+                            0.2825,
+                            0.2975,
+                            0.3125,
+                            0.3275,
+                            0.3425,
+                            0.3575,
+                            0.3725,
+                            0.3875,
+                            0.4025,
+                            0.4175,
+                            0.4325,
+                            0.4475,
+                            0.4625,
+                            0.4775,
+                            0.4925,
+                            0.5075,
+                            0.5225,
+                            0.5375,
+                            0.5525,
+                            0.5675,
+                            0.5825,
+                            0.5975,
+                            0.6125,
+                            0.6275,
+                            0.6425
                         ],
                         "90_day": [
-                            0.675,
-                            0.825,
-                            0.975,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
+                            0.2075,
+                            0.2225,
+                            0.2375,
+                            0.2525,
+                            0.2675,
+                            0.2825,
+                            0.2975,
+                            0.3125,
+                            0.3275,
+                            0.3425,
+                            0.3575,
+                            0.3725,
+                            0.3875,
+                            0.4025,
+                            0.4175,
+                            0.4325,
+                            0.4475,
+                            0.4625,
+                            0.4775,
+                            0.4925,
+                            0.5075,
+                            0.5225,
+                            0.5375,
+                            0.5525,
+                            0.5675,
+                            0.5825,
+                            0.5975,
+                            0.6125,
+                            0.6275,
+                            0.6425,
+                            0.6575,
+                            0.6725,
+                            0.6875,
+                            0.7025,
+                            0.7175,
+                            0.7325,
+                            0.7475,
+                            0.7625,
+                            0.7775,
+                            0.7925,
+                            0.8075,
+                            0.8225,
+                            0.8375,
+                            0.8525,
+                            0.8675,
+                            0.8825,
+                            0.8975,
+                            0.9125,
+                            0.9275,
+                            0.9425,
+                            0.9575,
+                            0.9725,
+                            0.9875,
                             1.0,
                             1.0,
                             1.0,
@@ -450,28 +450,28 @@
                 {
                     "brand": "amazon india",
                     "trend_direction": "Improving",
-                    "trend_slope": 0.375,
+                    "trend_slope": 0.4,
                     "forecasts": {
                         "7_day": [
-                            -0.095,
-                            0.0175,
-                            0.13,
-                            0.2425,
-                            0.355,
-                            0.4675,
-                            0.58
+                            0.6775,
+                            0.7975,
+                            0.9175,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
                         ],
                         "30_day": [
-                            -0.095,
-                            0.0175,
-                            0.13,
-                            0.2425,
-                            0.355,
-                            0.4675,
-                            0.58,
-                            0.6925,
-                            0.805,
+                            0.6775,
+                            0.7975,
                             0.9175,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
                             1.0,
                             1.0,
                             1.0,
@@ -494,16 +494,16 @@
                             1.0
                         ],
                         "90_day": [
-                            -0.095,
-                            0.0175,
-                            0.13,
-                            0.2425,
-                            0.355,
-                            0.4675,
-                            0.58,
-                            0.6925,
-                            0.805,
+                            0.6775,
+                            0.7975,
                             0.9175,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
                             1.0,
                             1.0,
                             1.0,
@@ -1300,34 +1300,34 @@
                 {
                     "brand": "reliance digital",
                     "trend_direction": "Declining",
-                    "trend_slope": -0.4,
+                    "trend_slope": -0.18,
                     "forecasts": {
                         "7_day": [
-                            0.104,
-                            -0.016,
-                            -0.136,
-                            -0.256,
-                            -0.376,
-                            -0.496,
-                            -0.616
+                            -0.142,
+                            -0.196,
+                            -0.25,
+                            -0.304,
+                            -0.358,
+                            -0.412,
+                            -0.466
                         ],
                         "30_day": [
-                            0.104,
-                            -0.016,
-                            -0.136,
-                            -0.256,
-                            -0.376,
-                            -0.496,
-                            -0.616,
+                            -0.142,
+                            -0.196,
+                            -0.25,
+                            -0.304,
+                            -0.358,
+                            -0.412,
+                            -0.466,
+                            -0.52,
+                            -0.574,
+                            -0.628,
+                            -0.682,
                             -0.736,
-                            -0.856,
-                            -0.976,
-                            -1.0,
-                            -1.0,
-                            -1.0,
-                            -1.0,
-                            -1.0,
-                            -1.0,
+                            -0.79,
+                            -0.844,
+                            -0.898,
+                            -0.952,
                             -1.0,
                             -1.0,
                             -1.0,
@@ -1344,22 +1344,22 @@
                             -1.0
                         ],
                         "90_day": [
-                            0.104,
-                            -0.016,
-                            -0.136,
-                            -0.256,
-                            -0.376,
-                            -0.496,
-                            -0.616,
+                            -0.142,
+                            -0.196,
+                            -0.25,
+                            -0.304,
+                            -0.358,
+                            -0.412,
+                            -0.466,
+                            -0.52,
+                            -0.574,
+                            -0.628,
+                            -0.682,
                             -0.736,
-                            -0.856,
-                            -0.976,
-                            -1.0,
-                            -1.0,
-                            -1.0,
-                            -1.0,
-                            -1.0,
-                            -1.0,
+                            -0.79,
+                            -0.844,
+                            -0.898,
+                            -0.952,
                             -1.0,
                             -1.0,
                             -1.0,
@@ -1453,119 +1453,165 @@
     "future_projection": {
         "projected_leader": null
     },
-    "ai_insight": "**Dominant Trend: Bearish Market Sentiment**\n\nThe current Indian ecommerce market sentiment exhibits a dominant bearish trend, characterized by a market direction of bearish (negative sentiment), a low market shock value of 0.194, and minimal narrative risk. This suggests a cautious and somewhat unpredictable market environment.\n\n**Why is the trend happening?**\n\nThe fast decline of the \"discounts\" topic (0.086 Volatility) is a significant driver behind the bearish market sentiment. Discounts are a key factor in the Indian ecommerce market, often influencing customer purchasing decisions. The decline in the \"discounts\" topic may indicate a decrease in consumer demand for discounts, which could be a result of various factors, such as changing consumer preferences, increased competition, or the rise of new marketing strategies.\n\n**Evidence:**\n\n* The \"discounts\" topic is the fastest declining topic, with a volatility of 0.086, indicating a significant shift in consumer behavior.\n* The overall market sentiment is negative, with a market direction of bearish, further supporting the dominant bearish trend.\n\n**Key Implications:**\n\n* Ecommerce players may need to adapt their marketing strategies to focus on other factors beyond discounts, such as customer experience, product quality, or innovative services.\n* The rise of new topics like \"technology\" (fastest rising topic) may offer opportunities for ecommerce businesses to explore and leverage emerging technologies.",
-    "brand_ai_insight": "**Performance Trend Analysis**\n\nBased on the provided sources, there is a dominant trend observed in the ecommerce industry.\n\n**Trend:** Expansion and growth through innovative offerings and market expansion.\n\n**Explanation:** This trend is happening because brands are looking to expand their offerings and presence in the market. Amazon India is expanding its vehicle insurance offerings, and Reliance's AJIO is launching a merchandise collection inspired by a popular spy thriller. This indicates that ecommerce brands are seeking to diversify their services and products to capture a larger market share.\n\n**Evidence:** \n\n- Source 1: Amazon India expanding vehicle insurance offerings.\n- Source 2: AJIO launching a merchandise collection inspired by Dhurandhar.\n\n**Impact:** This trend suggests that ecommerce brands are focusing on growth and expansion through innovative offerings, indicating a competitive and dynamic market.\n\n**No single brand performance analysis requested, instead focusing on the overall market trend**",
-    "topic_ai_insight": "**Dominant Trend in Ecommerce Market:**\n\n**TREND:** \"Partnerships, expansions, and adoption of new technologies\" is trending in the ecommerce market, with a focus on leveraging technology to expand offerings and reach new customers.\n\n**WHY:** It is happening due to the strategic moves of brands like Amazon India and Reliance Digital, who are expanding their services and offerings through innovative technologies. For instance:\n\n- Amazon India is expanding vehicle insurance offerings (Source 1), indicating a push to offer more services to users.\n- Reliance Digital is emphasizing the importance of volatile market waves and the role of technology in enabling participation in market upswings (Source 2).\n- Amazon India is also highlighting the importance of their 'Prime Video Presents 2026' in Mumbai, which underscores India's role in their global growth strategy (Source 4).\n\nThis combined trend reflects a push towards innovation, expansion, and partnerships in the ecommerce market.",
-    "risk_signals": "**Key Risks in Ecommerce Market:**\n\nThe dominant trend is:\n\n**Competition and Medium-term Growth Concerns**\n\nThis trend is happening because:\n\n* HDFC Securities has recommended selling FSN E-commerce Ventures (Nykaa's parent company) with a target price of \u20b9205, citing medium-term growth concerns (Source 2).\n* The recommendation implies that there are concerns about the company's future growth prospects, which could impact its competitiveness in the ecommerce market.\n\nThis trend can be supported by the fact that a leading brokerage firm has identified medium-term growth concerns, indicating potential risks for the company and the overall ecommerce market.\n\nThis trend is a risk because:\n\n* If FSN E-commerce Ventures (Nykaa's parent company) faces medium-term growth concerns, it may struggle to maintain its market share and competitiveness, potentially impacting the overall ecommerce market.\n* This could have a ripple effect on other ecommerce companies, potentially leading to a decrease in market share and profitability for some players.\n\n**Key Causes:**\n\n* Medium-term growth concerns, identified by HDFC Securities, indicating potential risks for the company and the overall ecommerce market.\n* The report suggests that there may be structural issues or challenges that could impact the company's growth prospects, although this is not explicitly stated.",
+    "ai_insight": "**Current Indian Ecommerce Market Trend:**\n\n**Dominant Trend:** The **Decline in Logistics** services. \n\nThis trend is driven by the shortage of rider availability, particularly during summer and the IPL season, which can surge demand by 25%. Many gig workers are expected to return home due to the harvest and elections, leading to decreased riders and increased logistics challenges.\n\n**Why it is happening:** The logistics sector in the Indian ecommerce market is facing a shortage of riders, which can lead to delays and increased operating costs. The upcoming events like IPL and the harvest season are expected to further exacerbate this issue.\n\n**Supporting evidence:**\nIn the provided context, Source 1 reports that food delivery and quick commerce platforms expect a surge in demand during the summer and IPL season, but rider availability remains uncertain. This indicates a potential bottleneck in the logistics sector.\n\n**General Implications:** The decline in logistics services can lead to higher operating costs, decreased customer satisfaction, and potentially impact sales revenue for ecommerce companies that rely heavily on these services.",
+    "brand_ai_insight": "**General Trend Analysis:**\n\nBased on the given context, a dominant trend is emerging in the Indian e-commerce space.\n\n**Trend:** Growing Investment and Expansion in E-commerce.\n\n**Why it's happening:** Leading e-commerce players, particularly Amazon and Flipkart, are investing heavily in the Indian market, focusing on long-term growth and expansion. Amazon is investing billions of dollars, while Flipkart is expanding its logistics and technology capabilities. This trend is driven by the significant headroom for e-commerce growth in India.\n\n**Evidence:**\n\n* Amazon India's focus on AI, exports, and jobs, as stated in Source 1.\n* Flipkart's expansion into new technologies and innovative marketing strategies, as mentioned in Source 2.\n* Amazon Prime Video's investment in local content and diverse formats, as stated in Source 4.\n\nThis trend highlights the growing competition and investment in the Indian e-commerce space, with major players looking to capitalize on the country's vast and growing market potential.\n\n---\n\nNote: There is an apparent negative sentiment in Source 3 regarding logistics and quick commerce companies, but it is not directly linked to the growth and expansion trend mentioned above.",
+    "topic_ai_insight": "**Dominant Trend:**\n\n**Trend: Expansion**\n\nAmazon India is focusing on expansion, as evident from multiple sources: [Source 3] mentions \"Amazon's network reaches all of India, ensuring\" which indicates their expansion, and [Source 5] explicitly states that Amazon Prime Video considers India a vital market for its global expansion. This growth is driven by the significant headroom for e-commerce growth in India, as mentioned in [Source 1]. Furthermore, Amazon's investments in AI, exports, and jobs, also point towards an expansion-focused strategy.\n\n**Supporting Evidence:** \n\n* [Source 1] - \"e-commerce is just beginning here, with significant room to grow.\"\n* [Source 3] - \"This beginner-friendly guide covers EC2, AMI, Launch Templates, Load Balancers, and scaling policies.\" and mentions Auto Scaling which can aid large-scale application setup required for expansion\n* [Source 5] - \"Amazon Prime Video considers India a vital market for its global expansion.\"\n\n**Why it is Happening:** \n\nAmazon is leveraging the enormous growth potential of India's e-commerce market, investing heavily in areas like AI, exports, and job creation, and expanding its network to reach all of India.\n\n**Impact:**\n\nThis trend highlights the competitive push among e-commerce giants like Amazon in the Indian market, where Amazon is investing heavily to capture the growing demand and become a leader in the market.",
+    "risk_signals": "**KEY RISK: Unstable Rider Availability and Logistics Challenges**\n\nNot explicitly mentioned in the context as a dominant trend, however a trend can be inferred regarding the risks within the ecommerce logistics and supply chain.\n\n**LOGISTICS CHALLENGES**\n\nNot explicitly mentioned which one of those is but based on the sources, a significant risk in the ecommerce logistics and supply chain could be the availability of riders. This risk is due to:\n\n1. Rider availability remaining uncertain during summer and the IPL season (Source 2).\n2. A surge in demand for gig workers (Source 2), which may lead to difficulties in maintaining efficient logistics.\n\nThe rising fuel prices (Source 2) could exacerbate these challenges, making it harder for companies to maintain a stable logistics operation.\n\nThe potential outcome of this risk could be reduced delivery efficiency, increased costs, and a negative impact on customer satisfaction.",
     "alerts": [
         {
-            "type": "TREND_SPIKE",
+            "type": "LOW_SENTIMENT",
             "brand": "flipkart",
-            "message": "flipkart showing unusual upward momentum \ud83d\udcc8",
+            "message": "flipkart sentiment is low \u26a0\ufe0f",
             "severity": "MEDIUM",
-            "timestamp": "2026-03-23T22:15:22.068109"
+            "timestamp": "2026-03-25T12:41:10.916305"
+        },
+        {
+            "type": "TREND_SPIKE",
+            "brand": "meesho",
+            "message": "meesho showing unusual upward momentum \ud83d\udcc8",
+            "severity": "MEDIUM",
+            "timestamp": "2026-03-25T12:41:10.916305"
         },
         {
             "type": "LOW_SENTIMENT",
             "brand": "myntra",
             "message": "myntra sentiment is low \u26a0\ufe0f",
             "severity": "MEDIUM",
-            "timestamp": "2026-03-23T22:15:22.068109"
+            "timestamp": "2026-03-25T12:41:10.916305"
         },
         {
             "type": "TOP_PERFORMER",
             "brand": "tata cliq",
             "message": "tata cliq is leading the market \ud83d\ude80",
             "severity": "INFO",
-            "timestamp": "2026-03-23T22:15:22.068109"
+            "timestamp": "2026-03-25T12:41:10.916305"
         }
     ],
     "explainability": {
         "topic_sentiment_matrix": [
             {
-                "topic": "expansion",
+                "topic": "regulation",
                 "sentiment_score": 0.5
             },
             {
-                "topic": "funding",
+                "topic": "other",
+                "sentiment_score": 0.35714285714285715
+            },
+            {
+                "topic": "expansion",
                 "sentiment_score": 0.25
             },
             {
-                "topic": "other",
-                "sentiment_score": 0.25
+                "topic": "funding",
+                "sentiment_score": 0.2222222222222222
             },
             {
                 "topic": "discounts",
-                "sentiment_score": 0.0
+                "sentiment_score": 0.09090909090909091
             },
             {
-                "topic": "regulation",
+                "topic": "competition",
                 "sentiment_score": 0.0
             },
             {
                 "topic": "technology",
-                "sentiment_score": -0.058823529411764705
+                "sentiment_score": -0.0967741935483871
             },
             {
                 "topic": "logistics",
+                "sentiment_score": -0.3333333333333333
+            },
+            {
+                "topic": "partnership",
                 "sentiment_score": -1.0
             }
         ],
         "topic_explainability": {
-            "expansion": {
-                "avg_sentiment": 0.5,
+            "other": {
+                "avg_sentiment": 0.357,
                 "example_articles": [
                     "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil The global luxury fashion market is set for substantial growth, expanding from $257.45 billion in 2025 to $337.18 billion by 2033, at a CAGR of 3.43%. Factors propelling this growth include rising disposable incomes, changing consumer behaviors, and heightene\u2026",
-                    "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line Reliance fashion platform AJIO has launched a special merchandise collection. This range is inspired by the spy thriller Dhurandhar. The collection features apparel like graphic T-shirts and signature tees. It also includes limited-edition signed Pathanis. De\u2026",
-                    "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards"
+                    "Judge of the Day: Marketing must own the P&L, says Arpan Biswas Judge of the Day: Marketing must own the P&L, says Arpan Biswasthedrum.com",
+                    "Arsenal vs Man City Free Streams: How to watch Carabao Cup Final 2025/26 online from anywhere All the ways to watch Arsenal vs Man City live streams, as the Premier League's top two meet in the Carabao Cup final at Wembley Stadium."
                 ]
             },
             "funding": {
-                "avg_sentiment": 0.25,
+                "avg_sentiment": 0.222,
                 "example_articles": [
                     "Fractal Industries shares to list today. Check GMP ahead of debut Fractal Industries is poised for its BSE SME debut with modest listing gains expected around 3%. The Rs 49 crore IPO, fully subscribed 5.44 times, will fund working capital and corporate needs.  The garment manufacturer, serving major e-commerce platforms, re\u2026",
                     "Amazon sees India as a long-term bet with significant headroom for e-commerce growth, says India VP Amazon sees India as a key long-term investment. E-commerce is just beginning here, with significant room to grow. The company is investing billions more, focusing on AI, exports, and jobs. Amazon's network reaches all of India, ensuring speed and convenience\u2026",
-                    "Uni\u2019s valuation slashed; Howard Morgan on AI, venture investing, more Happy Thursday! Fintech startup Uni is staring at a steep valuation cut as it looks to raise fresh capital amid regulatory headwinds. This and more in today\u2019s ETtech Morning Dispatch."
+                    "Microsoft Warns IRS Phishing Hits 29,000 Users, Deploys RMM Malware Microsoft has warned of fresh campaigns that are capitalizing on the upcoming tax season in the U.S. to harvest credentials and deliver malware.\nThe email campaigns take advantage of the urgency and time-sensitive nature of emails to send phishing messages ma\u2026"
                 ]
             },
-            "other": {
+            "expansion": {
                 "avg_sentiment": 0.25,
                 "example_articles": [
-                    "Judge of the Day: Marketing must own the P&L, says Arpan Biswas Judge of the Day: Marketing must own the P&L, says Arpan Biswasthedrum.com",
-                    "Arsenal vs Man City Free Streams: How to watch Carabao Cup Final 2025/26 online from anywhere All the ways to watch Arsenal vs Man City live streams, as the Premier League's top two meet in the Carabao Cup final at Wembley Stadium.",
-                    "From Buddha rice to zero-pesticide chana: How farmer-run companies are finding their edge Tired of being at the mercy of traders, some small farmers are flipping the script. Through farmer producer organizations and niche produce, they\u2019re evolving from price-takers into savvy board members. Discover the grit behind India\u2019s agrarian business revolu\u2026"
+                    "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line Reliance fashion platform AJIO has launched a special merchandise collection. This range is inspired by the spy thriller Dhurandhar. The collection features apparel like graphic T-shirts and signature tees. It also includes limited-edition signed Pathanis. De\u2026",
+                    "Dhurandhar: Storytelling In Age Of Restless Viewers If the stories are food for the mind then our digestive system has changed.\nIf they are a piece of art, our gaze has altered.\nThis calls for a change not in stories, but in the grammar of storytelling so that it can cut through the deluge and gluttony and for\u2026",
+                    "Amazon Prime Video leans into India to drive next wave of growth Amazon Prime Video considers India a vital market for its global expansion. The platform is investing heavily in local content and diverse formats. Innovative pricing strategies, including ad-supported tiers, are proving successful. Prime Video is also commit\u2026"
                 ]
             },
             "technology": {
-                "avg_sentiment": -0.059,
+                "avg_sentiment": -0.097,
                 "example_articles": [
                     "Why the Iran War May Have Just Killed the AI Boom The stock market spent the first week of the Iran war doing something strange: mostly shrugging. Oil spiked. Insurance markets effectively collapsed. Amazon had two data centers blown up. And the Nasdaq dipped, steadied, and the conversation shifted within da\u2026",
                     "Retro roots, Gen Z vibes: With free WiFi, games & coffee, India Post flexes for the young Inside the IIT-Bombay campus in Powai where he once spent four years, alumnus Rajan Verma is reading a book that does not belong to him. Titled \u2018Zero .",
                     "Will tech writers survive AI? Perspectives from two professors, Nupoor Ranade and Jeremy Merritt In this podcast, I chat with two professors \u2014 Nupoor Ranade (Carnegie Mellon) and Jeremy Merritt (James Madison University) \u2014 about how AI is reshaping the technical writing profession from the academic side. We discuss dropping enrollments, misconceptions ab\u2026"
                 ]
             },
-            "discounts": {
-                "avg_sentiment": 0.0,
-                "example_articles": [
-                    "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage Eternal-owned Blinkit is offering discounts of up to 72% on cooktops; most products are already out of stock and only limited options are still available. Similarly, Instamart is offering discounts of up to 60% on hobs, and some products are already sold out.\u2026",
-                    "Easing China FDI norms unlikely to unlock fast capital for startups The government's move is expected to speed up dealmaking for global venture funds with limited Chinese capital in their investor base. It could also make it easier for venture capital and private equity firms to raise money from Chinese limited partners (LPs)\u2026",
-                    "bl.Interviews: Dr Shyam Mohan, Managing Director, Motoray Mobility The Tata Punch EV is put through its paces on the streets of Kochi while also exploring the city\u2019s unique Kochi Water Metro. The 2026 Punch EV offers an ARAI-certified range of around 460 km, and this drive looks at how the car performs in city conditions \u2014 f\u2026"
-                ]
-            },
-            "logistics": {
+            "partnership": {
                 "avg_sentiment": -1.0,
                 "example_articles": [
-                    "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to have coincided with the profitability check at pioneers in this space -Swiggy and IPO-bound Zepto \u2013 and amid a broader debate over employment conditions in the last-mile, instant delivery revenue stre\u2026"
+                    "New-age cos feel market ire; Apple's India push New-age companies fell on Monday as a sharp market selloff dragged equities lower. This and more in today's ETtech Top 5."
+                ]
+            },
+            "discounts": {
+                "avg_sentiment": 0.091,
+                "example_articles": [
+                    "Amazon MX Player rolls out Fatafat, a free, ad-supported, mobile-first platform offering serialized vertical videos, in India, as micro dramas gain momentum (Jesse Whittock/Deadline) Jesse Whittock / Deadline:\nAmazon MX Player rolls out Fatafat, a free, ad-supported, mobile-first platform offering serialized vertical videos, in India, as micro dramas gain momentum\u00a0 \u2014\u00a0 Video\u00a0 \u2014\u00a0 Amazon MX Player has launched a microdrama service, as a new \u2026",
+                    "Amazon MX Player Rolls Out Microdrama Service Fatafat As Vertical Video Gains Momentum In India Amazon MX Player has launched a microdrama service, as a new report predicts huge growth for vertical video in India. Fatafat will be a mobile-first platform offering serialized vertical videos for free, marking the latest arrow in Amazon\u2019s streaming bow in I\u2026",
+                    "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage Eternal-owned Blinkit is offering discounts of up to 72% on cooktops; most products are already out of stock and only limited options are still available. Similarly, Instamart is offering discounts of up to 60% on hobs, and some products are already sold out.\u2026"
                 ]
             },
             "regulation": {
+                "avg_sentiment": 0.5,
+                "example_articles": [
+                    "AWS eyeing 2-3 gigawatts India capacity on tax sops sweetener AWS is targeting a long-term scale-up to 2-3 gigawatts of capacity after the government declared a 20-year tax holiday for cloud companies. India\u2019s current data centre capacity is expected to increase to 10 gigawatts by 2030 from 1.4 gigawatts at present.",
+                    "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation This year, America will celebrate the 250th anniversary of the Declaration of Independence, a document that came into existence during a period of transformational thinking about the relationship between the people and how they are governed. In an era of Euro\u2026"
+                ]
+            },
+            "logistics": {
+                "avg_sentiment": -0.333,
+                "example_articles": [
+                    "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors The quick-commerce foray of Flipkart and Amazon appears to have coincided with the profitability check at pioneers in this space -Swiggy and IPO-bound Zepto \u2013 and amid a broader debate over employment conditions in the last-mile, instant delivery revenue stre\u2026",
+                    "A summer of worry for food delivery, quick commerce companies Food delivery and quick commerce platforms expect a surge in demand during summer and the IPL season, but rider availability remains uncertain. Demand for gig workers could rise 25%, while many return home for harvest and elections. Rising fuel prices, incent\u2026",
+                    "Food delivery startup Swish raises $38 million; valuation more than doubles Swish has raised $38 million led by UK-based Hara Global and Bain Capital Ventures, with participation from Accel and others. Hara Global and Accel are existing investors in Swish, which has also raised venture debt as a part of this round from Alteria Capita\u2026"
+                ]
+            },
+            "competition": {
                 "avg_sentiment": 0.0,
                 "example_articles": [
-                    "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation This year, America will celebrate the 250th anniversary of the Declaration of Independence, a document that came into existence during a period of transformational thinking about the relationship between the people and how they are governed. In an era of Euro\u2026"
+                    "Zomato\u2019s fee hike to boost margins, demand still intact : Jignanshu Gor Zomato has increased its platform fee, aiming for better profits. This move puts it ahead of rival Swiggy in charges. Analysts believe this will boost Zomato's earnings without hurting customer demand significantly. Competition in quick commerce is also inten\u2026",
+                    "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell) HDFC Securities recommends selling FSN E-commerce Ventures with a target price of \u20b9205, citing medium-term growth concerns.",
+                    "Is Australia Falling Behind in the Global AI Race? Experts Weigh In Amid US-China Dominance CANBERRA, Australia \u2014 As the United States and China accelerate their fierce competition for supremacy in artificial intelligence, Australia finds itself in a precarious position: investing heavily in infrastructure and talent while grappling with slower ente\u2026"
                 ]
             }
         },
         "top_positive_articles": [
+            {
+                "title": "Ba&sh Bets on \u2018Less but Better\u2019 Strategy, Lifts Full-year Revenue on Strong\u00a0Q4",
+                "url": "http://wwd.com/business-news/financial/bash-2025-revenue-boost-less-but-better-strategy-1238684241/",
+                "brand": "reliance digital",
+                "topic": "technology",
+                "weighted_sentiment": 0.9475029110908508
+            },
+            {
+                "title": "Zomato\u2019s fee hike to boost margins, demand still intact : Jignanshu Gor",
+                "url": "https://economictimes.indiatimes.com/markets/expert-view/zomatos-fee-hike-to-boost-margins-demand-still-intact-jignanshu-gor/articleshow/129747469.cms",
+                "brand": "flipkart",
+                "topic": "competition",
+                "weighted_sentiment": 0.9455558061599731
+            },
             {
                 "title": "Startup Mafia 2.0 going strong: Zomato, Freshworks, Zoho alumni launch 360 firms",
                 "url": "https://economictimes.indiatimes.com/tech/startups/startup-mafia-2-0-going-strong-zomato-freshworks-zoho-alumni-launch-360-firms/articleshow/129636724.cms",
@@ -1574,35 +1620,35 @@
                 "weighted_sentiment": 0.8820403814315796
             },
             {
-                "title": "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil",
-                "url": "https://www.globenewswire.com/news-release/2026/02/24/3243852/28124/en/Luxury-Fashion-Market-Report-Forecast-and-Company-Analysis-2025-2033-Featuring-Kering-Burberry-Dolce-Gabbana-Giorgio-Armani-Capri-LVMH-Prada-Chanel-Diesel-Industria-de-Diseno-Texti.html",
-                "brand": "ajio",
-                "topic": "expansion",
-                "weighted_sentiment": 0.8473033308982849
-            },
-            {
-                "title": "Fractal Industries shares to list today. Check GMP ahead of debut",
-                "url": "https://economictimes.indiatimes.com/markets/stocks/news/fractal-industries-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/128736665.cms",
-                "brand": "ajio",
-                "topic": "funding",
-                "weighted_sentiment": 0.7896662354469299
-            },
-            {
-                "title": "Riding volatile market waves",
-                "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/riding-volatile-market-waves/article70760576.ece",
-                "brand": "reliance digital",
+                "title": "What is Multi-Cloud and Why Do Companies Adopt It?",
+                "url": "https://www.c-sharpcorner.com/article/what-is-multi-cloud-and-why-do-companies-adopt-it/",
+                "brand": "flipkart",
                 "topic": "other",
-                "weighted_sentiment": 0.7845223546028137
+                "weighted_sentiment": 0.8541356325149536
             },
             {
-                "title": "Amazon sees India as a long-term bet with significant headroom for e-commerce growth, says India VP",
-                "url": "https://economictimes.indiatimes.com/tech/technology/amazon-sees-india-as-a-long-term-bet-with-significant-headroom-for-e-commerce-growth-says-india-vp/articleshow/129730863.cms",
+                "title": "Amazon Prime Video leans into India to drive next wave of growth",
+                "url": "https://economictimes.indiatimes.com/industry/media/entertainment/amazon-prime-video-leans-into-india-to-drive-next-wave-of-growth/articleshow/129744374.cms",
                 "brand": "amazon india",
-                "topic": "funding",
-                "weighted_sentiment": 0.7818863987922668
+                "topic": "expansion",
+                "weighted_sentiment": 0.8513495922088623
             }
         ],
         "top_negative_articles": [
+            {
+                "title": "New-age cos feel market ire; Apple's India push",
+                "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/new-age-cos-feel-market-ire-apples-budget-friendly-india-push/articleshow/129753580.cms",
+                "brand": "amazon india",
+                "topic": "partnership",
+                "weighted_sentiment": -0.9460786581039428
+            },
+            {
+                "title": "Market rout drags down startup stocks; Lenskart, Ather, Bluestone among big losers",
+                "url": "https://economictimes.indiatimes.com/tech/startups/market-rout-drags-down-startup-stocks-lenskart-ather-bluestone-among-big-losers/articleshow/129750620.cms",
+                "brand": "flipkart",
+                "topic": "technology",
+                "weighted_sentiment": -0.9367855191230774
+            },
             {
                 "title": "Meta challenges \u20b910 lakh CCPA penalty in Delhi HC over walkie-talkie sale on Facebook",
                 "url": "https://www.thehindubusinessline.com/info-tech/meta-challenges-10-lakh-ccpa-penalty-in-delhi-hc-over-walkie-talkie-sale-on-facebook/article70757018.ece",
@@ -1611,32 +1657,18 @@
                 "weighted_sentiment": -0.9323209524154664
             },
             {
-                "title": "Why the Iran War May Have Just Killed the AI Boom",
-                "url": "https://oilprice.com/Energy/Energy-General/Why-the-Iran-War-May-Have-Just-Killed-the-AI-Boom.html",
-                "brand": "amazon india",
+                "title": "Oil shock crisis deepens: Asia faces economic turmoil as energy prices skyrocket",
+                "url": "https://www.naturalnews.com/2026-03-24-asia-faces-economic-turmoil-energy-prices-skyrocket.html",
+                "brand": "reliance digital",
                 "topic": "technology",
-                "weighted_sentiment": -0.7375845313072205
+                "weighted_sentiment": -0.8851296305656433
             },
             {
-                "title": "Flipkart group CFO Sriram Venkataraman quits amid ecommerce company\u2019s IPO plans",
-                "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-group-cfo-sriram-venkatraman-quits-amid-ecommerce-companys-ipo-plans/articleshow/129694999.cms",
-                "brand": "myntra",
-                "topic": "funding",
-                "weighted_sentiment": -0.7231833338737488
-            },
-            {
-                "title": "When saving mothers isn\u2019t a good deed",
-                "url": "https://timesofindia.indiatimes.com/world/mind-field/when-saving-mothers-isnt-a-good-deed/articleshow/129712254.cms",
+                "title": "A summer of worry for food delivery, quick commerce companies",
+                "url": "https://economictimes.indiatimes.com/tech/technology/a-summer-of-worry-for-food-delivery-quick-commerce-companies/articleshow/129760831.cms",
                 "brand": "flipkart",
-                "topic": "technology",
-                "weighted_sentiment": -0.682192325592041
-            },
-            {
-                "title": "Will tech writers survive AI? Perspectives from two professors, Nupoor Ranade and Jeremy Merritt",
-                "url": "https://idratherbewriting.com/blog/will-tech-writers-survive-ai-academics-nupoor-jeremy",
-                "brand": "amazon india",
-                "topic": "technology",
-                "weighted_sentiment": -0.6635534167289734
+                "topic": "logistics",
+                "weighted_sentiment": -0.8840080499649048
             }
         ],
         "brand_drivers": {
@@ -1645,7 +1677,7 @@
                     {
                         "title": "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil",
                         "url": "https://www.globenewswire.com/news-release/2026/02/24/3243852/28124/en/Luxury-Fashion-Market-Report-Forecast-and-Company-Analysis-2025-2033-Featuring-Kering-Burberry-Dolce-Gabbana-Giorgio-Armani-Capri-LVMH-Prada-Chanel-Diesel-Industria-de-Diseno-Texti.html",
-                        "topic": "expansion",
+                        "topic": "other",
                         "weighted_sentiment": 0.8473033308982849
                     },
                     {
@@ -1673,30 +1705,30 @@
             "amazon india": {
                 "positive_drivers": [
                     {
+                        "title": "Amazon Prime Video leans into India to drive next wave of growth",
+                        "url": "https://economictimes.indiatimes.com/industry/media/entertainment/amazon-prime-video-leans-into-india-to-drive-next-wave-of-growth/articleshow/129744374.cms",
+                        "topic": "expansion",
+                        "weighted_sentiment": 0.8513495922088623
+                    },
+                    {
                         "title": "Amazon sees India as a long-term bet with significant headroom for e-commerce growth, says India VP",
                         "url": "https://economictimes.indiatimes.com/tech/technology/amazon-sees-india-as-a-long-term-bet-with-significant-headroom-for-e-commerce-growth-says-india-vp/articleshow/129730863.cms",
                         "topic": "funding",
                         "weighted_sentiment": 0.7818863987922668
-                    },
-                    {
-                        "title": "Arsenal vs Man City Free Streams: How to watch Carabao Cup Final 2025/26 online from anywhere",
-                        "url": "https://www.techradar.com/how-to-watch/football/arsenal-vs-man-city-free-streams-carabao-cup-final-2025-26",
-                        "topic": "other",
-                        "weighted_sentiment": 0.0
                     }
                 ],
                 "negative_drivers": [
                     {
-                        "title": "Why the Iran War May Have Just Killed the AI Boom",
-                        "url": "https://oilprice.com/Energy/Energy-General/Why-the-Iran-War-May-Have-Just-Killed-the-AI-Boom.html",
-                        "topic": "technology",
-                        "weighted_sentiment": -0.7375845313072205
+                        "title": "New-age cos feel market ire; Apple's India push",
+                        "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/new-age-cos-feel-market-ire-apples-budget-friendly-india-push/articleshow/129753580.cms",
+                        "topic": "partnership",
+                        "weighted_sentiment": -0.9460786581039428
                     },
                     {
-                        "title": "Will tech writers survive AI? Perspectives from two professors, Nupoor Ranade and Jeremy Merritt",
-                        "url": "https://idratherbewriting.com/blog/will-tech-writers-survive-ai-academics-nupoor-jeremy",
+                        "title": "OnePlus could be set to shut down its businesses in the US and Europe",
+                        "url": "https://www.notebookcheck.net/OnePlus-could-be-set-to-shut-down-its-businesses-in-the-US-and-Europe.1257012.0.html",
                         "topic": "technology",
-                        "weighted_sentiment": -0.6635534167289734
+                        "weighted_sentiment": -0.8210382461547852
                     }
                 ]
             },
@@ -1733,30 +1765,30 @@
             "flipkart": {
                 "positive_drivers": [
                     {
-                        "title": "Spykar\u2019s cut",
-                        "url": "https://www.thehindubusinessline.com/catalyst/spykars-cut/article70772391.ece",
-                        "topic": "technology",
-                        "weighted_sentiment": 0.7257357239723206
+                        "title": "Zomato\u2019s fee hike to boost margins, demand still intact : Jignanshu Gor",
+                        "url": "https://economictimes.indiatimes.com/markets/expert-view/zomatos-fee-hike-to-boost-margins-demand-still-intact-jignanshu-gor/articleshow/129747469.cms",
+                        "topic": "competition",
+                        "weighted_sentiment": 0.9455558061599731
                     },
                     {
-                        "title": "\u2018AI not accurate enough to block calls automatically\u2019: Truecaller CEO Rishit Jhunjhunwala",
-                        "url": "https://economictimes.indiatimes.com/industry/telecom/telecom-news/ai-not-accurate-enough-to-block-calls-automatically-truecaller-ceo-rishit-jhunjhunwala/articleshow/129716005.cms",
-                        "topic": "technology",
-                        "weighted_sentiment": 0.0
+                        "title": "What is Multi-Cloud and Why Do Companies Adopt It?",
+                        "url": "https://www.c-sharpcorner.com/article/what-is-multi-cloud-and-why-do-companies-adopt-it/",
+                        "topic": "other",
+                        "weighted_sentiment": 0.8541356325149536
                     }
                 ],
                 "negative_drivers": [
                     {
-                        "title": "When saving mothers isn\u2019t a good deed",
-                        "url": "https://timesofindia.indiatimes.com/world/mind-field/when-saving-mothers-isnt-a-good-deed/articleshow/129712254.cms",
+                        "title": "Market rout drags down startup stocks; Lenskart, Ather, Bluestone among big losers",
+                        "url": "https://economictimes.indiatimes.com/tech/startups/market-rout-drags-down-startup-stocks-lenskart-ather-bluestone-among-big-losers/articleshow/129750620.cms",
                         "topic": "technology",
-                        "weighted_sentiment": -0.682192325592041
+                        "weighted_sentiment": -0.9367855191230774
                     },
                     {
-                        "title": "\u2018AI not accurate enough to block calls automatically\u2019: Truecaller CEO Rishit Jhunjhunwala",
-                        "url": "https://economictimes.indiatimes.com/industry/telecom/telecom-news/ai-not-accurate-enough-to-block-calls-automatically-truecaller-ceo-rishit-jhunjhunwala/articleshow/129716005.cms",
-                        "topic": "technology",
-                        "weighted_sentiment": 0.0
+                        "title": "A summer of worry for food delivery, quick commerce companies",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/a-summer-of-worry-for-food-delivery-quick-commerce-companies/articleshow/129760831.cms",
+                        "topic": "logistics",
+                        "weighted_sentiment": -0.8840080499649048
                     }
                 ]
             },
@@ -1845,7 +1877,7 @@
                     {
                         "title": "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell)",
                         "url": "https://www.thehindubusinessline.com/markets/brokers-call-fsn-e-commerce-ventures-sell/article70753460.ece",
-                        "topic": "other",
+                        "topic": "competition",
                         "weighted_sentiment": 0.0
                     }
                 ]
@@ -1853,30 +1885,30 @@
             "reliance digital": {
                 "positive_drivers": [
                     {
+                        "title": "Ba&sh Bets on \u2018Less but Better\u2019 Strategy, Lifts Full-year Revenue on Strong\u00a0Q4",
+                        "url": "http://wwd.com/business-news/financial/bash-2025-revenue-boost-less-but-better-strategy-1238684241/",
+                        "topic": "technology",
+                        "weighted_sentiment": 0.9475029110908508
+                    },
+                    {
                         "title": "Riding volatile market waves",
                         "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/riding-volatile-market-waves/article70760576.ece",
                         "topic": "other",
                         "weighted_sentiment": 0.7845223546028137
-                    },
-                    {
-                        "title": "Amazon is reportedly working on making a new phone, because it went so well last time",
-                        "url": "https://www.techradar.com/phones/amazon-is-reportedly-working-on-making-a-new-phone-because-it-went-so-well-last-time",
-                        "topic": "technology",
-                        "weighted_sentiment": 0.6065847873687744
                     }
                 ],
                 "negative_drivers": [
                     {
-                        "title": "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation",
-                        "url": "https://corpgov.law.harvard.edu/2026/03/21/remarks-by-commissioner-uyeda-on-investor-choice-and-the-limits-of-sec-regulation/",
-                        "topic": "regulation",
-                        "weighted_sentiment": 0.0
+                        "title": "Oil shock crisis deepens: Asia faces economic turmoil as energy prices skyrocket",
+                        "url": "https://www.naturalnews.com/2026-03-24-asia-faces-economic-turmoil-energy-prices-skyrocket.html",
+                        "topic": "technology",
+                        "weighted_sentiment": -0.8851296305656433
                     },
                     {
-                        "title": "Tudor Investment Corp ET AL Purchases 77,464 Shares of Hinge Health Inc. $HNGE",
-                        "url": "https://www.watchlistnews.com/tudor-investment-corp-et-al-purchases-77464-shares-of-hinge-health-inc-hnge/11029361.html",
-                        "topic": "funding",
-                        "weighted_sentiment": 0.0
+                        "title": "Is Australia Falling Behind in the Global AI Race? Experts Weigh In Amid US-China Dominance",
+                        "url": "https://www.ibtimes.com.au/australia-falling-behind-global-ai-race-experts-weigh-amid-us-china-dominance-1864073",
+                        "topic": "competition",
+                        "weighted_sentiment": -0.841357946395874
                     }
                 ]
             },
@@ -1918,13 +1950,13 @@
             }
         },
         "topic_drivers": {
-            "expansion": {
+            "other": {
                 "positive_drivers": [
                     {
-                        "title": "Startup Mafia 2.0 going strong: Zomato, Freshworks, Zoho alumni launch 360 firms",
-                        "url": "https://economictimes.indiatimes.com/tech/startups/startup-mafia-2-0-going-strong-zomato-freshworks-zoho-alumni-launch-360-firms/articleshow/129636724.cms",
-                        "brand": "snapdeal",
-                        "weighted_sentiment": 0.8820403814315796
+                        "title": "What is Multi-Cloud and Why Do Companies Adopt It?",
+                        "url": "https://www.c-sharpcorner.com/article/what-is-multi-cloud-and-why-do-companies-adopt-it/",
+                        "brand": "flipkart",
+                        "weighted_sentiment": 0.8541356325149536
                     },
                     {
                         "title": "Luxury Fashion Market Report Forecast and Company Analysis 2025-2033 Featuring Kering, Burberry, Dolce & Gabbana,. Giorgio Armani, Capri, LVMH, Prada, Chanel, Diesel, Industria de Diseno Textil",
@@ -1935,15 +1967,15 @@
                 ],
                 "negative_drivers": [
                     {
-                        "title": "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line",
-                        "url": "https://economictimes.indiatimes.com/industry/services/retail/reliances-e-commerce-platform-cashes-in-on-dhurandhar-hype-with-new-merch-line/articleshow/129610729.cms",
+                        "title": "Judge of the Day: Marketing must own the P&L, says Arpan Biswas",
+                        "url": "https://www.thedrum.com/news/judge-of-the-day-marketing-must-own-the-p-l-says-arpan-biswas",
                         "brand": "ajio",
                         "weighted_sentiment": 0.0
                     },
                     {
-                        "title": "Swiggy and HDFC Bank Elevate Everyday and Travel Rewards with the Launch of Two New Co-branded Credit Cards",
-                        "url": "https://www.thehindubusinessline.com/brandhub/pr-release/swiggy-and-hdfc-bank-elevate-everyday-and-travel-rewards-with-the-launch-of-two-new-co-branded-credit-cards/article70734759.ece",
-                        "brand": "myntra",
+                        "title": "Arsenal vs Man City Free Streams: How to watch Carabao Cup Final 2025/26 online from anywhere",
+                        "url": "https://www.techradar.com/how-to-watch/football/arsenal-vs-man-city-free-streams-carabao-cup-final-2025-26",
+                        "brand": "amazon india",
                         "weighted_sentiment": 0.0
                     }
                 ]
@@ -1971,38 +2003,38 @@
                         "weighted_sentiment": -0.7231833338737488
                     },
                     {
-                        "title": "Exclusive: AI boom due for correction, strongest firms will endure: First Round Capital cofounder Howard Morgan",
-                        "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-boom-will-correct-but-strongest-companies-will-emerge-stronger-first-round-cofounder-howard-morgan/articleshow/129664235.cms",
-                        "brand": "meesho",
+                        "title": "Microsoft Warns IRS Phishing Hits 29,000 Users, Deploys RMM Malware",
+                        "url": "https://thehackernews.com/2026/03/microsoft-warns-irs-phishing-hits-29000.html",
+                        "brand": "amazon india",
                         "weighted_sentiment": 0.0
                     }
                 ]
             },
-            "other": {
+            "expansion": {
                 "positive_drivers": [
                     {
-                        "title": "Riding volatile market waves",
-                        "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/riding-volatile-market-waves/article70760576.ece",
-                        "brand": "reliance digital",
-                        "weighted_sentiment": 0.7845223546028137
+                        "title": "Startup Mafia 2.0 going strong: Zomato, Freshworks, Zoho alumni launch 360 firms",
+                        "url": "https://economictimes.indiatimes.com/tech/startups/startup-mafia-2-0-going-strong-zomato-freshworks-zoho-alumni-launch-360-firms/articleshow/129636724.cms",
+                        "brand": "snapdeal",
+                        "weighted_sentiment": 0.8820403814315796
                     },
                     {
-                        "title": "India\u2019s Rs 13,000 crore live events market fuelling experiential marketing push: BookMyShow\u2013EY report",
-                        "url": "https://economictimes.indiatimes.com/industry/media/entertainment/indias-rs-13000-crore-live-events-market-fuelling-experiential-marketing-push-bookmyshowey-report/articleshow/129516179.cms",
-                        "brand": "nykaa",
-                        "weighted_sentiment": 0.6789193749427795
+                        "title": "Amazon Prime Video leans into India to drive next wave of growth",
+                        "url": "https://economictimes.indiatimes.com/industry/media/entertainment/amazon-prime-video-leans-into-india-to-drive-next-wave-of-growth/articleshow/129744374.cms",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.8513495922088623
                     }
                 ],
                 "negative_drivers": [
                     {
-                        "title": "Judge of the Day: Marketing must own the P&L, says Arpan Biswas",
-                        "url": "https://www.thedrum.com/news/judge-of-the-day-marketing-must-own-the-p-l-says-arpan-biswas",
+                        "title": "Reliance\u2019s e-commerce platform cashes in on Dhurandhar hype with new merch line",
+                        "url": "https://economictimes.indiatimes.com/industry/services/retail/reliances-e-commerce-platform-cashes-in-on-dhurandhar-hype-with-new-merch-line/articleshow/129610729.cms",
                         "brand": "ajio",
                         "weighted_sentiment": 0.0
                     },
                     {
-                        "title": "Arsenal vs Man City Free Streams: How to watch Carabao Cup Final 2025/26 online from anywhere",
-                        "url": "https://www.techradar.com/how-to-watch/football/arsenal-vs-man-city-free-streams-carabao-cup-final-2025-26",
+                        "title": "Dhurandhar: Storytelling In Age Of Restless Viewers",
+                        "url": "https://www.rediff.com/movies/column/dhurandhar-storytelling-in-the-age-of-restless-viewers/20260323.htm",
                         "brand": "amazon india",
                         "weighted_sentiment": 0.0
                     }
@@ -2011,46 +2043,64 @@
             "technology": {
                 "positive_drivers": [
                     {
+                        "title": "Ba&sh Bets on \u2018Less but Better\u2019 Strategy, Lifts Full-year Revenue on Strong\u00a0Q4",
+                        "url": "http://wwd.com/business-news/financial/bash-2025-revenue-boost-less-but-better-strategy-1238684241/",
+                        "brand": "reliance digital",
+                        "weighted_sentiment": 0.9475029110908508
+                    },
+                    {
                         "title": "Spykar\u2019s cut",
                         "url": "https://www.thehindubusinessline.com/catalyst/spykars-cut/article70772391.ece",
                         "brand": "flipkart",
                         "weighted_sentiment": 0.7257357239723206
-                    },
-                    {
-                        "title": "Amazon is reportedly working on making a new phone, because it went so well last time",
-                        "url": "https://www.techradar.com/phones/amazon-is-reportedly-working-on-making-a-new-phone-because-it-went-so-well-last-time",
-                        "brand": "reliance digital",
-                        "weighted_sentiment": 0.6065847873687744
                     }
                 ],
                 "negative_drivers": [
                     {
-                        "title": "Why the Iran War May Have Just Killed the AI Boom",
-                        "url": "https://oilprice.com/Energy/Energy-General/Why-the-Iran-War-May-Have-Just-Killed-the-AI-Boom.html",
-                        "brand": "amazon india",
-                        "weighted_sentiment": -0.7375845313072205
+                        "title": "Market rout drags down startup stocks; Lenskart, Ather, Bluestone among big losers",
+                        "url": "https://economictimes.indiatimes.com/tech/startups/market-rout-drags-down-startup-stocks-lenskart-ather-bluestone-among-big-losers/articleshow/129750620.cms",
+                        "brand": "flipkart",
+                        "weighted_sentiment": -0.9367855191230774
                     },
                     {
-                        "title": "When saving mothers isn\u2019t a good deed",
-                        "url": "https://timesofindia.indiatimes.com/world/mind-field/when-saving-mothers-isnt-a-good-deed/articleshow/129712254.cms",
-                        "brand": "flipkart",
-                        "weighted_sentiment": -0.682192325592041
+                        "title": "Oil shock crisis deepens: Asia faces economic turmoil as energy prices skyrocket",
+                        "url": "https://www.naturalnews.com/2026-03-24-asia-faces-economic-turmoil-energy-prices-skyrocket.html",
+                        "brand": "reliance digital",
+                        "weighted_sentiment": -0.8851296305656433
+                    }
+                ]
+            },
+            "partnership": {
+                "positive_drivers": [
+                    {
+                        "title": "New-age cos feel market ire; Apple's India push",
+                        "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/new-age-cos-feel-market-ire-apples-budget-friendly-india-push/articleshow/129753580.cms",
+                        "brand": "amazon india",
+                        "weighted_sentiment": -0.9460786581039428
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "New-age cos feel market ire; Apple's India push",
+                        "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/new-age-cos-feel-market-ire-apples-budget-friendly-india-push/articleshow/129753580.cms",
+                        "brand": "amazon india",
+                        "weighted_sentiment": -0.9460786581039428
                     }
                 ]
             },
             "discounts": {
                 "positive_drivers": [
                     {
+                        "title": "Amazon MX Player Rolls Out Microdrama Service Fatafat As Vertical Video Gains Momentum In India",
+                        "url": "http://deadline.com/2026/03/amazon-mx-player-fatafat-microdrama-service-india-1236762793/",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.7771271467208862
+                    },
+                    {
                         "title": "How Gen X\u2019s favourite gadgets like flip phones, wired earphones are finding a new set of fans: Gen Z",
                         "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/how-gen-xs-favourite-gadgets-like-flip-phones-wired-earphones-are-finding-a-new-set-of-fans-gen-z/articleshow/128893254.cms",
                         "brand": "tata cliq",
                         "weighted_sentiment": 0.5162656307220459
-                    },
-                    {
-                        "title": "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage",
-                        "url": "https://economictimes.indiatimes.com/tech/technology/qcomm-sees-brisk-sale-of-induction-stoves-as-people-panic-over-lpg-shortage/articleshow/129400310.cms",
-                        "brand": "bigbasket",
-                        "weighted_sentiment": 0.0
                     }
                 ],
                 "negative_drivers": [
@@ -2061,34 +2111,22 @@
                         "weighted_sentiment": -0.9323209524154664
                     },
                     {
-                        "title": "Qcomm sees brisk sale of induction stoves as people panic over LPG shortage",
-                        "url": "https://economictimes.indiatimes.com/tech/technology/qcomm-sees-brisk-sale-of-induction-stoves-as-people-panic-over-lpg-shortage/articleshow/129400310.cms",
-                        "brand": "bigbasket",
+                        "title": "Amazon MX Player rolls out Fatafat, a free, ad-supported, mobile-first platform offering serialized vertical videos, in India, as micro dramas gain momentum (Jesse Whittock/Deadline)",
+                        "url": "https://mediagazer.com/260323/p5",
+                        "brand": "amazon india",
                         "weighted_sentiment": 0.0
-                    }
-                ]
-            },
-            "logistics": {
-                "positive_drivers": [
-                    {
-                        "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
-                        "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
-                        "brand": "bigbasket",
-                        "weighted_sentiment": -0.6295598149299622
-                    }
-                ],
-                "negative_drivers": [
-                    {
-                        "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
-                        "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
-                        "brand": "bigbasket",
-                        "weighted_sentiment": -0.6295598149299622
                     }
                 ]
             },
             "regulation": {
                 "positive_drivers": [
                     {
+                        "title": "AWS eyeing 2-3 gigawatts India capacity on tax sops sweetener",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/aws-eyeing-2-3-gigawatts-india-capacity-on-tax-sops-sweetener/articleshow/129761032.cms",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.7057958245277405
+                    },
+                    {
                         "title": "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation",
                         "url": "https://corpgov.law.harvard.edu/2026/03/21/remarks-by-commissioner-uyeda-on-investor-choice-and-the-limits-of-sec-regulation/",
                         "brand": "reliance digital",
@@ -2100,6 +2138,72 @@
                         "title": "Remarks by Commissioner Uyeda on Investor Choice and the Limits of SEC Regulation",
                         "url": "https://corpgov.law.harvard.edu/2026/03/21/remarks-by-commissioner-uyeda-on-investor-choice-and-the-limits-of-sec-regulation/",
                         "brand": "reliance digital",
+                        "weighted_sentiment": 0.0
+                    },
+                    {
+                        "title": "AWS eyeing 2-3 gigawatts India capacity on tax sops sweetener",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/aws-eyeing-2-3-gigawatts-india-capacity-on-tax-sops-sweetener/articleshow/129761032.cms",
+                        "brand": "amazon india",
+                        "weighted_sentiment": 0.7057958245277405
+                    }
+                ]
+            },
+            "logistics": {
+                "positive_drivers": [
+                    {
+                        "title": "Food delivery startup Swish raises $38 million; valuation more than doubles",
+                        "url": "https://economictimes.indiatimes.com/tech/funding/food-delivery-startup-swish-raises-38-million-valuation-more-than-doubles/articleshow/129757920.cms",
+                        "brand": "flipkart",
+                        "weighted_sentiment": 0.5973981618881226
+                    },
+                    {
+                        "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
+                        "brand": "bigbasket",
+                        "weighted_sentiment": -0.6295598149299622
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "A summer of worry for food delivery, quick commerce companies",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/a-summer-of-worry-for-food-delivery-quick-commerce-companies/articleshow/129760831.cms",
+                        "brand": "flipkart",
+                        "weighted_sentiment": -0.8840080499649048
+                    },
+                    {
+                        "title": "Flipkart, Amazon expand dark stores as profit check slows quick commerce majors",
+                        "url": "https://economictimes.indiatimes.com/tech/technology/flipkart-amazon-expand-dark-stores-as-profit-check-slows-quick-commerce-majors/articleshow/129517458.cms",
+                        "brand": "bigbasket",
+                        "weighted_sentiment": -0.6295598149299622
+                    }
+                ]
+            },
+            "competition": {
+                "positive_drivers": [
+                    {
+                        "title": "Zomato\u2019s fee hike to boost margins, demand still intact : Jignanshu Gor",
+                        "url": "https://economictimes.indiatimes.com/markets/expert-view/zomatos-fee-hike-to-boost-margins-demand-still-intact-jignanshu-gor/articleshow/129747469.cms",
+                        "brand": "flipkart",
+                        "weighted_sentiment": 0.9455558061599731
+                    },
+                    {
+                        "title": "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell)",
+                        "url": "https://www.thehindubusinessline.com/markets/brokers-call-fsn-e-commerce-ventures-sell/article70753460.ece",
+                        "brand": "nykaa",
+                        "weighted_sentiment": 0.0
+                    }
+                ],
+                "negative_drivers": [
+                    {
+                        "title": "Is Australia Falling Behind in the Global AI Race? Experts Weigh In Amid US-China Dominance",
+                        "url": "https://www.ibtimes.com.au/australia-falling-behind-global-ai-race-experts-weigh-amid-us-china-dominance-1864073",
+                        "brand": "reliance digital",
+                        "weighted_sentiment": -0.841357946395874
+                    },
+                    {
+                        "title": "Broker\u2019s Call: \u00a0FSN E-commerce Ventures (Sell)",
+                        "url": "https://www.thehindubusinessline.com/markets/brokers-call-fsn-e-commerce-ventures-sell/article70753460.ece",
+                        "brand": "nykaa",
                         "weighted_sentiment": 0.0
                     }
                 ]
@@ -2121,13 +2225,13 @@
         ],
         "sentiment_change": {
             "direction": "increased",
-            "delta": 0.1462,
+            "delta": 0.1001,
             "top_reasons": [
-                "Given the recent ecommerce news articles, we can identify the TOP 3 reasons for the increased market sentiment.",
-                "Reason 1: **Amazon's long-term e-commerce growth prospects in India**. Amazon sees India as a significant long-term bet and has significant headroom for e-commerce growth. (Article: \"Amazon sees India as a long-term bet with significant headroom for e-commerce growth, says India VP\", Amazon India, Sentiment: 0.7818863987922668)",
-                "Reason 2: **Positive sentiments around Amazon's offerings and expansions**. The article about Amazon Pay expanding vehicle insurance offerings in India (Source 1) has a positive sentiment, which indicates a positive outlook for the brand. (Source 1, Amazon India, Topic: discounts, Sentiment: positive)"
+                "Based on the provided context and instructions, here is the response to the query:",
+                "**Market Analysis**",
+                "**Trend Identification**"
             ],
-            "explanation": "Given the recent ecommerce news articles, we can identify the TOP 3 reasons for the increased market sentiment.\n\n- Reason 1: **Amazon's long-term e-commerce growth prospects in India**. Amazon sees India as a significant long-term bet and has significant headroom for e-commerce growth. (Article: \"Amazon sees India as a long-term bet with significant headroom for e-commerce growth, says India VP\", Amazon India, Sentiment: 0.7818863987922668)\n\n- Reason 2: **Positive sentiments around Amazon's offerings and expansions**. The article about Amazon Pay expanding vehicle insurance offerings in India (Source 1) has a positive sentiment, which indicates a positive outlook for the brand. (Source 1, Amazon India, Topic: discounts, Sentiment: positive)\n\n- Reason 3: **Increased trust in Amazon through notable partnerships and investments**. Although not explicitly mentioned as a reason for sentiment change, a notable partnership or investment from Amazon might contribute to the overall positive sentiment. (Article: \"Spykar\u2019s cut\", Flipkart, Topic: technology, Sentiment: 0.7257357239723206)\n\nHowever, we cannot identify a single dominant trend or reason for the sentiment change, as there are multiple signals present in the given articles. The overall change in market sentiment might be attributed to a combination of these factors.\n\nAs this analysis refers to a market trend, we cannot determine a specific topic or focus exclusively on a single brand."
+            "explanation": "Based on the provided context and instructions, here is the response to the query:\n\n**Market Analysis**\n\n**Trend Identification**\n\nOne dominant trend is: **Uncertainty in Logistics and Rider Availability**\n\n**Why:**\n\nThe trend is happening due to a surge in demand for food delivery and quick commerce during summer and the IPL season, while many gig workers return home for harvest and elections, leading to uncertainty in rider availability.\n\n**Supporting Evidence:**\n\n* Article: \"A summer of worry for food delivery, quick commerce companies\" by flipkart, with a negative sentiment of -0.8840080499649048, indicating concerns in the logistics space.\n* Demand for gig workers is expected to rise 25%, exacerbating the uncertainty in rider availability.\n\n**Topic Focus**\n\n**Logistics**\n\nThe topic of logistics is experiencing a negative sentiment due to concerns about rider availability and uncertainty. This is supported by the article \"A summer of worry for food delivery, quick commerce companies\" by flipkart, which has a negative weighted sentiment of -0.8840080499649048.\n\n**TOP 3 Reasons for Sentiment Change**\n\n1. Surge in demand for food delivery and quick commerce during summer and the IPL season.\n2. Uncertainty in rider availability due to many gig workers returning home for harvest and elections.\n3. Rising fuel prices and incentives affecting the logistics industry."
         }
     }
 }

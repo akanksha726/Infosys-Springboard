@@ -34,6 +34,9 @@ data/*
 !data/processed/trend_data_cleaned.csv
 !data/processed/final_market_signal.json
 !data/processed/reviews_data.csv
+!data/processed/brand_forecast_history.csv
+!data/processed/market_forecast_history.csv
+
 
 # Dashboard / final outputs
 !data/output/
@@ -53,6 +56,7 @@ data/processed/topic_sentiment_matrix.csv
 data/processed/news_master_dataset.csv
 data/processed/finbert_summary.json
 data/processed/market_report.txt
+
 # Raw + cache
 data/raw/*
 data/archive/*

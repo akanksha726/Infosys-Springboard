@@ -1,11 +1,14 @@
 import pandas as pd
 import os
 import re
+import nltk
 from nltk.corpus import stopwords
 
-
-# Load stopwords
-stop_words = set(stopwords.words("english"))
+try:
+    stop_words = set(stopwords.words("english"))
+except LookupError:
+    nltk.download("stopwords")
+    stop_words = set(stopwords.words("english"))
 
 # Project root (TEAM-REPO)
 BASE_DIR = os.path.abspath(
