@@ -1,9 +1,6 @@
 # 🚀 AI-Powered Market Trend & Consumer Sentiment Forecaster
 
 An end-to-end AI system that analyzes ecommerce market trends using multi-source data (news + Google Trends + consumer signals) and generates actionable business insights with explainability.
-LIVE PREVIEW
-
-https://infosys-springboard-git-c043f5-thakurakanksha837-4728s-projects.vercel.app/
 
 > Developed as part of the Infosys Springboard Virtual Internship Program.
 ---
