@@ -268,6 +268,15 @@ def main():
 
     print("Dashboard data exported")
 
+    # 🔄 SYNC TO FRONTEND
+    FRONTEND_JSON_PATH = os.path.join(BASE_DIR, "frontend", "public", "market_dashboard_data.json")
+    if os.path.exists(os.path.dirname(FRONTEND_JSON_PATH)):
+        try:
+            shutil.copy2(dashboard_path, FRONTEND_JSON_PATH)
+            print(f"✅ Dashboard Synced to Frontend: {FRONTEND_JSON_PATH}")
+        except Exception as e:
+            print(f"⚠️ Dashboard sync failed: {e}")
+
     print("Generating PDF report...")
     generate_pdf_report()
 

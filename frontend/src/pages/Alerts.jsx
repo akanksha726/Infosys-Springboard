@@ -1,149 +1,164 @@
-import { useState } from 'react';
-import { Search, AlertTriangle, AlertCircle, Info, ExternalLink } from 'lucide-react';
+import { AlertTriangle, TrendingDown, TrendingUp, Zap, Bell } from 'lucide-react';
+
+function SeverityBadge({ severity }) {
+  const map = {
+    HIGH:   { color: '#ef4444', bg: 'rgba(239,68,68,0.15)' },
+    MEDIUM: { color: '#f59e0b', bg: 'rgba(245,158,11,0.15)' },
+    LOW:    { color: '#10b981', bg: 'rgba(16,185,129,0.15)' },
+    INFO:   { color: '#3b82f6', bg: 'rgba(59,130,246,0.15)' },
+  };
+  const s = map[severity?.toUpperCase()] || map.INFO;
+  return (
+    <span style={{
+      background: s.bg, color: s.color,
+      padding: '0.2rem 0.6rem', borderRadius: '999px',
+      fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase'
+    }}>
+      {severity || 'INFO'}
+    </span>
+  );
+}
 
 export default function Alerts({ data }) {
-  const [search, setSearch] = useState('');
-  
   if (!data) return <div className="p-8 animated-enter">Loading...</div>;
 
-  const insightsArray = data.consumer_insights?.consumer_ai_insight || [];
-  // The structure is ["LLM response skipped...", [ { source_id: 1, content: "..." }, ... ]]
-  const comments = Array.isArray(insightsArray) && insightsArray.length > 1 && Array.isArray(insightsArray[1]) 
-    ? insightsArray[1] 
-    : [];
-    
-  // Simple search filter
-  const filteredComments = comments.filter(c => c.content.toLowerCase().includes(search.toLowerCase()));
+  // Combine structured alerts + brand direction signals
+  const structuredAlerts = data.alerts || [];
+
+  const fallingBrands = data.brand_insights?.brand_direction?.filter(b => b.direction === 'Falling') || [];
+  const risingBrands  = data.brand_insights?.brand_direction?.filter(b => b.direction === 'Rising')  || [];
+
+  const overallDirection = data.market_overview?.trend_direction || 'Stable';
+  const sentiment        = data.market_overview?.current_sentiment || 0;
+  const volatility       = data.market_overview?.volatility || 0;
+  const risingTopic      = data.topic_insights?.fastest_rising_topic;
+  const decliningTopic   = data.topic_insights?.fastest_declining_topic;
 
   return (
     <div className="animated-enter">
       <div className="page-header">
         <div>
-          <h1 className="page-title">Insights & Alerts</h1>
-          <p className="text-secondary mt-1">AI-generated signals and extracted consumer commentary.</p>
+          <h1 className="page-title">Market Alerts</h1>
+          <p className="text-secondary mt-1">AI-generated signals, brand momentum alerts, and market risk indicators.</p>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', background: 'rgba(255,255,255,0.04)', borderRadius: '999px', border: '1px solid rgba(255,255,255,0.07)' }}>
+          <Bell size={14} style={{ color: '#f59e0b' }} />
+          <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>
+            {structuredAlerts.length + fallingBrands.length + risingBrands.length} active signals
+          </span>
         </div>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-        
-        {/* Alerts Column */}
-        <div className="flex flex-col gap-4">
-          <div className="glass-panel p-6 h-full">
-            <h3 className="chart-card-title flex items-center gap-2 mb-6">
-              <AlertTriangle className="text-warning" size={20} />
-              Recent Market Signals
-            </h3>
-            
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              {data.brand_insights?.brand_direction?.filter(b => b.direction === 'Falling').slice(0, 1).map((b, i) => (
-                <div key={i} className="glass-panel p-5" style={{ background: 'rgba(239, 68, 68, 0.05)', borderLeft: '4px solid #ef4444' }}>
-                  <div className="font-semibold capitalize text-danger mb-2 text-lg">{b.brand} Momentum Dropping</div>
-                  <div className="text-secondary text-sm leading-relaxed">FinBERT analysis detects increased negative sentiment vectors causing a downward trajectory.</div>
-                </div>
-              ))}
-              
-              {(!data.brand_insights?.brand_direction || data.brand_insights.brand_direction.filter(b => b.direction === 'Falling').length === 0) && (
-                <div className="glass-panel p-5" style={{ background: 'rgba(59, 130, 246, 0.05)', borderLeft: '4px solid #3b82f6' }}>
-                    <div className="font-semibold capitalize text-accent-blue mb-2 text-lg">Topic Breakout: {data.topic_insights?.fastest_rising_topic}</div>
-                    <div className="text-secondary text-sm leading-relaxed">This topic has gained massive engagement across social and news channels recently.</div>
-                </div>
-              )}
-            </div>
+      {/* ── MARKET OVERVIEW SIGNAL ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
+        <div className="glass-panel" style={{ padding: '1.25rem 1.5rem', borderLeft: `4px solid ${overallDirection === 'Bearish' ? '#ef4444' : '#10b981'}`, background: overallDirection === 'Bearish' ? 'rgba(239,68,68,0.05)' : 'rgba(16,185,129,0.05)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Overall Market</span>
+            <SeverityBadge severity={overallDirection === 'Bearish' ? 'HIGH' : 'LOW'} />
+          </div>
+          <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#e2e8f0', marginBottom: '0.25rem' }}>
+            Market is {overallDirection}
+          </div>
+          <div style={{ fontSize: '0.8rem', color: '#94a3b8' }}>
+            Sentiment: {sentiment.toFixed(3)} · Volatility Index: {volatility.toFixed(2)}
           </div>
         </div>
-        
-        {/* Insights / RAG Q&A Column */}
-        <div className="glass-panel p-6" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div className="flex justify-between items-center mb-6">
-            <h3 className="chart-card-title mb-0 flex items-center gap-2">
-              <Info className="text-accent-purple" size={20} />
-              Consumer Commentary Extractor
-            </h3>
-            
-            <div className="relative">
-              <div style={{ position: 'relative' }}>
-                <Search size={18} style={{ position: 'absolute', top: '10px', left: '12px', color: '#94a3b8' }} />
-                <input 
-                  type="text" 
-                  className="glass-btn pl-10" 
-                  placeholder="Search comments..." 
-                  style={{ paddingLeft: '2.5rem', width: '250px', textAlign: 'left' }}
-                  value={search}
-                  onChange={e => setSearch(e.target.value)}
-                />
-              </div>
+
+        {risingTopic && (
+          <div className="glass-panel" style={{ padding: '1.25rem 1.5rem', borderLeft: '4px solid #10b981', background: 'rgba(16,185,129,0.05)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+              <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Topic Breakout</span>
+              <SeverityBadge severity="MEDIUM" />
             </div>
+            <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#10b981', marginBottom: '0.25rem', textTransform: 'capitalize' }}>
+              ↑ {risingTopic}
+            </div>
+            <div style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Fastest rising topic this cycle</div>
           </div>
-          
-          <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '1rem', paddingRight: '1rem' }}>
-            {filteredComments.map((comment, idx) => {
-              // Parse out simple info if structured like "\nBrand: meesho\nTopic: funding\nSentiment: neutral\nNews: ..."
-              const lines = comment.content.split('\n').filter(Boolean);
-              
-              return (
-                <div key={idx} className="glass-panel" style={{ padding: '1.5rem', background: 'rgba(20, 20, 30, 0.4)', display: 'flex', flexDirection: 'column', gap: '0.75rem', borderLeft: '3px solid #6366f1' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem' }}>
-                    <div style={{ display: 'flex', gap: '0.5rem' }}>
-                       <span className="text-xs px-2 py-1 rounded bg-blue-500/20 text-blue-400 capitalize inline-block" style={{ background: 'rgba(99, 102, 241, 0.15)', color: '#818cf8', padding: '0.25rem 0.5rem', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 'bold' }}>Source {comment.source_id}</span>
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    {lines.map((line, lIdx) => {
-                      const colonIndex = line.indexOf(':');
-                      if (colonIndex > -1) {
-                        const key = line.substring(0, colonIndex).trim();
-                        const value = line.substring(colonIndex + 1).trim();
-                        
-                        let valueClassName = "text-text-primary";
-                        let valueBadge = null;
-                        
-                        // Special styling for Sentiment and specific keys
-                        if (key.toLowerCase().includes('sentiment')) {
-                          if (value.toLowerCase().includes('positive')) {
-                            valueClassName = "text-success font-medium";
-                            valueBadge = <span style={{display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', marginRight: '6px'}}></span>;
-                          } else if (value.toLowerCase().includes('negative')) {
-                            valueClassName = "text-danger font-medium";
-                            valueBadge = <span style={{display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: '#ef4444', marginRight: '6px'}}></span>;
-                          } else {
-                            valueClassName = "text-warning font-medium";
-                            valueBadge = <span style={{display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: '#f59e0b', marginRight: '6px'}}></span>;
-                          }
-                        } else if (key.toLowerCase().includes('brand')) {
-                          valueClassName = "text-accent-blue font-semibold capitalize";
-                        }
-                        
-                        return (
-                          <div key={lIdx} style={{ fontSize: '0.875rem', lineHeight: '1.6', display: 'flex', alignItems: 'flex-start' }}>
-                            <span style={{ fontWeight: 600, color: '#94a3b8', width: '85px', flexShrink: 0 }}>{key}</span>
-                            <span className={valueClassName} style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
-                              {valueBadge}{value}
-                            </span>
-                          </div>
-                        );
-                      }
-                      
-                      // Fallback for lines without colon
-                      return (
-                        <div key={lIdx} className="text-text-primary text-sm leading-relaxed whitespace-pre-line mt-1">
-                          {line}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-            
-            {filteredComments.length === 0 && (
-              <div className="text-center p-8 text-secondary">
-                No matching commentary found for "{search}"
-              </div>
-            )}
+        )}
+
+        {decliningTopic && (
+          <div className="glass-panel" style={{ padding: '1.25rem 1.5rem', borderLeft: '4px solid #ef4444', background: 'rgba(239,68,68,0.05)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+              <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Topic Decline</span>
+              <SeverityBadge severity="MEDIUM" />
+            </div>
+            <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#ef4444', marginBottom: '0.25rem', textTransform: 'capitalize' }}>
+              ↓ {decliningTopic}
+            </div>
+            <div style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Fastest declining topic this cycle</div>
           </div>
-        </div>
-        
+        )}
       </div>
+
+      {/* ── FALLING BRAND ALERTS ── */}
+      {fallingBrands.length > 0 && (
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1rem', fontWeight: 700, color: '#ef4444', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <TrendingDown size={18} /> Falling Brand Alerts ({fallingBrands.length})
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '0.9rem' }}>
+            {fallingBrands.map((b, i) => (
+              <div key={i} className="glass-panel" style={{ padding: '1rem 1.25rem', borderLeft: '4px solid #ef4444', background: 'rgba(239,68,68,0.06)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                  <span style={{ fontWeight: 700, color: '#e2e8f0', textTransform: 'capitalize', fontSize: '0.95rem' }}>{b.brand}</span>
+                  <SeverityBadge severity="HIGH" />
+                </div>
+                <div style={{ fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.25rem' }}>Momentum Dropping</div>
+                <div style={{ fontSize: '0.75rem', color: '#64748b' }}>FinBERT detects negative sentiment vectors.</div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── RISING BRAND SIGNALS ── */}
+      {risingBrands.length > 0 && (
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1rem', fontWeight: 700, color: '#10b981', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <TrendingUp size={18} /> Rising Brand Signals ({risingBrands.length})
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '0.9rem' }}>
+            {risingBrands.map((b, i) => (
+              <div key={i} className="glass-panel" style={{ padding: '1rem 1.25rem', borderLeft: '4px solid #10b981', background: 'rgba(16,185,129,0.06)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                  <span style={{ fontWeight: 700, color: '#e2e8f0', textTransform: 'capitalize', fontSize: '0.95rem' }}>{b.brand}</span>
+                  <SeverityBadge severity="LOW" />
+                </div>
+                <div style={{ fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.25rem' }}>Positive Momentum</div>
+                <div style={{ fontSize: '0.75rem', color: '#64748b' }}>FinBERT detects upward sentiment trajectory.</div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── STRUCTURED ALERTS FROM ENGINE ── */}
+      {structuredAlerts.length > 0 && (
+        <section>
+          <h2 style={{ fontSize: '1rem', fontWeight: 700, color: '#f59e0b', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <AlertTriangle size={18} /> Engine Alerts ({structuredAlerts.length})
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {structuredAlerts.map((alert, i) => (
+              <div key={i} className="glass-panel" style={{ padding: '1rem 1.25rem', borderLeft: `4px solid #f59e0b`, background: 'rgba(245,158,11,0.05)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <div>
+                  <span style={{ fontWeight: 700, color: '#e2e8f0', textTransform: 'capitalize', marginRight: '0.5rem' }}>{alert.brand || 'MARKET'}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#94a3b8' }}>{alert.message || alert.type}</span>
+                </div>
+                <SeverityBadge severity={alert.severity} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {structuredAlerts.length === 0 && fallingBrands.length === 0 && risingBrands.length === 0 && (
+        <div style={{ textAlign: 'center', padding: '4rem', color: '#94a3b8' }}>
+          <Zap size={48} style={{ margin: '0 auto 1rem', opacity: 0.3 }} />
+          <p>No active market alerts at this time.</p>
+        </div>
+      )}
     </div>
   );
 }

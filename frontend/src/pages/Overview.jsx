@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { TrendingUp, MessageSquare, Activity, AlertCircle } from 'lucide-react';
+import { TrendingUp, MessageSquare, Activity, AlertCircle, FileText, Download } from 'lucide-react';
 import AnimatedNumber from '../components/AnimatedNumber';
 
 export default function Overview({ data }) {
@@ -64,7 +64,6 @@ export default function Overview({ data }) {
       const sentiment = sentimentData ? sentimentData.final_consumer_sentiment.toFixed(3) : 'N/A';
       const forecastInfo = forecast?.brand_forecast?.brand_forecasts?.find(f => f.brand === brand);
       const slope = forecastInfo?.trend_slope !== undefined ? forecastInfo.trend_slope.toFixed(3) : 'N/A';
-
       rows.push([brand.toUpperCase(), sentiment, direction, slope]);
     });
 
@@ -79,6 +78,17 @@ export default function Overview({ data }) {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   };
+
+  const handleDownloadPDF = () => {
+    // Download the pre-generated PDF from the public folder
+    const a = document.createElement('a');
+    a.href = '/market_report.pdf';
+    a.download = `AI_Market_Report_${new Date().toISOString().split('T')[0]}.pdf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
 
   const { market_overview, brand_insights } = data;
   const isPos = market_overview?.trend_slope > 0;
@@ -101,7 +111,22 @@ export default function Overview({ data }) {
               <option key={b.brand} value={b.brand}>{b.brand.toUpperCase()}</option>
             ))}
           </select>
-          <button className="glass-btn primary" onClick={handleExport}>Export Report</button>
+          <button
+            className="glass-btn"
+            onClick={handleExport}
+            style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}
+            title="Download data as CSV spreadsheet"
+          >
+            <Download size={15} /> Export CSV
+          </button>
+          <button
+            className="glass-btn primary"
+            onClick={handleDownloadPDF}
+            style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}
+            title="Download the AI-generated PDF report"
+          >
+            <FileText size={15} /> Download Report
+          </button>
         </div>
       </div>
 

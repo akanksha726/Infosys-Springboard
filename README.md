@@ -5,6 +5,19 @@ LIVE PREVIEW
 
 https://infosys-springboard-git-c043f5-thakurakanksha837-4728s-projects.vercel.app/
 
+> Developed as part of the Infosys Springboard Virtual Internship Program.
+---
+## 🌐 Live Demo
+
+🚀 Frontend Dashboard:  
+(https://infosys-springboard-git-c043f5-thakurakanksha837-4728s-projects.vercel.app/)
+
+The frontend dashboard is deployed on Vercel and showcases:
+- Market trend analytics
+- Consumer sentiment visualization
+- Forecasting insights
+- Brand comparison dashboards
+- AI-powered market intelligence UI
 ---
 
 ## 📌 Overview
@@ -298,7 +311,9 @@ With more data (40–60 days), performance improves significantly.
 
 ## License
 
-This project is developed for educational and research purposes.
+## License
+
+This project was developed as part of the Infosys Springboard Virtual Internship Program for educational and research purposes.
 
 ---
 
@@ -306,3 +321,50 @@ This project is developed for educational and research purposes.
 
 Project developed as part of an AI Market Intelligence System for analyzing e-commerce sentiment and trends.
 
+---
+
+## 🚀 Deployment on Vercel
+
+The frontend dashboard is built with React and Vite, making it optimized for Vercel deployment. 
+
+### Option 1: Deploy via Vercel Dashboard (Recommended)
+
+1. Push your complete project code to a GitHub repository.
+2. Log in to [Vercel](https://vercel.com/) and click **Add New...** -> **Project**.
+3. Import your GitHub repository.
+4. In the **Configure Project** section, make sure you configure the details properly so Vercel knows where the frontend application lives:
+   - **Framework Preset**: Vite
+   - **Root Directory**: `frontend` (Click edit and select the `frontend` folder)
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. If your frontend requires any environment variables (e.g., API keys), add them under the **Environment Variables** tab.
+6. Click **Deploy**. Vercel will build your React application and provide you with a live URL.
+
+### Option 2: Deploy using Vercel CLI
+
+If you prefer using the terminal, you can deploy directly using Vercel CLI:
+
+1. Install the Vercel CLI globally:
+   ```bash
+   npm i -g vercel
+   ```
+2. Navigate to your frontend directory:
+   ```bash
+   cd frontend
+   ```
+3. Run the deployment command:
+   ```bash
+   vercel
+   ```
+4. Follow the terminal prompts:
+   - **Set up and deploy?** [Y/n] -> `Y`
+   - **Which scope do you want to deploy to?** -> (Select your account)
+   - **Link to existing project?** [y/N] -> `N`
+   - **What's your project's name?** -> Enter a name (e.g., `ai-ecommerce-dashboard`)
+   - **In which directory is your code located?** -> `./`
+   - **Want to overrides the settings?** -> `N` (It will automatically detect Vite).
+
+5. To create a production build and deploy it, run:
+   ```bash
+   vercel --prod
+   ```

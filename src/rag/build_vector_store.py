@@ -86,7 +86,8 @@ News: {text[:1000]}
                 metadata={
                     "brand": str(row["brand"]).lower(),
                     "topic": topic,
-                    "sentiment": str(row.get("finbert_label", "neutral")).lower()
+                    "sentiment": str(row.get("finbert_label", "neutral")).lower(),
+                    "url": str(row.get("url", ""))
                 }
             )
         )

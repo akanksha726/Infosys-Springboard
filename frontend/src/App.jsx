@@ -5,6 +5,8 @@ import Overview from './pages/Overview';
 import Topics from './pages/Topics';
 import Comparison from './pages/Comparison';
 import Alerts from './pages/Alerts';
+import Sources from './pages/Sources';
+import News from './pages/News';
 import Chatbot from './components/Chatbot';
 
 function App() {
@@ -18,9 +20,10 @@ function App() {
     // 1. Pause fetching when the tab is hidden to save resources
     if (document.hidden) return;
 
-    setIsSyncing(true);
+    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || ""; // Defaults to empty for local/Vercel static serving
     try {
-      const res = await fetch('/market_dashboard_data.json?t=' + new Date().getTime());
+      const endpoint = API_BASE_URL ? `${API_BASE_URL}/dashboard-data` : '/market_dashboard_data.json';
+      const res = await fetch(endpoint + '?t=' + new Date().getTime());
       if (!res.ok) throw new Error('Network response was not ok');
       const data = await res.json();
       setMarketData(data);
@@ -74,11 +77,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<DashboardLayout lastUpdated={lastUpdated} isError={isError} isSyncing={isSyncing} onRefresh={fetchRealTimeData} />}>
+        <Route path="/" element={<DashboardLayout data={marketData} lastUpdated={lastUpdated} isError={isError} isSyncing={isSyncing} onRefresh={fetchRealTimeData} />}>
           <Route index element={<Overview data={marketData} />} />
           <Route path="topics" element={<Topics data={marketData} />} />
           <Route path="comparison" element={<Comparison data={marketData} />} />
           <Route path="alerts" element={<Alerts data={marketData} />} />
+          <Route path="news" element={<News data={marketData} />} />
+          <Route path="sources" element={<Sources data={marketData} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

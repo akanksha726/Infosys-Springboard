@@ -33,25 +33,17 @@ retriever = None
 
 def get_retriever():
     global retriever
-
     if retriever is None:
         index_file = os.path.join(VECTOR_PATH, "index.faiss")
-
         if not os.path.exists(index_file):
-            raise FileNotFoundError(
-                "Vector store not found. Run pipeline once."
-            )
-
+            raise FileNotFoundError("Vector store not found. Run pipeline once.")
         vector_store = FAISS.load_local(
             VECTOR_PATH,
             get_embedding_model(),
             allow_dangerous_deserialization=True
         )
-
-        retriever = vector_store.as_retriever(
-            search_kwargs={"k": 5}
-        )
-
+        # 🔥 Maintain high context volume (k=12)
+        retriever = vector_store.as_retriever(search_kwargs={"k": 12})
     return retriever
 
 # -----------------------------
@@ -92,8 +84,12 @@ def detect_query_type(query):
 # -----------------------------
 # Main RAG function
 # -----------------------------
-def generate_rag_response(query):
-
+def generate_rag_response(query, k=None):
+    """
+    RAG-based response generation from vector search.
+    """
+    if k is not None:
+        retriever.search_kwargs["k"] = k
     query_type = detect_query_type(query)
     if query_type == "brand" and len(query.split()) <= 3:
         query = f"How is the brand {query} performing?"
@@ -104,19 +100,13 @@ def generate_rag_response(query):
             break
     client = get_llm_client()
 
-    enhanced_query = f"""
-    Indian ecommerce trends, brands like flipkart, amazon, meesho, nykaa, ajio.
-    Focus on sentiment, logistics, funding, discounts.
-    Question: {query}
-    """
+    enhanced_query = f"Indian ecommerce market news, brands sentiment and retail trends. {query[:200]}"
 
     # -----------------------------
     # Retrieve
     # -----------------------------
     docs = get_retriever().invoke(enhanced_query)
-    # topic-focused filtering
-    if detected_topic:
-        docs = [d for d in docs if detected_topic in d.page_content.lower()]
+    # Note: Topic filtering is disabled to allow more comprehensive market source retrieval.
 
     if not docs:
         return "No relevant information found.", []
@@ -143,7 +133,11 @@ def generate_rag_response(query):
     # Sources
     # -----------------------------
     sources = [
-        {"source_id": i + 1, "content": d.page_content[:200]}
+        {
+            "source_id": i + 1,
+            "content": d.page_content[:200],
+            "url": d.metadata.get("url", "")
+        }
         for i, d in enumerate(docs)
     ]
 
@@ -172,6 +166,8 @@ STRICT RULES:
 - NO hallucination
 - If unsure → say "Not explicitly mentioned"
 - Give CLEAR, SYNTHESIZED answers (not raw summaries)
+- CITE your sources using [Source X] format (e.g., [Source 1], [Source 2]). 
+- Ensure every major claim is attributed to a source.
 
 -----------------------
 CONTEXT:

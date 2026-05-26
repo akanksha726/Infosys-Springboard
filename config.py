@@ -18,7 +18,22 @@ ECOMMERCE_BRANDS = [
     "BigBasket",
     "Nykaa",
     "Reliance Digital",
-    "Tata Cliq"
+    "Tata Cliq",
+    "Zepto",
+    "Blinkit",
+    "Zomato",
+    "Swiggy",
+    "FirstCry",
+    "Lenskart",
+    "Tata 1mg",
+    "Pepperfry",
+    "Pharmeasy",
+    "Zivame",
+    "Delhivery",
+    "Shiprocket",
+    "H&M India",
+    "Zara India",
+    "Urban Company"
 ]
 
 # Model settings

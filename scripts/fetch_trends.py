@@ -39,12 +39,17 @@ def chunk_list(lst, size=5):
 # MAIN FETCH FUNCTION
 # ---------------------------
 def fetch_trends():
-    if not API_KEY:
-        print("⚠️ SERP_API_KEY not found. Skipping trend fetch.")
+    if not API_KEY or API_KEY.strip() == "your_serpapi_key_here":
+        print("⚠️ SERP_API_KEY not set. Skipping trend fetch.")
         return
+
     print("Fetching Google Trends data...")
 
     all_data = []
+
+    # Use last 3 months of data for better results
+    end_date = datetime.now().strftime("%Y-%m-%d")
+    start_date = (datetime.now() - timedelta(days=90)).strftime("%Y-%m-%d")
 
     for batch in chunk_list(brands, 5):
         print(f"Fetching for: {batch}")
@@ -54,6 +59,7 @@ def fetch_trends():
             "q": ",".join(batch),
             "data_type": "TIMESERIES",
             "geo": "IN",
+            "date": f"{start_date} {end_date}",
             "api_key": API_KEY
         }
 
@@ -61,18 +67,35 @@ def fetch_trends():
             search = GoogleSearch(params)
             results = search.get_dict()
 
+            # --- Check for API-level errors ---
+            if "error" in results:
+                print(f"❌ SerpAPI Error: {results['error']}")
+                continue
+
+            # --- Check search metadata status ---
+            meta = results.get("search_metadata", {})
+            status = meta.get("status", "")
+            if status and status != "Success":
+                print(f"⚠️ Search status: {status}")
+
             interest = results.get("interest_over_time", {})
 
             if not interest:
-                print("❌ No data for batch:", batch)
+                # Show top-level keys to help diagnose
+                print(f"❌ No interest_over_time for batch: {batch}")
+                print(f"   Response keys: {list(results.keys())}")
                 continue
 
             timeline = interest.get("timeline_data", [])
 
-            for entry in timeline:
-                date = entry["date"]
+            if not timeline:
+                print(f"⚠️ Empty timeline_data for batch: {batch}")
+                continue
 
-                for value in entry["values"]:
+            for entry in timeline:
+                date = entry.get("date", "")
+
+                for value in entry.get("values", []):
                     all_data.append({
                         "date": date,
                         "brand": value["query"].lower(),
@@ -80,65 +103,48 @@ def fetch_trends():
                     })
 
         except Exception as e:
-            print(f"Error fetching batch {batch}: {e}")
+            print(f"❌ Error fetching batch {batch}: {e}")
 
     if not all_data:
-        print("❌ No trend data collected")
+        print("❌ No trend data collected — keeping existing cached data.")
         return
 
     df = pd.DataFrame(all_data)
+
     # ---------------------------
-    # 🔥 CLEAN RAW SCORE (FIX)
+    # CLEAN RAW SCORE
     # ---------------------------
     df["raw_score"] = df["raw_score"].astype(str)
-
-    # handle "<1" → 0.5
     df["raw_score"] = df["raw_score"].str.replace("<1", "0.5")
-
     df["raw_score"] = pd.to_numeric(df["raw_score"], errors="coerce")
     df["raw_score"] = df["raw_score"].fillna(0)
 
     # ---------------------------
-    # 🔥 CREATE trend_score FIRST (REQUIRED)
+    # CREATE trend_score
     # ---------------------------
     max_score = df["raw_score"].max()
-
     if max_score == 0:
         df["trend_score"] = 0
     else:
         df["trend_score"] = df["raw_score"] / max_score
 
-    # ---------------------------
-    # 🔥 BRAND NORMALIZATION (FIX)
-    # ---------------------------
-
-    # 🔥 ADD THIS (brand-wise normalization)
+    # Brand-wise normalization
     df["trend_score"] = df.groupby("brand")["trend_score"].transform(
         lambda x: (x - x.min()) / (x.max() - x.min() + 1e-6)
     )
+
     df["date_parsed"] = df["date"].str.split("–").str[0]
+    df["date_parsed"] = pd.to_datetime(df["date_parsed"], errors="coerce")
 
-    df["date_parsed"] = pd.to_datetime(
-        df["date_parsed"],
-        errors="coerce"
-    )
-    # ---------------------------
-    # OPTIONAL: SMOOTHING
-    # ---------------------------
+    # Smoothing
     df = df.sort_values(["brand", "date_parsed"])
-
-
     df["trend_score"] = df.groupby("brand")["trend_score"].transform(
         lambda x: x.rolling(3, min_periods=1).mean()
     )
 
-    # ---------------------------
-    # CLEAN
-    # ---------------------------
     df = df.drop(columns=["date_parsed"])
     df = df[["date", "brand", "trend_score"]]
     df["fetched_at"] = pd.Timestamp.now()
-
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     df.to_csv(OUTPUT_PATH, index=False)
@@ -151,7 +157,6 @@ def fetch_trends():
 # RUN STANDALONE
 # ---------------------------
 if __name__ == "__main__":
-
     if should_fetch_trends(OUTPUT_PATH):
         fetch_trends()
     else:

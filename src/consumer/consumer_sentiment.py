@@ -27,7 +27,7 @@ def map_brand(text):
 
 def analyze_reviews(input_path, output_path):
     if not os.path.exists(input_path):
-        print("⚠️ reviews_data.csv not found, skipping consumer sentiment")
+        print("⚠️ reviews_dataset.csv not found, skipping consumer sentiment")
         return None
 
     df = pd.read_csv(input_path)

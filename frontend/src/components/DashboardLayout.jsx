@@ -18,37 +18,29 @@ export default function DashboardLayout({ lastUpdated, isError, isSyncing, onRef
             <span>Connection to AI pipeline lost. Retrying automatically...</span>
           </div>
         )}
-        
-        <header className="flex justify-between items-center mb-8 pb-4 border-b border-white/10" style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', marginBottom: '2rem' }}>
-          <div className="flex items-center gap-4" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            
-             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,255,255,0.03)', padding: '0.4rem 0.8rem', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)' }}>
-               {isSyncing ? (
-                 <RefreshCw size={14} className="text-secondary" style={{ animation: 'spin 1s linear infinite' }} />
-               ) : (
-                 <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: isError ? '#ef4444' : '#10b981', boxShadow: isError ? '0 0 8px #ef4444' : '0 0 8px #10b981' }}></div>
-               )}
-               <span className="text-sm text-secondary" style={{ fontSize: '0.8rem', color: '#94a3b8' }}>
-                 {isError ? 'Disconnected' : `Live • Updated: ${formatTime(lastUpdated)}`}
-               </span>
-               <button 
-                 onClick={onRefresh} 
-                 disabled={isSyncing}
-                 style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: '4px', marginLeft: '4px', display: 'flex', alignItems: 'center', color: '#94a3b8' }}
-                 title="Refresh Dashboard"
-               >
-                 <RefreshCw size={14} style={{ opacity: 0.7 }} className={isSyncing ? "animate-spin" : ""} />
-               </button>
-             </div>
-             
-             <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
 
-             <div className="text-sm text-secondary" style={{ display: 'none' }}>Updated Today</div>
-             <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
-               A
-             </div>
+        <header style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', marginBottom: '2rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,255,255,0.03)', padding: '0.4rem 0.8rem', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)' }}>
+            {isSyncing ? (
+              <RefreshCw size={14} style={{ color: '#94a3b8', animation: 'spin 1s linear infinite' }} />
+            ) : (
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: isError ? '#ef4444' : '#10b981', boxShadow: isError ? '0 0 8px #ef4444' : '0 0 8px #10b981' }} />
+            )}
+            <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>
+              {isError ? 'Disconnected' : `Live • Updated: ${formatTime(lastUpdated)}`}
+            </span>
+            <button
+              onClick={onRefresh}
+              disabled={isSyncing}
+              style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: '4px', marginLeft: '4px', display: 'flex', alignItems: 'center', color: '#94a3b8' }}
+              title="Refresh Dashboard"
+            >
+              <RefreshCw size={14} style={{ opacity: 0.7 }} />
+            </button>
           </div>
+          <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
         </header>
+
         <Outlet />
       </main>
     </div>

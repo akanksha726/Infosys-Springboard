@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Home, BarChart2, TrendingUp, Bell } from 'lucide-react';
+import { Home, BarChart2, TrendingUp, Bell, Newspaper, BookOpen } from 'lucide-react';
 
 export default function Sidebar() {
   return (
@@ -28,6 +28,16 @@ export default function Sidebar() {
         <NavLink to="/alerts" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
           <Bell size={20} />
           <span>Insights & Alerts</span>
+        </NavLink>
+
+        <NavLink to="/news" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+          <Newspaper size={20} />
+          <span>News</span>
+        </NavLink>
+
+        <NavLink to="/sources" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+          <BookOpen size={20} />
+          <span>Research Sources</span>
         </NavLink>
       </nav>
     </aside>
