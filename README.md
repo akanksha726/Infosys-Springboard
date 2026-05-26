@@ -7,7 +7,7 @@ An end-to-end AI system that analyzes ecommerce market trends using multi-source
 ## 🌐 Live Demo
 
 🚀 Frontend Dashboard:  
-https://market-trend-and-consumer-sentiment-forecaster-front-48sbou50b.vercel.app/
+(https://infosys-springboard-git-c043f5-thakurakanksha837-4728s-projects.vercel.app/)
 
 The frontend dashboard is deployed on Vercel and showcases:
 - Market trend analytics
