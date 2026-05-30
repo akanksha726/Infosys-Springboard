@@ -7,7 +7,7 @@ An end-to-end AI system that analyzes ecommerce market trends using multi-source
 ## 🌐 Live Demo
 
 🚀 Frontend Dashboard:  
-infosys-springboard-7bszjs9bn-thakurakanksha837-4728s-projects.vercel.app
+https://infosys-springboard-eight.vercel.app/
 
 The frontend dashboard is deployed on Vercel and showcases:
 - Market trend analytics
